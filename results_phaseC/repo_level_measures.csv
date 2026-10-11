@@ -1,0 +1,11 @@
+repo,group,km_median_snapshots,removed_share,file_deleted_share_of_removals,km_median_days,intro_per_kloc,removed_per_kloc,intro_per_commit,mean_kloc
+TaylorResearchLab/scedar,PreAI,8.0,0.473,0.556,,83.791,39.753,19.552,6.77
+binsync/declib,AI,20.0,0.39,0.325,792.961,46.709,18.213,18.483,11.48
+getavalon/core,PreAI,7.0,0.538,0.356,766.99,108.379,58.295,18.207,4.87
+hanyas/sds,PreAI,5.0,0.413,0.365,141.723,253.006,116.021,30.379,3.48
+initc3/HoneyBadgerMPC,PreAI,5.0,0.705,0.157,44.031,102.725,75.948,29.897,8.44
+jaxleyverse/jaxley,AI,7.0,0.572,0.082,302.961,56.484,32.298,13.207,6.78
+jsosa/LFPtools,PreAI,,0.466,0.368,,123.478,57.585,14.862,3.49
+mit-acl/tcaff,AI,8.0,0.57,0.778,241.102,297.129,170.091,33.793,3.3
+pachterlab/edgePython,AI,,0.03,0.0,,3.409,0.407,2.31,19.65
+temporalecologylab/TreeRings,AI,5.0,0.616,0.793,90.267,65.908,40.631,12.138,5.34

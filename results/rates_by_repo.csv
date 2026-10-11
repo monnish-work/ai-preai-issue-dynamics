@@ -1,0 +1,9 @@
+repo,group,category,snapshots,commit_intervals,days_observed,mean_kloc,baseline_issues,introduced,removed,open_at_end,intro_per_kloc,intro_per_commit,removed_per_kloc,removed_per_commit,remediation_share,density_start_per_kloc
+dhlab-epfl/dhSegment,PreAI,maintainability,30,29,168,5.47,176,10,31,155,1.829,0.345,5.671,1.069,0.167,29.605
+dhlab-epfl/dhSegment,PreAI,reliability,30,29,168,5.47,3,0,1,2,0.0,0.0,0.183,0.034,0.333,0.505
+dhlab-epfl/dhSegment,PreAI,security,30,29,168,5.47,11,4,3,12,0.732,0.138,0.549,0.103,0.2,1.85
+dhlab-epfl/dhSegment,PreAI,all,30,29,168,5.47,190,14,35,169,2.561,0.483,6.403,1.207,0.172,31.96
+pachterlab/edgePython,AI,maintainability,30,29,120,19.73,383,64,8,439,3.244,2.207,0.405,0.276,0.018,21.121
+pachterlab/edgePython,AI,reliability,30,29,120,19.73,11,3,0,14,0.152,0.103,0.0,0.0,0.0,0.607
+pachterlab/edgePython,AI,security,30,29,120,19.73,0,0,0,0,0.0,0.0,0.0,0.0,,0.0
+pachterlab/edgePython,AI,all,30,29,120,19.73,394,67,8,453,3.396,2.31,0.405,0.276,0.017,21.727

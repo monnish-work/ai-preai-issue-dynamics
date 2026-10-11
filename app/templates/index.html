@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Issue Lifelines</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230B6E5F'/%3E%3Cpath d='M6 16h20' stroke='%23fff' stroke-width='2' opacity='.45'/%3E%3Cpath d='M11 16h10' stroke='%23fff' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<!-- ================= Welcome / sign in ================= -->
+<section id="welcome" class="welcome" hidden>
+  <div class="welcome-copy">
+    <p class="eyebrow">Individual Study · 2026</p>
+    <h1 class="display">Issue Lifelines</h1>
+    <p class="lead">Follow every static-analysis warning in AI-assisted and pre-AI Python projects from the commit that introduced it to the commit that removed it.</p>
+    <form id="login-form" class="login" autocomplete="on" novalidate>
+      <label for="login-name">Your name</label>
+      <div class="login-row">
+        <input id="login-name" name="name" type="text" placeholder="e.g. Monnish" maxlength="60" required>
+        <button type="submit" class="btn primary">Enter</button>
+      </div>
+      <p id="login-error" class="form-error" role="alert"></p>
+      <p class="hint">No password. Your name labels the manual checks you save.</p>
+    </form>
+  </div>
+  <div class="welcome-art" aria-hidden="true">
+    <svg id="lifeline-art" viewBox="0 0 520 300"></svg>
+    <p class="art-caption mono">python:S3776 · Cognitive Complexity 32 &gt; 15 · born c05 · removed c13</p>
+  </div>
+</section>
+
+<!-- ================= App shell ================= -->
+<div id="shell" class="shell" hidden>
+  <aside class="sidebar">
+    <a class="brand" href="#about">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" class="brand-bg"/><path d="M6 16h20" class="brand-track"/><path d="M11 16h10" class="brand-life"/></svg>
+      <span>Issue Lifelines</span>
+    </a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#about" data-view="about">About</a>
+      <a href="#results" data-view="results">Results</a>
+      <a href="#compare" data-view="compare">Compare projects</a>
+      <a href="#issues" data-view="issues">Issue explorer</a>
+      <a href="#validation" data-view="validation">Tracker validation</a>
+      <a href="#dataset" data-view="dataset">Dataset</a>
+      <a href="#limits" data-view="limits">Limitations</a>
+    </nav>
+    <div class="side-foot">
+      <label for="phase-select" class="mini-label">Data set</label>
+      <select id="phase-select"></select>
+      <div class="user">
+        <span class="avatar" id="user-avatar"></span>
+        <span class="user-name" id="user-name"></span>
+        <button id="logout" class="link-btn" type="button">Sign out</button>
+      </div>
+      <button id="theme-toggle" class="link-btn" type="button">Switch theme</button>
+    </div>
+  </aside>
+  <main id="main" class="main" tabindex="-1"></main>
+</div>
+
+<div id="tooltip" class="tooltip" role="status" hidden></div>
+<div id="drawer" class="drawer" hidden>
+  <div class="drawer-backdrop" data-close></div>
+  <aside class="drawer-panel" role="dialog" aria-modal="true" aria-labelledby="drawer-title">
+    <button class="drawer-close" data-close type="button" aria-label="Close">×</button>
+    <div id="drawer-body"></div>
+  </aside>
+</div>
+
+<script src="{{ url_for('static', filename='js/charts.js') }}"></script>
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

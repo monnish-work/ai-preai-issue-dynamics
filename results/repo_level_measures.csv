@@ -1,0 +1,3 @@
+repo,group,km_median_snapshots,removed_share,file_deleted_share_of_removals,km_median_days,intro_per_kloc,removed_per_kloc,intro_per_commit,mean_kloc
+dhlab-epfl/dhSegment,PreAI,,0.0,,,2.561,6.403,0.483,5.47
+pachterlab/edgePython,AI,,0.03,0.0,,3.396,0.405,2.31,19.73

@@ -1,0 +1,418 @@
+repo,url,stars,forks,size_kb,created_at,pushed_at,default_branch,description
+cal-pratt/SheetVision,https://github.com/cal-pratt/SheetVision,499,88,906,2016-07-13,2019-11-30,master,Read sheet music and convert to midi
+grayhatacademy/ghidra_scripts,https://github.com/grayhatacademy/ghidra_scripts,498,59,2763,2019-08-29,2021-05-03,master,"Port of devttyS0's IDA plugins to the Ghidra plugin framework, new plugins as well."
+DylanWusee/pointconv,https://github.com/DylanWusee/pointconv,498,96,513,2019-02-25,2019-10-01,master,
+hbashton/spotify-ripper,https://github.com/hbashton/spotify-ripper,497,91,459,2016-10-03,2020-06-10,master,https://github.com/jrnewell/spotify-ripper has been revived
+hwalsuklee/tensorflow-mnist-VAE,https://github.com/hwalsuklee/tensorflow-mnist-VAE,497,177,383,2017-03-20,2017-04-11,master,Tensorflow implementation of variational auto-encoder for MNIST
+quancore/social-lstm,https://github.com/quancore/social-lstm,497,269,5558,2018-06-21,2020-04-26,master,Social LSTM implementation in PyTorch
+dengdan/seglink,https://github.com/dengdan/seglink,496,173,1978,2017-06-07,2018-05-03,master,An Implementation of the seglink alogrithm in paper Detecting Oriented Text in Natural Images by Linking Segments
+elbayadm/attn2d,https://github.com/elbayadm/attn2d,496,69,6515,2018-08-10,2021-05-08,master,Pervasive Attention: 2D Convolutional Networks for Sequence-to-Sequence Prediction
+Emptyset110/dHydra,https://github.com/Emptyset110/dHydra,494,255,5630,2016-02-19,2017-01-14,master,主要针对多数据源多策略实时计算的量化分析开发框架。提供新浪Level2等数据获取
+adambielski/CapsNet-pytorch,https://github.com/adambielski/CapsNet-pytorch,494,71,290,2017-11-28,2021-04-13,master,PyTorch implementation of NIPS 2017 paper Dynamic Routing Between Capsules
+codeniko/shape_predictor_81_face_landmarks,https://github.com/codeniko/shape_predictor_81_face_landmarks,494,124,19883,2018-05-19,2019-03-19,master,Custom shape predictor model trained to find 81 facial feature landmarks given any image
+daijifeng001/MNC,https://github.com/daijifeng001/MNC,493,177,2926,2016-06-21,2017-06-09,master,Instance-aware Semantic Segmentation via Multi-task Network Cascades
+Hangz-nju-cuhk/Rotate-and-Render,https://github.com/Hangz-nju-cuhk/Rotate-and-Render,493,110,8823,2020-03-18,2020-08-27,master,Code for Rotate-and-Render: Unsupervised Photorealistic Face Rotation from Single-View Images (CVPR 2020)
+buguroo/pyknow,https://github.com/buguroo/pyknow,493,149,1759,2015-06-01,2020-02-23,develop,PyKnow: Expert Systems for Python
+andyzsf/TuShare,https://github.com/andyzsf/TuShare,493,141,3245,2016-02-29,2016-02-29,master,"TuShare是实现对股票/期货等金融数据从数据采集、清洗加工 到 数据存储过程的工具，满足金融量化分析师和学习数据分析的人在数据获取方面的需求，它的特点是数据覆盖范围广，接口调用简单,响应快速。"
+CongWeilin/mtcnn-caffe,https://github.com/CongWeilin/mtcnn-caffe,493,291,18584,2017-02-06,2018-10-01,master,Joint Face Detection and Alignment using Multi-task Cascaded Convolutional Neural Networks
+danielegrattarola/keras-gat,https://github.com/danielegrattarola/keras-gat,492,125,5902,2017-11-08,2020-10-26,master,Keras implementation of the graph attention networks (GAT) by Veličković et al. (2017; https://arxiv.org/abs/1710.10903)
+roimehrez/contextualLoss,https://github.com/roimehrez/contextualLoss,492,76,10216,2018-02-05,2021-07-08,master,The Contextual Loss
+kaushalshetty/Structured-Self-Attention,https://github.com/kaushalshetty/Structured-Self-Attention,492,101,504,2018-02-01,2019-09-22,master,A Structured Self-attentive Sentence Embedding
+dome272/Instagram-DeepFake-Bot,https://github.com/dome272/Instagram-DeepFake-Bot,491,51,4754,2020-09-29,2021-02-15,master,"An Instagram Bot serving as an account, people can use to create DeepFakes on Instagram."
+AnubhavGupta3377/Text-Classification-Models-Pytorch,https://github.com/AnubhavGupta3377/Text-Classification-Models-Pytorch,490,129,12921,2018-11-25,2019-01-05,master,Implementation of State-of-the-art Text Classification Models in Pytorch
+carpedm20/pixel-rnn-tensorflow,https://github.com/carpedm20/pixel-rnn-tensorflow,490,126,1686,2016-07-12,2019-06-02,master,in progress
+daa233/generative-inpainting-pytorch,https://github.com/daa233/generative-inpainting-pytorch,487,101,1702,2018-12-24,2021-02-03,master,A PyTorch reimplementation for paper Generative Image Inpainting with Contextual Attention (https://arxiv.org/abs/1801.07892)
+hpc203/10kinds-light-face-detector-align-recognition,https://github.com/hpc203/10kinds-light-face-detector-align-recognition,487,113,530,2020-09-25,2021-11-06,master,10种轻量级人脸检测算法的比拼，其中还包含人脸关键点检测与对齐，人脸特征向量提取和计算距离相似度
+unsky/focal-loss,https://github.com/unsky/focal-loss,486,124,6384,2017-08-13,2017-12-20,master,Focal loss for Dense Object Detection
+ring04h/wyproxy,https://github.com/ring04h/wyproxy,486,186,1254,2016-09-13,2017-01-06,master,"proxying and recording HTTP/HTTPs/Socks5 proxy flow, save to MYSQL database. "
+andreasveit/densenet-pytorch,https://github.com/andreasveit/densenet-pytorch,486,142,430,2017-02-17,2018-02-28,master,A PyTorch Implementation for Densely Connected Convolutional Networks (DenseNets)
+Banconxuan/RTM3D,https://github.com/Banconxuan/RTM3D,485,88,5747,2020-01-10,2020-12-30,master,The official PyTorch Implementation of RTM3D and KM3D for Monocular 3D Object Detection
+deanishe/zothero,https://github.com/deanishe/zothero,485,33,12596,2017-12-20,2021-04-29,master,Rapidly search and cite Zotero entries from Alfred
+huanghoujing/person-reid-triplet-loss-baseline,https://github.com/huanghoujing/person-reid-triplet-loss-baseline,484,127,426,2018-01-27,2019-01-06,master,"Rank-1 89% (Single Query) on Market1501 with raw triplet loss, In Defense of the Triplet Loss for Person Re-Identification, using Pytorch"
+amirassov/kaggle-imaterialist,https://github.com/amirassov/kaggle-imaterialist,484,117,10493,2019-06-11,2020-01-12,master,The First Place Solution of Kaggle iMaterialist (Fashion) 2019 at FGVC6
+chrisstroemel/Simple,https://github.com/chrisstroemel/Simple,483,39,11560,2018-01-26,2018-01-29,master,Experimental Global Optimization Algorithm
+jjery2243542/adaptive_voice_conversion,https://github.com/jjery2243542/adaptive_voice_conversion,483,92,279,2019-01-15,2020-10-29,master,
+ying09/TextFuseNet,https://github.com/ying09/TextFuseNet,483,121,4617,2020-09-14,2021-07-02,master,"A PyTorch implementation of ""TextFuseNet: Scene Text Detection with Richer Fused Features""."
+cavalleria/cavaface,https://github.com/cavalleria/cavaface,483,84,312,2020-04-15,2021-11-12,master,face recognition training project(pytorch)
+openaps/openaps,https://github.com/openaps/openaps,481,178,336,2015-04-12,2020-04-01,master,"deprecated repo, formerly tools for exploring DIY openaps, but no longer used in current modern OpenAPS builds. see https://openaps.readthedocs.io/en/latest/ for current build instructions"
+NetManAIOps/donut,https://github.com/NetManAIOps/donut,480,139,12647,2017-12-27,2019-03-06,master,WWW 2018: Unsupervised Anomaly Detection via Variational Auto-Encoder for Seasonal KPIs in Web Applications
+uoip/stereo_ptam,https://github.com/uoip/stereo_ptam,480,131,1016,2018-01-06,2018-01-09,master,Python implementation of SLAM algorithm Stereo-PTAM
+TomWildenhain/pptcc,https://github.com/TomWildenhain/pptcc,480,12,739,2020-04-01,2021-08-25,master,
+anantzoid/Conditional-PixelCNN-decoder,https://github.com/anantzoid/Conditional-PixelCNN-decoder,479,81,2618,2016-11-19,2018-06-18,master,Tensorflow implementation of Gated Conditional Pixel Convolutional Neural Network
+zhaoweicai/Detectron-Cascade-RCNN,https://github.com/zhaoweicai/Detectron-Cascade-RCNN,479,105,3951,2018-09-27,2019-09-10,master,Cascade R-CNN in Detectron
+donlnz/nonconformist,https://github.com/donlnz/nonconformist,479,98,1287,2015-03-16,2021-03-20,master,Python implementation of the conformal prediction framework.
+nilboy/pixel-recursive-super-resolution,https://github.com/nilboy/pixel-recursive-super-resolution,479,148,299,2017-02-21,2019-05-07,master,Tensorflow implementation of pixel-recursive-super-resolution(Google Brain paper: https://arxiv.org/abs/1702.00783)
+xiaolonw/adversarial-frcnn,https://github.com/xiaolonw/adversarial-frcnn,479,165,606,2017-04-08,2018-01-29,master,A-Fast-RCNN (CVPR 2017)
+bourdakos1/capsule-networks,https://github.com/bourdakos1/capsule-networks,478,153,11543,2017-11-10,2018-02-15,master,A Tensorflow implementation of Capsule Networks
+BayesWatch/nas-without-training,https://github.com/BayesWatch/nas-without-training,478,63,1188,2020-06-02,2021-08-06,master,Code for Neural Architecture Search without Training (ICML 2021)
+davidhallac/TICC,https://github.com/davidhallac/TICC,478,159,2441,2017-01-25,2020-06-14,master,
+LTD-Beget/sprutio,https://github.com/LTD-Beget/sprutio,478,88,2860,2015-12-16,2017-11-22,master,Beget File Manager App
+duterscmy/ccks2019-ckbqa-4th-codes,https://github.com/duterscmy/ccks2019-ckbqa-4th-codes,477,89,2979,2019-10-15,2021-04-05,master,中文知识库问答代码，CCKS2019 CKBQA评测第四名解决方案
+iyah4888/SIGGRAPH18SSS,https://github.com/iyah4888/SIGGRAPH18SSS,477,101,1175,2018-07-29,2020-09-07,master,"SIGGRAPH2018, Semantic Soft Segmentation, http://people.inf.ethz.ch/aksoyy/sss/"
+bmsookim/wide-resnet.pytorch,https://github.com/bmsookim/wide-resnet.pytorch,477,135,674,2017-06-07,2020-01-09,master,"Best CIFAR-10, CIFAR-100 results with wide-residual networks using PyTorch"
+dongwu92/AutoPortraitMatting,https://github.com/dongwu92/AutoPortraitMatting,477,148,3575,2017-01-09,2018-10-17,master,"Tensorflow implementation of Automatic Portrait Matting on paper ""Automatic Portrait Segmentation for Image Stylization"""
+PhantomInsights/mexican-government-report,https://github.com/PhantomInsights/mexican-government-report,476,81,15041,2019-09-10,2020-01-22,master,"Text Mining on the 2019 Mexican Government Report, covering from extracting text from a PDF file to plotting the results."
+devsisters/pointer-network-tensorflow,https://github.com/devsisters/pointer-network-tensorflow,476,135,758,2017-01-17,2017-03-01,master,"TensorFlow implementation of ""Pointer Networks"""
+ChrisTheCoolHut/Firmware_Slap,https://github.com/ChrisTheCoolHut/Firmware_Slap,476,81,5085,2019-06-25,2020-09-17,master,Discovering vulnerabilities in firmware through concolic analysis and function clustering.
+ProHiryu/albert-chinese-ner,https://github.com/ProHiryu/albert-chinese-ner,476,121,3838,2019-10-16,2021-01-13,master,使用预训练语言模型ALBERT做中文NER
+PrajitR/fast-pixel-cnn,https://github.com/PrajitR/fast-pixel-cnn,474,61,13022,2017-02-21,2017-05-23,master,Speed up PixelCNN++ image generation by up to a 183 times
+garyzhao/SemGCN,https://github.com/garyzhao/SemGCN,474,80,6242,2019-06-19,2021-06-16,master,"The Pytorch implementation for ""Semantic Graph Convolutional Networks for 3D Human Pose Regression"" (CVPR 2019)."
+timctho/VNect-tensorflow,https://github.com/timctho/VNect-tensorflow,473,101,3742,2017-09-29,2019-01-09,master,
+wuhuikai/GP-GAN,https://github.com/wuhuikai/GP-GAN,473,92,18909,2017-03-22,2020-03-27,master,"Official Chainer implementation of GP-GAN: Towards Realistic High-Resolution Image Blending (ACMMM 2019, oral)"
+cbrownley/foundations-for-analytics-with-python,https://github.com/cbrownley/foundations-for-analytics-with-python,472,662,307,2015-11-05,2021-09-26,master,
+lllyasviel/sketchKeras,https://github.com/lllyasviel/sketchKeras,472,76,1611,2017-05-04,2017-05-04,master,an u-net with some algorithm to take sketch from paints
+Ne3o1/PayLoadAllTheThings,https://github.com/Ne3o1/PayLoadAllTheThings,472,101,11581,2018-07-07,2018-07-07,master,
+chrism2671/PyTrendFollow,https://github.com/chrism2671/PyTrendFollow,472,85,3653,2018-02-24,2018-04-25,master,PyTrendFollow - systematic futures trading using trend following
+Evolving-AI-Lab/synthesizing,https://github.com/Evolving-AI-Lab/synthesizing,471,85,1829,2016-06-05,2020-06-30,master,"Code for paper ""Synthesizing the preferred inputs for neurons in neural networks via deep generator networks"""
+boyliwensheng/understand_facenet,https://github.com/boyliwensheng/understand_facenet,471,132,1924,2018-03-21,2018-09-13,master,整理和注释了facenet的代码，以便更好地理解facenet的代码。源代码地址：https://github.com/davidsandberg/facenet
+khanrc/tf.gans-comparison,https://github.com/khanrc/tf.gans-comparison,470,73,8099,2017-09-04,2018-03-09,master,Implementations of (theoretical) generative adversarial networks and comparison without cherry-picking
+obskyr/colorgram.py,https://github.com/obskyr/colorgram.py,470,51,1154,2016-09-14,2021-08-13,master,A Python module for extracting colors from images. Get a palette of any picture!
+ratsgo/embedding,https://github.com/ratsgo/embedding,470,125,525,2019-05-12,2021-12-01,master,한국어 임베딩 (Sentence Embeddings Using Korean Corpora)
+hongyi-zhang/mixup,https://github.com/hongyi-zhang/mixup,469,78,417,2017-10-14,2018-06-12,master,Implementation of the mixup training method
+sacmehta/delight,https://github.com/sacmehta/delight,469,51,977,2020-08-03,2020-10-16,master,DeLighT: Very Deep and Light-Weight Transformers
+pyupio/pyup,https://github.com/pyupio/pyup,469,65,536,2015-12-10,2021-06-24,master,"A tool to update your project's dependencies on GitHub. Runs on pyup.io, comes with a command line interface."
+kentsommer/keras-inceptionV4,https://github.com/kentsommer/keras-inceptionV4,467,170,1712,2017-01-19,2017-09-10,master,Keras Implementation of Google's Inception-V4 Architecture (includes Keras compatible pre-trained weights)
+songyingxin/TextClassification,https://github.com/songyingxin/TextClassification,467,92,2689,2019-04-12,2019-07-30,master,"Pytorch + NLP, 一份友好的项目实践仓库"
+chingyaoc/ggnn.pytorch,https://github.com/chingyaoc/ggnn.pytorch,467,91,10796,2018-02-01,2019-07-31,master,A PyTorch Implementation of Gated Graph Sequence Neural Networks (GGNN)
+yinchangchang/ocr_densenet,https://github.com/yinchangchang/ocr_densenet,466,160,6969,2018-06-05,2019-03-12,master,第一届西安交通大学人工智能实践大赛（2018AI实践大赛--图片文字识别）第一名；仅采用densenet识别图中文字
+tsinghua-rll/VoxelNet-tensorflow,https://github.com/tsinghua-rll/VoxelNet-tensorflow,466,118,604,2017-12-12,2019-08-15,master,A 3D object detection system for autonomous driving.
+lightbulb-framework/lightbulb-framework,https://github.com/lightbulb-framework/lightbulb-framework,465,72,1543,2016-11-03,2020-11-24,master,Tools for auditing WAFS
+Wizaron/instance-segmentation-pytorch,https://github.com/Wizaron/instance-segmentation-pytorch,463,92,1938,2018-02-25,2020-03-09,master,Semantic Instance Segmentation with a Discriminative Loss Function in PyTorch
+sinAshish/Multi-Scale-Attention,https://github.com/sinAshish/Multi-Scale-Attention,463,95,611,2019-06-06,2020-05-16,master,"[JBHI] Code for our paper ""Multi-scale Guided Attention for Medical Image Segmentation"""
+Davidham3/STSGCN,https://github.com/Davidham3/STSGCN,463,106,1606,2020-01-02,2020-02-04,master,AAAI 2020. Spatial-Temporal Synchronous Graph Convolutional Networks: A New Framework for Spatial-Temporal Network Data Forecasting
+d0ng1ee/logdeep,https://github.com/d0ng1ee/logdeep,462,119,6293,2020-03-11,2020-04-23,master,log anomaly detection toolkit including DeepLog
+guillaumegenthial/im2latex,https://github.com/guillaumegenthial/im2latex,462,125,3933,2017-09-16,2020-08-19,master,Image to LaTeX (Seq2seq + Attention with Beam Search) - Tensorflow
+kaix-nv/DCTNet,https://github.com/kaix-nv/DCTNet,462,97,1371,2019-11-23,2021-04-06,master,
+srgnk/HackerRank,https://github.com/srgnk/HackerRank,462,222,294,2018-05-13,2021-10-25,master,Solutions to HackerRank problems
+Sentdex/socialsentiment,https://github.com/Sentdex/socialsentiment,462,161,227,2018-03-14,2018-03-29,master,"Sentiment Analysis application created with Python and Dash, hosted at socialsentiment.net"
+laincloud/lain,https://github.com/laincloud/lain,461,98,430,2016-05-10,2019-03-25,master,LAIN's main repo
+howardhsu/BERT-for-RRC-ABSA,https://github.com/howardhsu/BERT-for-RRC-ABSA,461,110,6435,2019-02-24,2021-02-05,master,"code for our NAACL 2019 paper: ""BERT Post-Training for Review Reading Comprehension and Aspect-based Sentiment Analysis"""
+gh0x0st/Buffer_Overflow,https://github.com/gh0x0st/Buffer_Overflow,460,118,325,2019-02-05,2020-06-03,master,Don't let buffer overflows overflow your mind
+CcphAmy/NetEaseCloudMusic-nonmembership-list-download,https://github.com/CcphAmy/NetEaseCloudMusic-nonmembership-list-download,460,119,13150,2018-08-06,2018-11-09,master,"网易云音乐歌曲批量下载,免VIP【支持歌单,排名榜】"
+DataTurks-Engg/Entity-Recognition-In-Resumes-SpaCy,https://github.com/DataTurks-Engg/Entity-Recognition-In-Resumes-SpaCy,460,214,366,2018-06-14,2019-10-31,master,Automatic Summarization of Resumes with NER -> Evaluate resumes at a glance through Named Entity Recognition
+hughperkins/pytorch,https://github.com/hughperkins/pytorch,459,68,5416,2015-08-29,2017-07-05,master,Python wrappers for torch and lua
+htr-tech/pakcrack,https://github.com/htr-tech/pakcrack,458,44,1636,2020-07-14,2020-09-03,master,All in 1 Pakisthani Facebook Cloner [ 7/8/9/10/11 DIGIT ]
+patois/dsync,https://github.com/patois/dsync,458,64,246,2019-05-09,2021-01-20,master,IDAPython plugin that synchronizes disassembler and decompiler views
+MILVLG/mcan-vqa,https://github.com/MILVLG/mcan-vqa,458,89,1930,2019-06-06,2020-12-16,master,Deep Modular Co-Attention Networks for Visual Question Answering
+irfanICMLL/CoupleGenerator,https://github.com/irfanICMLL/CoupleGenerator,457,61,10376,2020-01-06,2020-01-10,master,Generate your lover with your photo
+clayandgithub/zh_cnn_text_classify,https://github.com/clayandgithub/zh_cnn_text_classify,457,193,13600,2017-04-23,2017-09-28,master,基于CNN的中文文本分类算法（可应用于垃圾邮件过滤、情感分析等场景）
+paulperry/quant,https://github.com/paulperry/quant,457,95,9899,2015-04-15,2015-07-14,master,Quantitative Finance and Algorithmic Trading
+yumath/bertNER,https://github.com/yumath/bertNER,457,94,9387,2019-03-01,2021-06-18,master,"ChineseNER based on BERT, with BiLSTM+CRF layer"
+tomrunia/OpticalFlow_Visualization,https://github.com/tomrunia/OpticalFlow_Visualization,456,57,423,2018-08-03,2020-11-05,master,Python optical flow visualization following Baker et al. (ICCV 2007) as used by the MPI-Sintel challenge
+lzane/Fingers-Detection-using-OpenCV-and-Python,https://github.com/lzane/Fingers-Detection-using-OpenCV-and-Python,456,171,1402,2016-10-24,2019-10-11,master,A simple Fingers Detection (or Gesture Recognition) using OpenCV and Python with background substraction 简单手势识别
+CSAILVision/NetDissect,https://github.com/CSAILVision/NetDissect,455,114,1294,2017-04-25,2018-08-25,release1,Network Dissection http://netdissect.csail.mit.edu for quantifying interpretability of deep CNNs.
+Maclory/SPSR,https://github.com/Maclory/SPSR,454,82,10290,2020-03-16,2021-10-12,master,Pytorch implementation of Structure-Preserving Super Resolution with Gradient Guidance (CVPR 2020 & TPAMI 2021) 
+Sense-X/TSD,https://github.com/Sense-X/TSD,454,61,5017,2020-04-01,2021-04-04,master,1st place models in Google OpenImage Detection Challenge 2019
+5A59/Zvm,https://github.com/5A59/Zvm,454,49,285,2018-06-24,2019-09-12,master,A lightweight jvm written by python
+chenxuuu/24h-raspberry-live-on-bilibili,https://github.com/chenxuuu/24h-raspberry-live-on-bilibili,454,70,12224,2017-06-06,2020-07-28,master,🎦树莓派/VPS驱动的b站直播弹幕点播台，代码写得很烂，看之前请吃点降压药。已计划重写
+avalonstrel/GatedConvolution_pytorch,https://github.com/avalonstrel/GatedConvolution_pytorch,452,76,4032,2018-11-16,2021-06-17,master,A modified reimplemented in pytorch of inpainting model in  Free-Form Image Inpainting with Gated Convolution [http://jiahuiyu.com/deepfill2/] 
+AI-liu/Complex-YOLO,https://github.com/AI-liu/Complex-YOLO,452,109,341,2018-08-06,2019-03-21,master,Complex-YOLO: Real-time 3D Object Detection on Point Clouds   pytorch  Darknet
+AlanDecode/Maverick,https://github.com/AlanDecode/Maverick,452,101,6058,2019-12-05,2021-07-31,master,🏄‍ A static blog generator built with Python.
+qiueer/zabbix,https://github.com/qiueer/zabbix,451,260,734,2015-12-10,2018-01-20,master,"zabbix功能扩展，主要监控tomcat,mysql,redis,mongodb,memcached,nginx等中间件"
+XiaohangZhan/cdp,https://github.com/XiaohangZhan/cdp,451,89,2484,2018-09-05,2019-09-15,master,Code for our ECCV 2018 work.
+ShiveryMoon/Imooc-Algorithm-PythonEdition,https://github.com/ShiveryMoon/Imooc-Algorithm-PythonEdition,451,149,682,2017-11-20,2020-06-21,master,慕课网的实战课程“算法与数据结构“的全python实现
+lkulowski/LSTM_encoder_decoder,https://github.com/lkulowski/LSTM_encoder_decoder,450,90,7942,2020-01-20,2021-06-04,master,Build a LSTM encoder-decoder using PyTorch to make sequence-to-sequence prediction for time series data
+Acceis/leakScraper,https://github.com/Acceis/leakScraper,450,81,216,2018-04-30,2019-01-21,mongodb,LeakScraper is an efficient set of tools to process and visualize huge text files containing credentials. Theses tools are designed to help penetration testers and redteamers doing OSINT by gathering 
+chuanqi305/MobileNetv2-SSDLite,https://github.com/chuanqi305/MobileNetv2-SSDLite,450,223,691,2018-04-15,2018-10-18,master,"Caffe implementation of SSD and SSDLite detection on MobileNetv2, converted from tensorflow."
+tatanus/SPF,https://github.com/tatanus/SPF,449,131,574,2015-05-15,2019-08-08,master,SpeedPhishing Framework
+LightingFx/hs300_stock_predict,https://github.com/LightingFx/hs300_stock_predict,448,107,3078,2019-06-06,2021-09-26,master,该项目用于对沪深300股票的预测，包括股票下载，数据清洗，LSTM 模型的训练，测试，以及实时预测
+SeoSangwoo/Attention-Based-BiLSTM-relation-extraction,https://github.com/SeoSangwoo/Attention-Based-BiLSTM-relation-extraction,445,138,2347,2018-04-11,2018-11-02,master,"Tensorflow Implementation of ""Attention-Based Bidirectional Long Short-Term Memory Networks for Relation Classification"" (ACL 2016)"
+Mingrui-Yu/RaspberryCar,https://github.com/Mingrui-Yu/RaspberryCar,444,111,5887,2019-09-24,2020-05-24,master,"An intellligent car based on Raspberry Pi: obstacle avoidance, video transimission, object detection, tennis tracking; 基于树莓派的智能小车：自动避障，实时图像传输，目标检测，网球追踪；"
+Joker316701882/Salient-Object-Detection,https://github.com/Joker316701882/Salient-Object-Detection,444,136,4120,2017-09-29,2021-12-24,master,"This is tensorflow implementation for cvpr2017 paper ""Deeply Supervised Salient Object Detection with Short Connections"""
+amimo/ollvm-breaker,https://github.com/amimo/ollvm-breaker,444,90,951,2019-12-06,2020-02-17,master,使用Binary Ninja去除ollvm流程平坦混淆
+yuhuixu1993/PC-DARTS,https://github.com/yuhuixu1993/PC-DARTS,442,107,1557,2019-07-11,2020-07-03,master,PC-DARTS:Partial Channel Connections for Memory-Efficient Differentiable Architecture Search
+cynricfu/MAGNN,https://github.com/cynricfu/MAGNN,441,73,3403,2020-01-04,2020-11-05,master,Metapath Aggregated Graph Neural Network for Heterogeneous Graph Embedding
+RobRomijnders/AE_ts,https://github.com/RobRomijnders/AE_ts,441,98,495,2016-12-26,2019-11-08,master,Auto encoder for time series
+wil3/gymfc,https://github.com/wil3/gymfc,441,106,8518,2018-04-10,2021-10-07,master,A universal flight control tuning framework
+fuqiuai/wordCloud,https://github.com/fuqiuai/wordCloud,441,108,9958,2017-10-13,2017-10-19,master,用python进行文本分词并生成词云
+pystitch/stitch,https://github.com/pystitch/stitch,440,13,896,2016-08-09,2018-12-21,master,Write reproducible reports in Markdown
+FSecureLABS/win_driver_plugin,https://github.com/FSecureLABS/win_driver_plugin,440,118,346,2016-08-16,2018-08-22,master,A tool to help when dealing with Windows IOCTL codes or reversing Windows drivers.
+yunjey/mnist-svhn-transfer,https://github.com/yunjey/mnist-svhn-transfer,439,108,5306,2017-05-03,2017-05-27,master,PyTorch Implementation of CycleGAN and SSGAN for Domain Transfer (Minimal)
+pcomputo/Whole-Foods-Delivery-Slot,https://github.com/pcomputo/Whole-Foods-Delivery-Slot,439,145,482,2020-03-29,2021-06-02,master,Automated script for Whole Foods and Amazon Fresh delivery slot
+cyrildiagne/screenpoint,https://github.com/cyrildiagne/screenpoint,438,52,1716,2020-05-01,2021-10-12,master,Project an image centroid to another image using OpenCV
+makelove/Taobao_topsdk,https://github.com/makelove/Taobao_topsdk,438,134,279,2018-05-08,2020-12-05,master,淘宝客-淘宝联盟-阿里妈妈 topsdk python3.6
+owenzhang/kaggle-avazu,https://github.com/owenzhang/kaggle-avazu,438,249,295,2015-02-24,2015-02-24,master,2nd place solution for Avazu click-through rate prediction competition
+ruoqianguo/cascade-rcnn_Pytorch,https://github.com/ruoqianguo/cascade-rcnn_Pytorch,438,104,523,2018-08-11,2019-01-01,master,An implementation of Cascade R-CNN: Delving into High Quality Object Detection.
+danfeiX/scene-graph-TF-release,https://github.com/danfeiX/scene-graph-TF-release,437,130,324,2017-04-06,2019-03-27,master,"""Scene Graph Generation by Iterative Message Passing"" code repository"
+scaelles/OSVOS-TensorFlow,https://github.com/scaelles/OSVOS-TensorFlow,437,129,4382,2017-03-23,2018-06-06,master,One-Shot Video Object Segmentation
+plaitpy/plaitpy,https://github.com/plaitpy/plaitpy,437,22,1050,2017-12-22,2018-12-27,master,plait.py - a fake data modeler 
+yuhaowow/GeneralConfig,https://github.com/yuhaowow/GeneralConfig,437,121,4911,2016-04-10,2020-01-15,master,all config file for code
+houssamzenati/Efficient-GAN-Anomaly-Detection,https://github.com/houssamzenati/Efficient-GAN-Anomaly-Detection,436,134,18728,2018-02-10,2020-11-12,master,
+AlphaJia/pytorch-faster-rcnn,https://github.com/AlphaJia/pytorch-faster-rcnn,436,84,380,2020-10-21,2020-11-21,main,pytorch based implementation faster rcnn
+r3vn/badKarma,https://github.com/r3vn/badKarma,436,94,682,2018-08-22,2018-12-17,master,network reconnaissance toolkit
+zekunhao1995/PointFlowRenderer,https://github.com/zekunhao1995/PointFlowRenderer,436,48,805,2019-11-07,2019-11-10,master,"Code for rendering the point cloud figures in paper: ""PointFlow : 3D Point Cloud Generation with Continuous Normalizing Flows"""
+stanford-futuredata/noscope,https://github.com/stanford-futuredata/noscope,436,119,566,2017-03-02,2020-03-06,master,Accelerating network inference over video
+modestyachts/ARS,https://github.com/modestyachts/ARS,435,105,2135,2018-03-19,2021-09-29,master,An implementation of the Augmented Random Search algorithm 
+gmission/gmission,https://github.com/gmission/gmission,434,19,2176,2015-11-09,2020-07-25,remaster,gmission server
+ucsb-seclab/karonte,https://github.com/ucsb-seclab/karonte,434,64,1242,2019-10-17,2021-09-18,master,Karonte is a static analysis tool to detect multi-binary vulnerabilities in embedded firmware
+openairplay/openairplay,https://github.com/openairplay/openairplay,434,60,894,2015-03-06,2021-12-24,master,Enabling Airplay just like on Apple OSX on Ubuntu and possibly other non-apple OSes
+llSourcell/How_to_simulate_a_self_driving_car,https://github.com/llSourcell/How_to_simulate_a_self_driving_car,433,296,4853,2017-05-13,2019-10-10,master,"This is the code for ""How to Simulate a Self-Driving Car"" by Siraj Raval on Youtube"
+debuggerx01/JSONFormat4Flutter,https://github.com/debuggerx01/JSONFormat4Flutter,433,55,17361,2018-03-06,2021-04-23,master,受zzz40500/GsonFormat启发，将JSONObject格式的String解析成dart语言的实体类
+airlab-unibas/airlab,https://github.com/airlab-unibas/airlab,433,93,255,2018-06-27,2020-10-08,master,Image registration laboratory for 2D and 3D image data
+bikz05/object-detector,https://github.com/bikz05/object-detector,432,216,459,2015-06-05,2017-02-06,master,Object Detection Framework using HOG as descriptor and Linear SVM as classifier.
+seoungwugoh/STM,https://github.com/seoungwugoh/STM,432,80,6910,2019-11-08,2020-06-03,master,Video Object Segmentation using Space-Time Memory Networks
+funkandwagnalls/ranger,https://github.com/funkandwagnalls/ranger,431,82,404,2015-07-13,2017-11-17,master,A tool for security professionals to access and interact with remote Microsoft Windows based systems.
+YiYuanIntelligent/3DFasterRCNN_LungNoduleDetector,https://github.com/YiYuanIntelligent/3DFasterRCNN_LungNoduleDetector,430,162,1365,2017-10-08,2017-11-08,master,
+NeonHorizon/lipopi,https://github.com/NeonHorizon/lipopi,430,62,4075,2015-12-13,2021-09-19,master,Guide to setting up LiPo batteries on the Raspberry Pi
+sunyilgdx/SIFRank_zh,https://github.com/sunyilgdx/SIFRank_zh,430,78,2499,2020-03-02,2020-05-17,master,Keyphrase or Keyword Extraction 基于预训练模型的中文关键词抽取方法（论文SIFRank: A New Baseline for Unsupervised Keyphrase Extraction Based on Pre-trained Language Model 的中文版代码）
+ZhengZerong/DeepHuman,https://github.com/ZhengZerong/DeepHuman,430,46,12046,2019-11-24,2021-06-21,master,"Code for our ICCV paper ""DeepHuman: 3D Human Reconstruction from a Single Image"""
+snap-stanford/GraphRNN,https://github.com/snap-stanford/GraphRNN,429,111,12200,2018-06-06,2019-03-08,master,
+Megvii-BaseDetection/BorderDet,https://github.com/Megvii-BaseDetection/BorderDet,429,62,894,2020-07-21,2021-03-25,master,BorderDet: Border Feature for Dense Object Detection(ECCV2020 Oral)
+xsren/wx_taobao_fanli,https://github.com/xsren/wx_taobao_fanli,429,155,1834,2017-05-26,2019-03-22,master,微信 淘宝 返利
+A-bone1/Attention-ocr-Chinese-Version,https://github.com/A-bone1/Attention-ocr-Chinese-Version,429,141,12346,2018-01-27,2018-05-14,master, Attention OCR Based On Tensorflow 
+negrinho/sane_tikz,https://github.com/negrinho/sane_tikz,429,37,411,2019-09-02,2020-11-18,master,Reconquer the canvas: beautiful Tikz figures without clunky Tikz code
+rkcosmos/deepcut,https://github.com/rkcosmos/deepcut,428,99,11815,2017-06-22,2020-10-23,master,A Thai word tokenization library using Deep Neural Network
+nicholaslocascio/deep-regex,https://github.com/nicholaslocascio/deep-regex,427,66,12021,2016-08-11,2017-05-31,master,Code for the paper Neural Generation of Regular Expressions from Natural Language with Minimal Domain Knowledge (EMNLP 2016). http://arxiv.org/abs/1608.03000
+abhi2610/ohem,https://github.com/abhi2610/ohem,427,155,1389,2016-06-23,2018-04-12,master,OHEM support for Fast R-CNN
+whatsplay/whatsapp-play,https://github.com/whatsplay/whatsapp-play,426,222,16075,2019-04-22,2021-05-15,master,"Command line software through which you can play with your WhatsApp. It is having different options to play with your WhatsApp like message blast, online tracking, whatsapp chat.. "
+fuweifuvtoo/Semantic-segmentation,https://github.com/fuweifuvtoo/Semantic-segmentation,426,55,328,2019-05-09,2021-11-18,master,采用Pytorch的入门语义分割项目，支持的网络有Unet和Segnet；遥感语义分割；Unet；Segnet；Remote sensing semantic segmentation；
+chenjiandongx/51job-spider,https://github.com/chenjiandongx/51job-spider,426,199,10548,2017-05-22,2018-06-06,master,🔎 前程无忧 Python 招聘岗位信息爬取和分析
+hezhangsprinter/DCPDN,https://github.com/hezhangsprinter/DCPDN,425,110,914,2018-03-08,2020-08-06,master,Densely Connected Pyramid Dehazing Network (CVPR'2018)
+jeffmer/micropython-upyphone,https://github.com/jeffmer/micropython-upyphone,425,35,886,2017-11-09,2017-11-24,master,A gsm phone using pyboard and sim800l
+deoplete-plugins/deoplete-go,https://github.com/deoplete-plugins/deoplete-go,425,28,890,2015-12-02,2021-03-30,master,Asynchronous Go completion for Neovim. deoplete source for Go.
+cuanboy/ScrapyProject,https://github.com/cuanboy/ScrapyProject,424,226,983,2018-01-30,2018-04-22,master,开始Scrapy实战如：存数据库、下载文件、爬京东、淘宝、Anti-Anti-Spider……
+qidiso/mobilefacenet-V2,https://github.com/qidiso/mobilefacenet-V2,424,149,481,2018-06-04,2019-08-08,master,"🔥improve the accuracy of mobilefacenet(insight face) reached 99.733 in the cfp-ff、 the 99.68+ in lfw,96.71+ in agedb30.🔥"
+Varbaek/xsser,https://github.com/Varbaek/xsser,424,79,831,2015-11-15,2020-02-18,master,From XSS to RCE 2.75 - Black Hat Europe Arsenal 2017 + Extras
+hit9/gif2txt,https://github.com/hit9/gif2txt,424,64,1390,2015-10-01,2018-10-14,gh-pages,Gif image to Ascii Text
+JQ-Networks/UnifiedMessageRelay,https://github.com/JQ-Networks/UnifiedMessageRelay,424,59,1878,2017-07-30,2020-06-15,master,Group Message Forward Framework (supports QQ Telegram Line Discord)
+LynnHo/DCGAN-LSGAN-WGAN-GP-DRAGAN-Tensorflow-2,https://github.com/LynnHo/DCGAN-LSGAN-WGAN-GP-DRAGAN-Tensorflow-2,424,102,16448,2017-08-10,2021-12-13,master,Reimplementation of GANs
+tilezen/joerd,https://github.com/tilezen/joerd,424,52,9673,2016-01-29,2021-03-22,master,"Joerd can be used to download, merge and generate tiles from digital elevation data"
+Yochengliu/Relation-Shape-CNN,https://github.com/Yochengliu/Relation-Shape-CNN,423,72,19603,2019-04-04,2021-09-30,master,Relation-Shape Convolutional Neural Network for Point Cloud Analysis (CVPR 2019 Oral & Best paper finalist)
+crazydonkey200/tensorflow-char-rnn,https://github.com/crazydonkey200/tensorflow-char-rnn,423,261,5820,2016-02-28,2018-03-29,master,Char-RNN implemented using TensorFlow. 
+00theway/Ghostcat-CNVD-2020-10487,https://github.com/00theway/Ghostcat-CNVD-2020-10487,422,112,1819,2020-02-22,2020-03-09,master,"Ghostcat read file/code execute,CNVD-2020-10487(CVE-2020-1938) "
+changye/AutoTrade,https://github.com/changye/AutoTrade,422,216,616,2016-05-03,2016-06-06,master,"一款自动化交易框架, 可以在其基础上 架设自己的策略交易系统"
+RUB-NDS/CORStest,https://github.com/RUB-NDS/CORStest,422,101,2028,2017-07-01,2020-08-14,master,A simple CORS misconfiguration scanner
+1111joe1111/ida_ea,https://github.com/1111joe1111/ida_ea,421,72,1889,2017-10-17,2017-11-28,master,A set of exploitation/reversing aids for IDA
+raghakot/keras-text,https://github.com/raghakot/keras-text,421,96,12114,2017-08-27,2018-06-04,master,Text Classification Library in Keras
+nicolas-ivanov/tf_seq2seq_chatbot,https://github.com/nicolas-ivanov/tf_seq2seq_chatbot,420,200,19151,2015-12-07,2020-04-14,master,[unmaintained]
+mengskysama/shadowsocks-rm,https://github.com/mengskysama/shadowsocks-rm,420,428,739,2015-10-26,2019-03-13,master,A fast tunnel proxy that helps you bypass firewalls
+una-dinosauria/human-motion-prediction,https://github.com/una-dinosauria/human-motion-prediction,420,138,913,2017-04-16,2019-05-05,master,Simple baselines and RNNs for predicting human motion in tensorflow. Presented at CVPR 17.
+berzerk0/BEWGor,https://github.com/berzerk0/BEWGor,420,70,2883,2017-05-18,2021-06-23,master,Bull's Eye Wordlist Generator - Does your password rely on predictable patterns of accessible info? 
+rexdf/ChineseLocalization,https://github.com/rexdf/ChineseLocalization,419,86,8257,2015-04-14,2021-09-05,st3-dev,"Localization for Sublime Text,  support 简体中文 繁体中文 日本語  Chinese Japanese German Russian Spanish Armenian Swedish and French"
+anttttti/Wordbatch,https://github.com/anttttti/Wordbatch,419,59,1447,2016-08-29,2021-12-29,master,"Python library for distributed AI processing pipelines, using swappable scheduler backends."
+zhangxu0307/time_series_forecasting_pytorch,https://github.com/zhangxu0307/time_series_forecasting_pytorch,418,64,3620,2017-10-19,2019-03-18,master,"time series forecasting using pytorch，including ANN,RNN,LSTM,GRU and TSR-RNN，experimental code"
+RobRomijnders/LSTM_tsc,https://github.com/RobRomijnders/LSTM_tsc,418,143,3442,2016-04-05,2017-12-15,master,An LSTM for time-series classification
+DaehanKim/vgae_pytorch,https://github.com/DaehanKim/vgae_pytorch,418,74,5162,2019-06-28,2021-09-20,master,This repository implements variational graph auto encoder by Thomas Kipf. 
+twangnh/Distilling-Object-Detectors,https://github.com/twangnh/Distilling-Object-Detectors,418,65,2700,2019-04-04,2021-07-15,master,Implementation of CVPR 2019 paper: Distilling Object Detectors with Fine-grained Feature Imitation
+mbrossar/denoise-imu-gyro,https://github.com/mbrossar/denoise-imu-gyro,418,76,3464,2020-02-24,2020-09-16,master,Convolutional Neural Networks for Denoising Gyroscopes of Low-Cost IMUs
+retroryan/istio-workshop,https://github.com/retroryan/istio-workshop,418,249,7790,2017-09-09,2019-09-18,master,Istio Workshop
+selimsef/dsb2018_topcoders,https://github.com/selimsef/dsb2018_topcoders,418,137,212,2018-04-10,2019-08-21,master,DSB2018 [ods.ai] topcoders
+lanewinfield/zoomout,https://github.com/lanewinfield/zoomout,417,14,1303,2020-12-17,2020-12-17,main,"a pull switch (or BYO button) that gets you out of video calls, quick"
+1044197988/Python-Image-feature-extraction,https://github.com/1044197988/Python-Image-feature-extraction,417,98,873,2019-10-29,2019-11-29,master,Python实现提取图像的纹理、颜色特征，包含快速灰度共现矩阵（GLCM）、LBP特征、颜色矩、颜色直方图。
+jinxiwang/ocr_TDR,https://github.com/jinxiwang/ocr_TDR,417,214,2800,2018-09-14,2019-03-20,master,好未来Feature Camp:中文手写汉字识别
+jjangsangy/ExplainToMe,https://github.com/jjangsangy/ExplainToMe,417,59,5847,2015-03-12,2021-09-08,master,Automatic Web Article Summarizer
+loliverhennigh/Convolutional-LSTM-in-Tensorflow,https://github.com/loliverhennigh/Convolutional-LSTM-in-Tensorflow,417,160,266,2016-08-18,2017-05-26,master,An implementation of convolutional lstms in tensorflow. The code is written in the same style as the basiclstmcell function in tensorflow
+datawire/forge,https://github.com/datawire/forge,417,44,3693,2017-03-18,2019-02-20,master,Define and run multi-container apps in Kubernetes
+qiexing/face-landmark-localization,https://github.com/qiexing/face-landmark-localization,417,179,3414,2016-01-07,2018-04-18,master,"cnn network predict face landmarks (68 points) and head pose (3d pose, yaw,roll,pitch)."
+ppwwyyxx/Adversarial-Face-Attack,https://github.com/ppwwyyxx/Adversarial-Face-Attack,416,67,1116,2018-12-04,2021-07-06,master,Black-Box Adversarial Attack on Public Face Recognition Systems
+ferventdesert/etlpy,https://github.com/ferventdesert/etlpy,416,163,3455,2016-03-17,2019-08-23,master,a smart stream-like crawler & etl python library
+uber-research/differentiable-plasticity,https://github.com/uber-research/differentiable-plasticity,415,71,8606,2018-03-28,2019-10-23,master,"Implementations of the algorithms described in Differentiable plasticity: training plastic networks with gradient descent, a research paper from Uber AI Labs."
+casparwylie/Perceptron,https://github.com/casparwylie/Perceptron,415,38,15326,2016-10-01,2021-05-21,master,"A flexible artificial neural network builder to analyse performance, and optimise the best model. "
+FGiuliari/Trajectory-Transformer,https://github.com/FGiuliari/Trajectory-Transformer,415,109,2534,2020-03-30,2021-07-15,master,"Code for ""Transformer Networks for Trajectory Forecasting"""
+houqb/SPNet,https://github.com/houqb/SPNet,415,57,485,2020-03-23,2020-06-10,master,"Code for our CVPR2020 paper ""Strip Pooling: Rethinking Spatial Pooling for Scene Parsing"""
+locuslab/smoothing,https://github.com/locuslab/smoothing,415,81,7553,2019-02-07,2019-05-20,master,Provable adversarial robustness at ImageNet scale
+a312863063/seeprettyface-generator-yellow,https://github.com/a312863063/seeprettyface-generator-yellow,415,109,3176,2019-06-12,2019-12-25,master,这是一个用StyleGAN训练出的黄种人人脸生成器
+liujiao111/poi,https://github.com/liujiao111/poi,414,123,875,2019-11-01,2020-08-13,master,百度以及高德地图POI数据和POI边界坐标数据(目前仅限百度)爬取代码，采用Python编写
+riannevdberg/gc-mc,https://github.com/riannevdberg/gc-mc,414,101,3583,2018-01-26,2018-11-15,master,
+tensorlayer/text-antispam,https://github.com/tensorlayer/text-antispam,413,110,2915,2017-09-01,2021-12-03,master,商用级垃圾文本分类器
+RobbieHan/sandboxMP,https://github.com/RobbieHan/sandboxMP,413,188,8006,2018-10-15,2019-04-12,master,关注知乎专栏可以查看已经发布的开发文档：https://zhuanlan.zhihu.com/sandbox 。
+YonghaoHe/LFD-A-Light-and-Fast-Detector,https://github.com/YonghaoHe/LFD-A-Light-and-Fast-Detector,413,82,6866,2020-09-13,2021-09-13,master,"LFD is a big update upon LFFD.  Generally, LFD is a multi-class object detector characterized by lightweight, low inference latency and superior precision. It is for real-world appilcations."
+jayleicn/scipy-lecture-notes-zh-CN,https://github.com/jayleicn/scipy-lecture-notes-zh-CN,413,173,8540,2016-02-12,2017-03-28,master,"中文版scipy-lecture-notes.  网站下线, 以离线HTML的形式继续更新, 见release."
+shekkizh/WassersteinGAN.tensorflow,https://github.com/shekkizh/WassersteinGAN.tensorflow,412,129,1232,2017-02-12,2017-02-13,master,Tensorflow implementation of Wasserstein GAN - arxiv: https://arxiv.org/abs/1701.07875
+Lotayou/densebody_pytorch,https://github.com/Lotayou/densebody_pytorch,412,70,4158,2019-03-29,2019-08-26,master,PyTorch implementation of CloudWalk's recent work DenseBody
+vektort13/AntiOS,https://github.com/vektort13/AntiOS,412,209,382,2019-02-21,2020-10-17,master,Pyhton scripts that can change your Windows fingerprints and ID
+clovaai/AdamP,https://github.com/clovaai/AdamP,412,53,5126,2020-06-15,2021-01-13,master,AdamP: Slowing Down the Slowdown for Momentum Optimizers on Scale-invariant Weights (ICLR 2021)
+open-mmlab/OpenUnReID,https://github.com/open-mmlab/OpenUnReID,412,67,651,2020-05-25,2021-06-14,master,PyTorch open-source toolbox for unsupervised or domain adaptive object re-ID.
+pfalcon/ScratchABit,https://github.com/pfalcon/ScratchABit,412,48,879,2015-04-11,2020-11-25,master,Easily retargetable and hackable interactive disassembler with IDAPython-compatible plugin API
+GadgetReactor/pyHS100,https://github.com/GadgetReactor/pyHS100,411,126,265,2016-07-07,2021-03-22,master,Python Library to control TPLink Switch (HS100 / HS110)
+JiageWang/opencv-pyqt5,https://github.com/JiageWang/opencv-pyqt5,411,75,395,2019-09-05,2019-09-25,master,使用opencv与pyqt5实现的图像处理程序，已实现转灰度图、图像平滑、形态学操作、梯度计算、阈值处理、边缘检测、轮廓检测
+aelnouby/Text-to-Image-Synthesis,https://github.com/aelnouby/Text-to-Image-Synthesis,411,90,465,2017-10-27,2020-07-24,master,Pytorch implementation of Generative Adversarial Text-to-Image Synthesis paper
+wzmsltw/BSN-boundary-sensitive-network,https://github.com/wzmsltw/BSN-boundary-sensitive-network,411,76,9740,2018-07-02,2019-03-01,master,"Codes of our paper: ""BSN: Boundary Sensitive Network for Temporal Action Proposal Generation"""
+MhLiao/MaskTextSpotter,https://github.com/MhLiao/MaskTextSpotter,411,90,319,2019-10-06,2021-01-27,master,A PyTorch implementation of Mask TextSpotter
+GuYuc/WS-DAN.PyTorch,https://github.com/GuYuc/WS-DAN.PyTorch,411,95,558,2019-05-07,2019-12-04,master,A PyTorch implementation of WS-DAN (Weakly Supervised Data Augmentation Network) for FGVC (Fine-Grained Visual Classification)
+HazyResearch/fonduer,https://github.com/HazyResearch/fonduer,411,75,12036,2018-02-02,2021-06-23,master,A knowledge base construction engine for richly formatted data
+ChiWeiHsiao/DeepVO-pytorch,https://github.com/ChiWeiHsiao/DeepVO-pytorch,410,112,5378,2018-04-15,2021-11-15,master,PyTorch Implementation of DeepVO
+roglew/pappy-proxy,https://github.com/roglew/pappy-proxy,410,43,1272,2015-11-13,2018-11-20,master,An intercepting proxy for web application testing
+ooooverflow/BiSeNet,https://github.com/ooooverflow/BiSeNet,409,77,1194,2018-11-20,2020-03-13,master,BiSeNet based on pytorch
+miraclewkf/SENet-PyTorch,https://github.com/miraclewkf/SENet-PyTorch,409,97,272,2018-01-22,2018-01-30,master,
+xuanjihe/speech-emotion-recognition,https://github.com/xuanjihe/speech-emotion-recognition,409,142,729,2017-12-28,2019-07-08,master,speech emotion recognition using a convolutional recurrent networks based on IEMOCAP
+x2c3z4/kernel_visualization,https://github.com/x2c3z4/kernel_visualization,408,111,18493,2015-09-14,2021-08-13,master,Generate callgraphs for Linux/Solaris/FreeBSD kernel function calls
+MaskRay/wechatircd,https://github.com/MaskRay/wechatircd,408,40,713,2016-02-19,2020-06-22,master,㊙用IRC客户端控制微信网页版
+wnzhang/deep-ctr,https://github.com/wnzhang/deep-ctr,408,170,6505,2015-12-30,2017-06-12,master,"An attempt of training DNN models to predict ad click-through rate, implemented with Theano."
+SmallMunich/nutonomy_pointpillars,https://github.com/SmallMunich/nutonomy_pointpillars,408,85,4723,2019-09-28,2020-11-11,master,Convert pointpillars Pytorch Model To ONNX for TensorRT Inference
+dragen1860/GCN-PyTorch,https://github.com/dragen1860/GCN-PyTorch,408,87,5554,2019-04-30,2019-05-02,master,Graph Convolution Network for PyTorch
+sampepose/flownet2-tf,https://github.com/sampepose/flownet2-tf,408,191,17164,2017-06-20,2018-10-09,master,FlowNet 2.0: Evolution of Optical Flow Estimation with Deep Networks
+aizquier/voyagerimb,https://github.com/aizquier/voyagerimb,407,59,1432,2017-11-16,2019-02-13,master,Voyager's Golden Disk Image Browser
+vivianLL/QASystemOnHepatopathyKG,https://github.com/vivianLL/QASystemOnHepatopathyKG,407,117,16143,2019-05-20,2019-05-21,master,基于neo4j肝病知识图谱的问答系统
+gdelugre/ida-arm-system-highlight,https://github.com/gdelugre/ida-arm-system-highlight,407,59,398,2017-05-09,2021-09-28,master,IDA script for highlighting and decoding ARM system instructions
+dhruvramani/Terminal-on-FB-Messenger,https://github.com/dhruvramani/Terminal-on-FB-Messenger,407,53,727,2016-01-28,2017-04-09,master,Allows user to take full control of the terminal of their computer through Facebook's messaging service.
+Media-Smart/vedaseg,https://github.com/Media-Smart/vedaseg,407,51,248,2019-12-13,2021-11-29,master,A semantic segmentation toolbox based on PyTorch
+MayankSingal/PyTorch-Image-Dehazing,https://github.com/MayankSingal/PyTorch-Image-Dehazing,406,65,12059,2018-09-24,2018-09-25,master,PyTorch implementation of some single image dehazing networks. 
+tostq/Easy_HMM,https://github.com/tostq/Easy_HMM,406,112,6294,2017-04-27,2018-09-13,master,"A easy HMM program written with Python, including the full codes of training, prediction and decoding."
+genforce/idinvert_pytorch,https://github.com/genforce/idinvert_pytorch,406,53,2796,2020-07-20,2021-08-28,master,[ECCV 2020] In-Domain GAN Inversion for Real Image Editing (PyTorch code)
+Yaoyi-Li/GCA-Matting,https://github.com/Yaoyi-Li/GCA-Matting,406,60,7151,2019-11-18,2020-08-18,master,Official repository for Natural Image Matting via Guided Contextual Attention
+nxxxu/AutoPixieWps,https://github.com/nxxxu/AutoPixieWps,405,123,254,2015-04-05,2019-12-20,master,Automated pixieWps python script
+monnappa22/Limon,https://github.com/monnappa22/Limon,405,118,870,2015-11-21,2016-05-20,master,"Limon is a sandbox developed as a research project written in python, which automatically collects, analyzes, and reports on the run time indicators of Linux malware. It allows one to inspect Linux ma"
+thomasmesnard/DeepMind-Teaching-Machines-to-Read-and-Comprehend,https://github.com/thomasmesnard/DeepMind-Teaching-Machines-to-Read-and-Comprehend,405,102,265,2016-02-29,2016-08-26,master,"Implementation of ""Teaching Machines to Read and Comprehend"" proposed by Google DeepMind"
+kanezaki/pytorch-unsupervised-segmentation,https://github.com/kanezaki/pytorch-unsupervised-segmentation,405,102,3189,2018-04-06,2020-07-22,master,
+jzilly/RecurrentHighwayNetworks,https://github.com/jzilly/RecurrentHighwayNetworks,404,70,2009,2016-10-07,2019-10-09,master,"Recurrent Highway Networks - Implementations for Tensorflow, Torch7, Theano and Brainstorm"
+fizyr/keras-maskrcnn,https://github.com/fizyr/keras-maskrcnn,404,128,5564,2018-03-12,2021-06-17,main,Keras implementation of MaskRCNN object detection.
+JIA-Lab-research/PanopticFCN,https://github.com/JIA-Lab-research/PanopticFCN,403,50,866,2020-12-01,2021-04-19,main,Fully Convolutional Networks for Panoptic Segmentation (CVPR2021 Oral)
+yunuscadirci/CallStranger,https://github.com/yunuscadirci/CallStranger,403,61,1282,2020-06-08,2021-08-07,master,Vulnerability checker for Callstranger (CVE-2020-12695)
+erre-quadro/spikex,https://github.com/erre-quadro/spikex,403,26,3597,2020-07-09,2021-07-30,master,SpikeX - SpaCy Pipes for Knowledge Extraction
+FuxiCV/3D-Face-GCNs,https://github.com/FuxiCV/3D-Face-GCNs,402,80,3054,2020-04-03,2020-09-15,master,"Towards High-Fidelity 3D Face Reconstruction from In-the-Wild Images Using Graph Convolutional Networks, CVPR 2020"
+guimaizi/get_domain,https://github.com/guimaizi/get_domain,402,90,17356,2019-03-01,2020-02-28,master,
+mikacuy/pointnetvlad,https://github.com/mikacuy/pointnetvlad,402,68,625,2018-03-16,2020-01-19,master,"PointNetVLAD: Deep Point Cloud Based Retrieval for Large-Scale Place Recognition, CVPR 2018"
+ScriptSmith/reaper,https://github.com/ScriptSmith/reaper,402,69,7684,2017-01-30,2019-01-05,master,"Social media scraping / data collection tool for the Facebook, Twitter, Reddit, YouTube, Pinterest, and Tumblr APIs"
+the3dadvantage/Modeling-Cloth-2_8,https://github.com/the3dadvantage/Modeling-Cloth-2_8,402,42,368,2019-05-28,2019-09-05,master,New modeling Cloth tools
+titu1994/keras-squeeze-excite-network,https://github.com/titu1994/keras-squeeze-excite-network,402,119,490,2017-08-27,2020-03-10,master,Implementation of Squeeze and Excitation Networks in Keras
+daleroberts/tv,https://github.com/daleroberts/tv,402,18,4579,2016-07-06,2021-04-20,master,Quickly view (satellite) imagery directly in your terminal using Unicode 9.0 characters and true color.
+songhan/SqueezeNet-Deep-Compression,https://github.com/songhan/SqueezeNet-Deep-Compression,402,128,577,2016-04-06,2019-03-15,master,
+VDIGPKU/CBNet_caffe,https://github.com/VDIGPKU/CBNet_caffe,401,74,3974,2019-09-09,2020-05-15,master,Composite Backbone Network (AAAI20)
+vincent-leguen/DILATE,https://github.com/vincent-leguen/DILATE,400,77,4817,2019-09-17,2020-10-14,master,"Code for our NeurIPS 2019 paper ""Shape and Time Distortion Loss for Training Deep Time Series Forecasting Models"""
+ZeroE04/R-CenterNet,https://github.com/ZeroE04/R-CenterNet,400,97,16500,2020-07-25,2021-03-24,master,detector for rotated-object based on CenterNet/基于CenterNet的旋转目标检测
+jakezhaojb/ARAE,https://github.com/jakezhaojb/ARAE,399,87,8658,2017-06-08,2020-04-11,master,"Code for the paper ""Adversarially Regularized Autoencoders  (ICML 2018)"" by Zhao, Kim, Zhang, Rush and LeCun"
+cyberheartmi9/CVE-2017-12617,https://github.com/cyberheartmi9/CVE-2017-12617,399,120,881,2017-10-05,2017-10-11,master,Apache Tomcat < 9.0.1 (Beta) / < 8.5.23 / < 8.0.47 / < 7.0.8 - JSP Upload Bypass / Remote Code Execution 
+jhjacobsen/pytorch-i-revnet,https://github.com/jhjacobsen/pytorch-i-revnet,398,46,390,2018-02-20,2021-02-16,master,i-RevNet Pytorch Code
+huanghoujing/EANet,https://github.com/huanghoujing/EANet,398,85,2832,2018-12-29,2020-12-29,master,EANet: Enhancing Alignment for Cross-Domain Person Re-identification
+mcauser/micropython-waveshare-epaper,https://github.com/mcauser/micropython-waveshare-epaper,398,85,623,2018-02-23,2021-09-01,master,MicroPython drivers for Waveshare e-paper modules
+WilsonWangTHU/mbbl,https://github.com/WilsonWangTHU/mbbl,398,66,1830,2019-07-02,2019-07-18,master,
+VoidSec/CVE-2020-1472,https://github.com/VoidSec/CVE-2020-1472,398,63,3878,2020-09-14,2020-11-05,master,Exploit Code for CVE-2020-1472 aka Zerologon
+valeoai/ADVENT,https://github.com/valeoai/ADVENT,397,71,330,2019-04-04,2021-01-17,master,Adversarial Entropy Minimization for Domain Adaptation in Semantic Segmentation
+shrugs/partyparrot,https://github.com/shrugs/partyparrot,397,38,1397,2015-11-13,2020-07-16,master,:tada: :bird: Very Serious Code :tm: that generates huge slack messages with emojis.
+Vladkryvoruchko/PSPNet-Keras-tensorflow,https://github.com/Vladkryvoruchko/PSPNet-Keras-tensorflow,397,169,7400,2017-06-16,2019-09-25,master,TensorFlow implementation of original paper : https://github.com/hszhao/PSPNet
+nyoki-mtl/pytorch-segmentation,https://github.com/nyoki-mtl/pytorch-segmentation,396,65,15622,2018-11-22,2020-03-06,master,"PyTorch implementation for semantic segmentation (DeepLabV3+, UNet, etc.)"
+zer0h/httpscan,https://github.com/zer0h/httpscan,396,167,283,2016-03-29,2016-04-05,master,一个爬虫式的网段Web主机发现小工具 # A HTTP Service detector with a crawler from IP/CIDR
+buriburisuri/ac-gan,https://github.com/buriburisuri/ac-gan,396,92,3038,2016-11-10,2017-11-30,master,A tensorflow implementation of google's AC-GAN ( Auxiliary Classifier GAN ).
+SpEcHiDe/AnyDLBot,https://github.com/SpEcHiDe/AnyDLBot,395,1652,222,2018-10-04,2021-11-30,master,An Open Source GPLv3 All-In-One Telegram Bot
+edwardzpeng/shadowsocks,https://github.com/edwardzpeng/shadowsocks,395,69,274,2019-01-26,2020-02-15,master,Redirect attack on Shadowsocks stream ciphers
+kuangliu/torchcv,https://github.com/kuangliu/torchcv,395,71,16120,2017-11-30,2018-12-25,master,TorchCV: a PyTorch vision library mimics ChainerCV
+decisionforce/TPN,https://github.com/decisionforce/TPN,394,56,4782,2020-03-13,2021-01-12,master,[CVPR 2020] Temporal Pyramid Network for Action Recognition
+GT-Vision-Lab/VQA,https://github.com/GT-Vision-Lab/VQA,394,144,1785,2015-06-02,2021-03-11,master,
+kaganisildak/malwarescarecrow,https://github.com/kaganisildak/malwarescarecrow,393,21,1146,2020-07-23,2020-09-13,master,A tool designed to make physical devices detectable by malware and make system look like virtual machine.
+starimeL/PytorchConverter,https://github.com/starimeL/PytorchConverter,393,75,263,2017-10-31,2018-06-27,master,Pytorch model to caffe & ncnn
+xuanzebi/BERT-CH-NER,https://github.com/xuanzebi/BERT-CH-NER,393,98,1780,2019-03-22,2019-11-18,master,基于BERT的中文命名实体识别
+ethereum/lahja,https://github.com/ethereum/lahja,393,17,475,2018-08-30,2020-09-04,master,"Lahja is a generic multi process event bus implementation written in Python 3.6+ to enable lightweight inter-process communication, based on non-blocking asyncio"
+songcser/sanic-ms,https://github.com/songcser/sanic-ms,392,114,479,2017-08-31,2018-11-30,master,基于sanic的微服务基础架构
+soheil-zz/ssh2,https://github.com/soheil-zz/ssh2,392,28,721,2015-12-06,2018-02-18,master,SSH for EC2
+ksanjeevan/crnn-audio-classification,https://github.com/ksanjeevan/crnn-audio-classification,392,82,3650,2019-03-04,2021-06-16,master,UrbanSound classification using Convolutional Recurrent Networks in PyTorch 
+karpathy/covid-sanity,https://github.com/karpathy/covid-sanity,392,54,306,2020-03-30,2020-05-03,master,Aspires to help the influx of bioRxiv / medRxiv papers on COVID-19
+RhinoSecurityLabs/Cloud-Security-Research,https://github.com/RhinoSecurityLabs/Cloud-Security-Research,392,68,2339,2019-06-07,2020-04-23,master,Cloud-related research releases from the Rhino Security Labs team.
+wuzhihao7788/yolodet-pytorch,https://github.com/wuzhihao7788/yolodet-pytorch,390,102,8045,2020-09-15,2021-04-02,master,"reproduce the YOLO series of papers in pytorch, including YOLOv4, PP-YOLO, YOLOv5，YOLOv3, etc."
+znxlwm/pytorch-CartoonGAN,https://github.com/znxlwm/pytorch-CartoonGAN,390,73,3197,2018-07-24,2021-06-17,master,Pytorch implementation of CartoonGAN (CVPR 2018)
+threatspec/threatspec,https://github.com/threatspec/threatspec,390,57,3580,2019-06-16,2020-12-30,master,"threatspec - continuous threat modeling, through code"
+rn5l/session-rec,https://github.com/rn5l/session-rec,389,80,2280,2019-07-02,2021-11-05,master,Python-based framework for building and evaluating session-based and session-aware recommender systems.
+SafeBreach-Labs/SirepRAT,https://github.com/SafeBreach-Labs/SirepRAT,389,90,6552,2019-03-02,2020-12-13,master,Remote Command Execution as SYSTEM on Windows IoT Core (releases available for Python2.7 & Python3)
+titu1994/Inception-v4,https://github.com/titu1994/Inception-v4,389,170,17136,2016-06-19,2017-09-07,master,"Inception-v4, Inception - Resnet-v1 and v2 Architectures in Keras"
+nccgroup/autopwn,https://github.com/nccgroup/autopwn,388,89,633,2015-02-23,2019-04-23,master,Specify targets and run sets of tools against them
+k8gege/CVE-2019-0708,https://github.com/k8gege/CVE-2019-0708,388,188,2381,2019-05-15,2019-06-13,master,3389远程桌面代码执行漏洞CVE-2019-0708批量检测工具(Rdpscan Bluekeep Check)
+yinhao0214/BiLstm_CNN_CRF_CWS,https://github.com/yinhao0214/BiLstm_CNN_CRF_CWS,388,109,12062,2018-02-01,2018-08-23,master,BiLstm+CNN+CRF  法律文档（合同类案件）领域分词（100篇标注样本）
+neptune-ai/open-solution-mapping-challenge,https://github.com/neptune-ai/open-solution-mapping-challenge,388,98,721,2018-04-10,2021-03-22,master,Open solution to the Mapping Challenge :earth_americas:
+htr-tech/afgcrack,https://github.com/htr-tech/afgcrack,387,63,1330,2020-07-18,2021-02-11,master,All in 1 Afganisthani Facebook Cloner [ 7/8/9/10/11 DIGIT ]
+penincillin/DREAM,https://github.com/penincillin/DREAM,387,97,1320,2018-03-03,2018-06-04,master,"This is the public repository for our accepted CVPR 2018 paper ""Pose-Robust Face Recognition via Deep Residual Equivariant Mapping"""
+wenqifan03/GraphRec-WWW19,https://github.com/wenqifan03/GraphRec-WWW19,386,108,6335,2019-11-22,2020-11-21,master,"Graph Neural Networks for Social Recommendation, WWW'19"
+thunlp/TensorFlow-Summarization,https://github.com/thunlp/TensorFlow-Summarization,386,108,871,2017-02-21,2018-01-25,master,
+tryexceptpass/sofi,https://github.com/tryexceptpass/sofi,386,46,262,2016-02-18,2021-06-11,master,an OS agnostic UI module for Python
+LynnHo/CycleGAN-Tensorflow-2,https://github.com/LynnHo/CycleGAN-Tensorflow-2,385,155,2691,2017-05-16,2021-12-13,master,Reimplementation of CycleGAN
+azurlane-doujin/AzurLanePaintingExtract-v1.0,https://github.com/azurlane-doujin/AzurLanePaintingExtract-v1.0,385,33,951,2019-05-29,2021-11-17,1.6,一个简单的碧蓝航线立绘还原的工具
+dhlab-epfl/dhSegment,https://github.com/dhlab-epfl/dhSegment,385,112,6179,2017-07-13,2021-07-09,master,Generic framework for historical document processing
+visinf/1-stage-wseg,https://github.com/visinf/1-stage-wseg,385,40,7086,2020-03-24,2021-11-10,master,Single-Stage Semantic Segmentation from Image Labels (CVPR 2020)
+quanhua92/human-pose-estimation-opencv,https://github.com/quanhua92/human-pose-estimation-opencv,384,155,7134,2018-06-15,2018-06-15,master,Perform Human Pose Estimation in OpenCV Using OpenPose MobileNet
+joshlk/many_requests,https://github.com/joshlk/many_requests,383,7,6053,2020-11-11,2021-03-23,main,Dead easy interface for executing many HTTP requests asynchronously. Also provides helper functions for executing embarrassingly parallel async coroutines.
+daniel-kukiela/nmt-chatbot,https://github.com/daniel-kukiela/nmt-chatbot,383,210,12038,2017-11-21,2020-06-06,master,NMT Chatbot
+MatthieuCourbariaux/BinaryConnect,https://github.com/MatthieuCourbariaux/BinaryConnect,383,110,1206,2015-08-10,2016-02-15,lasagne,Training Deep Neural Networks with binary weights during propagations
+wangxiaoxi3/API_Automation,https://github.com/wangxiaoxi3/API_Automation,383,217,1214,2018-08-31,2020-04-30,master,基于Pytest+request+Allure的接口自动化开源框架（第一版）
+biicode/biicode,https://github.com/biicode/biicode,383,39,404,2015-04-08,2020-09-30,master,biicode c/c++ dependency manager
+federicomariamassari/willowtree,https://github.com/federicomariamassari/willowtree,382,42,2576,2017-10-06,2018-07-14,master,Robust and flexible Python implementation of the willow tree lattice for derivatives pricing.
+s-leger/archipack,https://github.com/s-leger/archipack,382,49,9503,2017-03-03,2020-03-29,master,Archipack for blender 2.79
+weibycn/fund,https://github.com/weibycn/fund,381,106,474,2017-05-27,2017-05-27,master,天天基金数据处理
+gulvarol/smplpytorch,https://github.com/gulvarol/smplpytorch,381,43,241,2019-05-22,2021-04-23,master,SMPL body model layer for PyTorch
+cydonia999/Tiny_Faces_in_Tensorflow,https://github.com/cydonia999/Tiny_Faces_in_Tensorflow,381,132,4148,2017-10-15,2020-03-31,master,"A Tensorflow Tiny Face Detector, implementing ""Finding Tiny Faces"""
+omikun/ForceNap,https://github.com/omikun/ForceNap,381,24,9820,2018-03-03,2018-05-07,master,Suspend any one Mac OS apps when not in focus 
+playerkk/face-py-faster-rcnn,https://github.com/playerkk/face-py-faster-rcnn,381,150,631,2016-10-29,2018-02-18,master,Face Detection with the Faster R-CNN
+Vooban/Smoothly-Blend-Image-Patches,https://github.com/Vooban/Smoothly-Blend-Image-Patches,381,90,5730,2017-08-25,2019-11-12,master,"Using a U-Net for image segmentation, blending predicted patches smoothly is a must to please the human eye."
+Ma-Dan/keras-yolo4,https://github.com/Ma-Dan/keras-yolo4,380,173,1683,2020-04-25,2020-07-17,master,A Keras implementation of YOLOv4 (Tensorflow backend)
+cybertronai/pytorch-lamb,https://github.com/cybertronai/pytorch-lamb,379,50,845,2019-04-28,2020-12-09,master,Implementation of  https://arxiv.org/abs/1904.00962
+hardikbansal/CycleGAN,https://github.com/hardikbansal/CycleGAN,379,221,642,2017-04-09,2019-04-16,master,Tensorflow implementation of CycleGAN
+pathetiq/BurpSmartBuster,https://github.com/pathetiq/BurpSmartBuster,378,62,4487,2016-07-29,2020-10-12,master,A Burp Suite content discovery plugin that add the smart into the Buster!
+welch/seasonal,https://github.com/welch/seasonal,378,74,432,2016-02-03,2018-02-20,master,Robustly estimate trend and periodicity in a timeseries.
+ironman5366/W.I.L.L,https://github.com/ironman5366/W.I.L.L,378,56,3522,2015-10-10,2019-07-09,master,A python written personal assistant
+HiKapok/tf.fashionAI,https://github.com/HiKapok/tf.fashionAI,378,90,1140,2018-04-05,2018-06-02,master,Full pipeline for TianChi FashionAI clothes keypoints detection compitetion in TensorFlow
+ee09115/spoofing_detection,https://github.com/ee09115/spoofing_detection,378,99,18753,2018-02-05,2020-08-13,master,Cork/Face Presentation Attack Detection
+XiaoMi/mace-models,https://github.com/XiaoMi/mace-models,377,74,6252,2018-06-27,2021-07-05,master,Mobile AI Compute Engine Model Zoo
+skorokithakis/tbvaccine,https://github.com/skorokithakis/tbvaccine,377,13,807,2016-08-27,2020-03-01,master,A small utility to pretty-print Python tracebacks. ⛺
+ruoqianguo/DetNet_pytorch,https://github.com/ruoqianguo/DetNet_pytorch,376,115,519,2018-07-25,2019-01-01,master,An implementation of DetNet: A Backbone network for Object Detection.
+pixelb/fslint,https://github.com/pixelb/fslint,376,72,661,2015-01-29,2021-07-21,master,Linux file system lint checker/cleaner
+shreyaspadhy/UNet-Zoo,https://github.com/shreyaspadhy/UNet-Zoo,375,76,805,2017-12-09,2018-08-02,master,A collection of UNet and hybrid architectures in PyTorch for 2D and 3D Biomedical Image segmentation
+lucashadfield/speck,https://github.com/lucashadfield/speck,375,19,5147,2019-12-27,2020-09-19,master,line art image renderer
+belltailjp/selective_search_py,https://github.com/belltailjp/selective_search_py,375,118,2148,2015-04-23,2017-03-10,master,Python-based implementation of the Selective Search for Object Recognition.
+seasonSH/DocFace,https://github.com/seasonSH/DocFace,375,118,666,2018-05-14,2018-10-17,master,Face recognition system for ID photos
+zztianzz/PF-Net-Point-Fractal-Network,https://github.com/zztianzz/PF-Net-Point-Fractal-Network,374,67,334,2020-03-08,2021-05-26,master,CVPR2020 PF-Net: Point Fractal Network for 3D Point Cloud Completion
+csdwren/SelfDeblur,https://github.com/csdwren/SelfDeblur,374,69,2958,2019-08-04,2020-08-17,master,Neural Blind Deconvolution Using Deep Priors (CVPR 2020)
+ChangxingJiang/CxSpider,https://github.com/ChangxingJiang/CxSpider,374,103,777,2020-06-07,2021-06-05,master,长行的爬虫集合：微博、Twitter、玩加、知网、虎牙、斗鱼、B站、WeGame、猫眼、豆瓣、安居客、居理新房
+shaohua0116/Activation-Visualization-Histogram,https://github.com/shaohua0116/Activation-Visualization-Histogram,374,57,606,2017-06-10,2017-11-01,master,"Compare SELUs (scaled exponential linear units) with other activations on MNIST, CIFAR10, etc."
+wizyoung/googletranslate.popclipext,https://github.com/wizyoung/googletranslate.popclipext,373,29,5315,2017-08-03,2021-11-03,master,(Unofficial) A free and easy-to-use Google Translate PopClip Extension (macOS). 一个免费的谷歌翻译 PopClip 插件 (macOS)。
+mitchelljy/Trending-YouTube-Scraper,https://github.com/mitchelljy/Trending-YouTube-Scraper,373,168,1151,2018-10-31,2020-05-01,master,Python script that scrapes the currently trending YouTube videos in a variety of countries
+allenai/kb,https://github.com/allenai/kb,373,50,362,2019-09-03,2020-06-02,master,KnowBert -- Knowledge Enhanced Contextual Word Representations
+pengming617/bert_classification,https://github.com/pengming617/bert_classification,373,77,4058,2018-12-21,2019-08-26,master,利用bert预训练的中文模型进行文本分类  数据集中文情感分析语料chnsenticorp
+kakaobrain/word2word,https://github.com/kakaobrain/word2word,373,54,1123,2019-04-08,2021-01-08,master,"Easy-to-use word-to-word translations for 3,564 language pairs."
+renxingkai/BERT_Chinese_Classification,https://github.com/renxingkai/BERT_Chinese_Classification,373,90,2301,2019-02-18,2019-02-18,master,本实验，是用BERT进行中文情感分类，记录了详细操作及完整程序
+MTLab/onnx2caffe,https://github.com/MTLab/onnx2caffe,373,100,12614,2018-05-25,2019-12-02,master,pytorch to caffe by onnx
+KumapowerLIU/Rethinking-Inpainting-MEDFE,https://github.com/KumapowerLIU/Rethinking-Inpainting-MEDFE,373,49,3085,2020-07-05,2021-04-03,master,Rethinking Image Inpainting via a Mutual Encoder Decoder with Feature Equalizations. ECCV 2020 Oral
+PyQt5/CustomWidgets,https://github.com/PyQt5/CustomWidgets,373,79,3312,2019-04-17,2019-12-05,master,PyQt Custom Widgets - PyQt 自定义控件
+jessemelpolio/non-stationary_texture_syn,https://github.com/jessemelpolio/non-stationary_texture_syn,373,64,17993,2018-04-25,2018-11-26,master,Code used for texture synthesis using GAN
+lalor/todolist,https://github.com/lalor/todolist,372,158,319,2016-12-20,2018-12-23,master,
+JansonYuan/Pytorch-Camp,https://github.com/JansonYuan/Pytorch-Camp,372,227,1689,2020-04-29,2021-02-27,master,
+Atomu2014/product-nets,https://github.com/Atomu2014/product-nets,372,123,4797,2016-09-16,2020-01-30,master,Tensorflow implementation of Product-based Neural Networks. An extended version is at https://github.com/Atomu2014/product-nets-distributed.
+jiesutd/Text-Attention-Heatmap-Visualization,https://github.com/jiesutd/Text-Attention-Heatmap-Visualization,372,56,1397,2019-04-01,2019-04-12,master,Plot the vector graph of attention based text visualisation
+llSourcell/AI_Startup_Prototype,https://github.com/llSourcell/AI_Startup_Prototype,371,255,1434,2019-03-27,2019-04-03,master,"This is the code for ""Watch Me Build an AI Startup"" By Siraj Raval on Youtube"
+qipeng/gcn-over-pruned-trees,https://github.com/qipeng/gcn-over-pruned-trees,371,70,599,2018-08-22,2020-07-29,master,Graph Convolution over Pruned Dependency Trees Improves Relation Extraction (authors' PyTorch implementation)
+ParhamP/Speech-Hacker,https://github.com/ParhamP/Speech-Hacker,371,36,6241,2016-11-21,2017-09-08,master,Makes famous people speak whatever you wish by linking their words
+graphql-python/graphql-core-legacy,https://github.com/graphql-python/graphql-core-legacy,371,175,2262,2015-10-06,2021-10-07,master,GraphQL base implementation for Python (legacy version – see graphql-core for the current one)
+MicroEngine/DevilYuan,https://github.com/MicroEngine/DevilYuan,370,689,1792,2018-06-09,2018-06-09,master,DevilYuan股票量化系统
+yanqiangmiffy/sentence-similarity,https://github.com/yanqiangmiffy/sentence-similarity,370,90,8295,2018-11-30,2020-11-17,master,问题句子相似度计算，即给定客服里用户描述的两句话，用算法来判断是否表示了相同的语义。
+adebayoj/fairml,https://github.com/adebayoj/fairml,370,75,19440,2016-01-02,2021-05-10,master,
+myfavouritekk/T-CNN,https://github.com/myfavouritekk/T-CNN,370,145,4715,2015-10-20,2017-06-05,ilsvrc2015vid,ImageNet 2015 Object Detection from Video (VID)
+linmp/bili,https://github.com/linmp/bili,370,103,2692,2020-03-02,2021-11-24,master,谢谢大家的赞呀~加油加油~有不懂的可以私信我哦（只要我会的尽量帮忙解答）
+saeed-anwar/RIDNet,https://github.com/saeed-anwar/RIDNet,370,62,17144,2019-07-15,2021-10-03,master,"Pytorch code for ""Real image denoising with feature attention"",  ICCV (Oral), 2019."
+ZhaoJ9014/High-Performance-Face-Recognition,https://github.com/ZhaoJ9014/High-Performance-Face-Recognition,369,79,10453,2018-07-08,2021-12-09,master,🔥🔥Several High-Performance Models for Unconstrained/Large-Scale/Low-Shot Face Recognition🔥🔥
+zouhongzhao/Programming-Collective-Intelligence-Source-Code,https://github.com/zouhongzhao/Programming-Collective-Intelligence-Source-Code,369,201,214,2015-04-30,2018-01-17,master,集体智慧编程源代码
+VITA-Group/GLNet,https://github.com/VITA-Group/GLNet,368,73,2273,2019-03-14,2021-12-29,master,"[CVPR 2019, Oral] ""Collaborative Global-Local Networks for Memory-Efﬁcient Segmentation of Ultra-High Resolution Images"" by Wuyang Chen*, Ziyu Jiang*, Zhangyang Wang, Kexin Cui, and Xiaoning Qian"
+bobzhuyb/ns3-rdma,https://github.com/bobzhuyb/ns3-rdma,368,134,9789,2016-09-30,2018-08-16,master,"NS3 simulator for RDMA over Converged Ethernet v2 (RoCEv2), including the implementation of DCQCN, TIMELY, PFC, ECN and shared buffer switch"
+TideSec/web_pwd_common_crack,https://github.com/TideSec/web_pwd_common_crack,368,78,650,2019-01-03,2020-06-22,master,通用web弱口令破解脚本，旨在批量检测那些没有验证码的管理后台，可用于刷分~
+FelixOpolka/STGCN-PyTorch,https://github.com/FelixOpolka/STGCN-PyTorch,368,73,14700,2018-12-11,2018-12-11,master,🚗 Implementation of spatio-temporal graph convolutional network with PyTorch
+zrnsm/pyculiarity,https://github.com/zrnsm/pyculiarity,367,147,208,2015-07-10,2020-06-16,master,A Python port of Twitter's AnomalyDetection R Package
+sgratzl/slack-cleaner,https://github.com/sgratzl/slack-cleaner,367,44,220,2017-09-08,2021-08-12,main,delete slack messages and files. An improved version is at: 
+JirongZhang/DeepHomography,https://github.com/JirongZhang/DeepHomography,366,56,18921,2019-09-12,2021-04-12,master,Content-Aware Unsupervised Deep Homography Estimation
+kamalkraj/Named-Entity-Recognition-with-Bidirectional-LSTM-CNNs,https://github.com/kamalkraj/Named-Entity-Recognition-with-Bidirectional-LSTM-CNNs,366,139,1147,2018-01-27,2020-04-21,master,Named-Entity-Recognition-with-Bidirectional-LSTM-CNNs
+kobiso/CBAM-keras,https://github.com/kobiso/CBAM-keras,366,128,550,2018-08-10,2021-02-08,master,CBAM implementation on Keras
+chennnM/GCNII,https://github.com/chennnM/GCNII,366,74,5622,2020-06-10,2020-07-09,master,"PyTorch implementation of ""Simple and Deep Graph Convolutional Networks"""
+SC4RECOIN/LSTM-Crypto-Price-Prediction,https://github.com/SC4RECOIN/LSTM-Crypto-Price-Prediction,366,56,2818,2018-04-08,2021-08-10,master,Predicting price trends in cryptomarkets using an lstm-RNN for the use of a trading bot
+ekzhang/fastseg,https://github.com/ekzhang/fastseg,366,34,980,2020-07-22,2021-03-30,master,"📸 PyTorch implementation of MobileNetV3 for real-time semantic segmentation, with pretrained weights & state-of-the-art performance"
+lephisto/tesla-apiscraper,https://github.com/lephisto/tesla-apiscraper,366,98,1134,2019-01-12,2019-10-28,master,API Scraper for pulling Vehicle Statistics from the Tesla Owner API into an InfluxDB + Grafana Dashboards
+deanishe/alfred-fixum,https://github.com/deanishe/alfred-fixum,365,9,725,2017-04-03,2021-04-29,master,Fix Alfred 3 Python workflows affected by the Sierra/Alfred-Workflow background process bug
+liu-nlper/SLTK,https://github.com/liu-nlper/SLTK,365,79,683,2018-02-22,2018-07-24,master,序列化标注工具，基于PyTorch实现BLSTM-CNN-CRF模型，CoNLL 2003 English NER测试集F1值为91.10%（word and char feature）。
+asyml/vision-transformer-pytorch,https://github.com/asyml/vision-transformer-pytorch,365,59,218,2020-10-30,2020-11-23,main,Pytorch version of Vision Transformer (ViT) with pretrained models. This is part of CASL (https://casl-project.github.io/) and ASYML project.
+NVlabs/wetectron,https://github.com/NVlabs/wetectron,365,48,8489,2020-04-04,2020-12-02,master,Weakly-supervised object detection.
+sibirbil/IMO2020,https://github.com/sibirbil/IMO2020,365,60,16052,2020-01-13,2020-03-18,master,"İstanbul'da Makine Öğrenmesi (27 Ocak- 2 Şubat, 2020) - Ders malzemeleri"
+chenxin061/pdarts,https://github.com/chenxin061/pdarts,364,85,1215,2019-04-29,2020-02-18,master,"Codes for our paper ""Progressive Differentiable Architecture Search:Bridging the Depth Gap between Search and Evaluation"""
+renemarc/home-assistant-config,https://github.com/renemarc/home-assistant-config,364,56,15961,2018-01-17,2021-10-18,master,🏠 Fully documented Home Assistant configuration for a smart-looking place. 😎 Be sure to ⭐️ my repo and copy ideas!
+prigoyal/pytorch_memonger,https://github.com/prigoyal/pytorch_memonger,364,35,208,2017-12-05,2018-04-23,master,Experimental ground for optimizing memory of pytorch models
+bilylee/SiamFC-TensorFlow,https://github.com/bilylee/SiamFC-TensorFlow,364,110,3003,2017-11-29,2020-01-14,master,A TensorFlow implementation of the SiamFC tracker
+cvjena/cnn-models,https://github.com/cvjena/cnn-models,364,163,3518,2016-09-27,2017-11-26,master,ImageNet pre-trained models with batch normalization for the Caffe framework
+Raschka-research-group/coral-cnn,https://github.com/Raschka-research-group/coral-cnn,364,64,6296,2019-01-23,2021-05-05,master,Rank Consistent Ordinal Regression for Neural Networks with Application to Age Estimation
+utkuozbulak/pytorch-cnn-adversarial-attacks,https://github.com/utkuozbulak/pytorch-cnn-adversarial-attacks,364,60,1317,2017-12-15,2018-12-03,master, Pytorch implementation of convolutional neural network adversarial attack techniques 
+syang1993/gst-tacotron,https://github.com/syang1993/gst-tacotron,364,108,422,2018-03-31,2018-12-06,master,"A tensorflow implementation of the ""Style Tokens: Unsupervised Style Modeling, Control and Transfer in End-to-End Speech Synthesis"""
+4shadoww/hakkuframework,https://github.com/4shadoww/hakkuframework,363,87,18794,2016-06-07,2021-10-17,master,Hakku Framework penetration testing
+renmengye/revnet-public,https://github.com/renmengye/revnet-public,363,51,526,2017-06-28,2018-06-19,master,"Code for ""The Reversible Residual Network: Backpropagation Without Storing Activations"""
+LeslieZhoa/tensorflow-MTCNN,https://github.com/LeslieZhoa/tensorflow-MTCNN,363,141,15102,2018-11-25,2018-12-09,master,人脸检测MTCNN算法，采用tensorflow框架编写，从理解到训练，中文注释完全，含测试和训练，支持摄像头
+DavideA/c3d-pytorch,https://github.com/DavideA/c3d-pytorch,363,81,13117,2017-07-20,2019-03-03,master,"Pytorch porting of C3D network, with Sports1M weights"
+kolsys/YouTubeTV.bundle,https://github.com/kolsys/YouTubeTV.bundle,363,49,945,2015-05-02,2020-09-06,master,Plex YouTube video plugin
+fchollet/hualos,https://github.com/fchollet/hualos,362,81,264,2015-06-21,2018-02-02,master,Keras Total Visualization project
+gautam678/Pix2Depth,https://github.com/gautam678/Pix2Depth,361,84,2379,2017-11-05,2019-10-07,master,DEPRECATED: Depth Map Estimation from Monocular Images
+zzz24512653/CommunityDetection,https://github.com/zzz24512653/CommunityDetection,361,170,292,2015-03-22,2018-09-28,master,Implements of community detection algorithms
+Zhaoyi-Yan/Shift-Net_pytorch,https://github.com/Zhaoyi-Yan/Shift-Net_pytorch,361,81,6000,2018-04-12,2021-03-24,master,"Pytorch implementation of Shift-Net: Image Inpainting via Deep Feature Rearrangement (ECCV, 2018)"
+liuhuanyong/SentenceSimilarity,https://github.com/liuhuanyong/SentenceSimilarity,361,86,7711,2018-03-06,2018-12-15,master,"self complement of Sentence Similarity compute based on cilin, hownet, simhash, wordvector,vsm models，基于同义词词林，知网，指纹，字词向量，向量空间模型的句子相似度计算。"
+AlfredoSequeida/fvid,https://github.com/AlfredoSequeida/fvid,360,41,5452,2020-10-05,2021-04-15,master,fvid is a project that aims to encode any file as a video using 1-bit color images to survive compression algorithms for data retrieval.
+yukiarrr/Il2cppSpy,https://github.com/yukiarrr/Il2cppSpy,360,55,4519,2019-09-18,2020-08-07,master,Unity IL2CPP Disassembler (for apk)
+llSourcell/Neural_Network_Voices,https://github.com/llSourcell/Neural_Network_Voices,359,107,949,2018-03-08,2018-03-12,master,"This is the code for ""Neural Network Voices"" by Siraj Raval on Youtube "

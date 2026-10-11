@@ -1,0 +1,4 @@
+repo,reason,n
+dhlab-epfl/dhSegment,"flagged line edited, same rule and message",5
+pachterlab/edgePython,"identical flagged code, SonarQube re-keyed it",1
+pachterlab/edgePython,"flagged line edited, same rule and message",2

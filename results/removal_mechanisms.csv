@@ -1,0 +1,8 @@
+group,category,removal_mechanism,n
+AI,maintainability,code_changed,4
+AI,maintainability,code_still_present,4
+PreAI,maintainability,code_changed,5
+PreAI,maintainability,file_deleted,26
+PreAI,reliability,code_changed,1
+PreAI,security,code_changed,1
+PreAI,security,file_deleted,2

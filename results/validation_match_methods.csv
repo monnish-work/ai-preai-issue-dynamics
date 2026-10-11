@@ -1,0 +1,6 @@
+repo,tool,method,n,ambiguous
+dhlab-epfl/dhSegment,semgrep,exact,331,0
+dhlab-epfl/dhSegment,sonarqube,exact,3756,0
+dhlab-epfl/dhSegment,sonarqube,message,784,0
+pachterlab/edgePython,sonarqube,exact,12195,0
+pachterlab/edgePython,sonarqube,message,203,0

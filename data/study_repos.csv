@@ -1,0 +1,3 @@
+group,repo,role,notes
+AI,pachterlab/edgePython,pilot,44/49 .py files carry 'This code was written by Claude (Anthropic)'; commits also mention Codex
+PreAI,dhlab-epfl/dhSegment,pilot,last commit 2020-12-17; scientific Python framework; 341 non-merge commits
