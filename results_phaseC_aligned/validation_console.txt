@@ -1,0 +1,103 @@
+                        repo  our_histories  sonar_keys  merged_histories(>1 key)  split_keys(>1 history)  agreement_pct
+    TaylorResearchLab/scedar            514         677                       179                      91          60.12
+              binsync/declib            335         339                         6                       2          97.64
+              getavalon/core            495         764                       213                       8          71.07
+                  hanyas/sds            866        1043                       128                      16          86.19
+       initc3/HoneyBadgerMPC            885        1142                       222                       4          80.21
+          jaxleyverse/jaxley            272         294                        27                       6          88.78
+              jsosa/LFPtools            428         661                       216                       0          67.32
+               mit-acl/tcaff            522         544                        30                      11          92.46
+       pachterlab/edgePython            462         463                         2                       1          99.35
+temporalecologylab/TreeRings            261         261                         0                       0         100.00
+                        repo      tool           method     n  ambiguous
+    TaylorResearchLab/scedar      ruff            exact    19          0
+    TaylorResearchLab/scedar      ruff       exact_twin     7          0
+    TaylorResearchLab/scedar      ruff          message     1          0
+    TaylorResearchLab/scedar   semgrep            exact    64          0
+    TaylorResearchLab/scedar   semgrep       exact_twin    58          0
+    TaylorResearchLab/scedar   semgrep          message     1          0
+    TaylorResearchLab/scedar sonarqube            exact  1561          0
+    TaylorResearchLab/scedar sonarqube       exact_twin  3042          0
+    TaylorResearchLab/scedar sonarqube          message   320          0
+    TaylorResearchLab/scedar sonarqube            moved    34          0
+    TaylorResearchLab/scedar sonarqube moved_unresolved   109        109
+              binsync/declib      ruff            exact    83          0
+              binsync/declib   semgrep            exact    31          0
+              binsync/declib sonarqube            exact  1363          0
+              binsync/declib sonarqube       exact_twin   204          0
+              binsync/declib sonarqube          message   395          0
+              binsync/declib sonarqube            moved     1          0
+              getavalon/core      ruff            exact    67          0
+              getavalon/core      ruff            moved     1          0
+              getavalon/core   semgrep            exact     3          0
+              getavalon/core sonarqube            exact  2032          0
+              getavalon/core sonarqube       exact_twin   452          0
+              getavalon/core sonarqube          message   184          2
+              getavalon/core sonarqube            moved    27          0
+              getavalon/core sonarqube moved_unresolved    13         13
+                  hanyas/sds      ruff       exact_twin     2          0
+                  hanyas/sds   semgrep            exact     6          0
+                  hanyas/sds   semgrep          message     2          0
+                  hanyas/sds sonarqube            exact  1784          0
+                  hanyas/sds sonarqube       exact_twin   862          0
+                  hanyas/sds sonarqube          message   663          0
+                  hanyas/sds sonarqube            moved    16          0
+                  hanyas/sds sonarqube moved_unresolved    11         11
+       initc3/HoneyBadgerMPC      ruff            exact   228          0
+       initc3/HoneyBadgerMPC      ruff       exact_twin    99          0
+       initc3/HoneyBadgerMPC      ruff          message     9          0
+       initc3/HoneyBadgerMPC   semgrep            exact   382          0
+       initc3/HoneyBadgerMPC   semgrep       exact_twin     1          0
+       initc3/HoneyBadgerMPC   semgrep          message    15          0
+       initc3/HoneyBadgerMPC   semgrep            moved     2          0
+       initc3/HoneyBadgerMPC sonarqube            exact  3671          0
+       initc3/HoneyBadgerMPC sonarqube       exact_twin   625          0
+       initc3/HoneyBadgerMPC sonarqube          message  1020          0
+       initc3/HoneyBadgerMPC sonarqube            moved    15          0
+       initc3/HoneyBadgerMPC sonarqube moved_unresolved     6          6
+          jaxleyverse/jaxley      ruff            exact   104          0
+          jaxleyverse/jaxley      ruff            moved     2          0
+          jaxleyverse/jaxley sonarqube            exact   799          0
+          jaxleyverse/jaxley sonarqube       exact_twin   265          0
+          jaxleyverse/jaxley sonarqube          message    85          0
+          jaxleyverse/jaxley sonarqube            moved     7          0
+              jsosa/LFPtools      ruff            exact    80          0
+              jsosa/LFPtools sonarqube            exact  4264          0
+              jsosa/LFPtools sonarqube       exact_twin  1854          0
+              jsosa/LFPtools sonarqube          message   203          1
+              jsosa/LFPtools sonarqube            moved     4          0
+              jsosa/LFPtools sonarqube moved_unresolved     2          2
+               mit-acl/tcaff      ruff            exact   157          0
+               mit-acl/tcaff   semgrep            exact    75          0
+               mit-acl/tcaff   semgrep            moved     3          0
+               mit-acl/tcaff sonarqube            exact  2697          0
+               mit-acl/tcaff sonarqube       exact_twin   991          0
+               mit-acl/tcaff sonarqube          message   788          0
+               mit-acl/tcaff sonarqube            moved    13          0
+               mit-acl/tcaff sonarqube moved_unresolved     2          2
+       pachterlab/edgePython      ruff            exact    58          0
+       pachterlab/edgePython sonarqube            exact 10136          0
+       pachterlab/edgePython sonarqube       exact_twin  2009          0
+       pachterlab/edgePython sonarqube          message   203          0
+temporalecologylab/TreeRings      ruff            exact     7          0
+temporalecologylab/TreeRings      ruff       exact_twin    28          0
+temporalecologylab/TreeRings sonarqube            exact   412          0
+temporalecologylab/TreeRings sonarqube       exact_twin   368          0
+temporalecologylab/TreeRings sonarqube          message   126          0
+Manual sample: 10 issues -> results/manual_validation_sample.md
+                        repo  sonar_new_keys  tracker_introductions  event_agreement_pct
+    TaylorResearchLab/scedar             677                    514                 74.4
+              binsync/declib             339                    335                 98.8
+              getavalon/core             764                    495                 64.8
+                  hanyas/sds            1043                    866                 83.0
+       initc3/HoneyBadgerMPC            1142                    885                 77.5
+          jaxleyverse/jaxley             294                    272                 90.5
+              jsosa/LFPtools             661                    428                 64.8
+               mit-acl/tcaff             544                    522                 94.1
+       pachterlab/edgePython             463                    462                 99.4
+temporalecologylab/TreeRings             261                    261                100.0
+reason
+file renamed or moved (tracker followed git rename)    907
+flagged line edited, same rule and message             267
+identical flagged code, SonarQube re-keyed it          128
+Name: n, dtype: int64

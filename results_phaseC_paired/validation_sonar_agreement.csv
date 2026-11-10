@@ -1,0 +1,11 @@
+repo,our_histories,sonar_keys,merged_histories(>1 key),split_keys(>1 history),agreement_pct
+TaylorResearchLab/scedar,514,677,179,91,60.12
+binsync/declib,335,339,6,2,97.64
+getavalon/core,347,422,68,0,83.89
+hanyas/sds,682,732,55,5,91.8
+initc3/HoneyBadgerMPC,293,365,69,0,81.1
+jaxleyverse/jaxley,272,294,27,6,88.78
+jsosa/LFPtools,240,241,1,0,99.59
+mit-acl/tcaff,522,544,30,11,92.46
+pachterlab/edgePython,462,463,2,1,99.35
+temporalecologylab/TreeRings,261,261,0,0,100.0

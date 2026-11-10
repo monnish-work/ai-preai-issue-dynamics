@@ -1,0 +1,17 @@
+unit,category,group,n_issues,n_removed,n_censored,km_median,mean_lifetime_removed_only
+days,maintainability,AI,554,108,446,,92.441
+days,maintainability,PreAI,1319,320,999,1365.036,206.938
+days,reliability,AI,17,0,17,,
+days,reliability,PreAI,16,3,13,766.99,420.327
+days,security,AI,7,2,5,237.033,237.033
+days,security,PreAI,12,9,3,558.227,425.821
+days,all,AI,578,110,468,,95.07
+days,all,PreAI,1347,332,1015,1365.036,214.8
+snapshots,maintainability,AI,554,108,446,,2.361
+snapshots,maintainability,PreAI,1319,320,999,13.0,4.222
+snapshots,reliability,AI,17,0,17,,
+snapshots,reliability,PreAI,16,3,13,,2.333
+snapshots,security,AI,7,2,5,6.0,6.0
+snapshots,security,PreAI,12,9,3,7.0,5.0
+snapshots,all,AI,578,110,468,,2.427
+snapshots,all,PreAI,1347,332,1015,13.0,4.226

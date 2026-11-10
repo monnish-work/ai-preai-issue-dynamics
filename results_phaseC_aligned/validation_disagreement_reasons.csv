@@ -1,0 +1,26 @@
+repo,reason,n
+TaylorResearchLab/scedar,"flagged line edited, same rule and message",21
+TaylorResearchLab/scedar,file renamed or moved (tracker followed git rename),150
+TaylorResearchLab/scedar,"identical flagged code, SonarQube re-keyed it",95
+binsync/declib,"flagged line edited, same rule and message",3
+binsync/declib,"identical flagged code, SonarQube re-keyed it",2
+binsync/declib,file renamed or moved (tracker followed git rename),1
+getavalon/core,file renamed or moved (tracker followed git rename),249
+getavalon/core,"flagged line edited, same rule and message",22
+getavalon/core,"identical flagged code, SonarQube re-keyed it",6
+hanyas/sds,file renamed or moved (tracker followed git rename),102
+hanyas/sds,"flagged line edited, same rule and message",77
+hanyas/sds,"identical flagged code, SonarQube re-keyed it",16
+initc3/HoneyBadgerMPC,file renamed or moved (tracker followed git rename),164
+initc3/HoneyBadgerMPC,"flagged line edited, same rule and message",95
+initc3/HoneyBadgerMPC,"identical flagged code, SonarQube re-keyed it",3
+jaxleyverse/jaxley,file renamed or moved (tracker followed git rename),7
+jaxleyverse/jaxley,"flagged line edited, same rule and message",19
+jaxleyverse/jaxley,"identical flagged code, SonarQube re-keyed it",2
+jsosa/LFPtools,file renamed or moved (tracker followed git rename),211
+jsosa/LFPtools,"flagged line edited, same rule and message",21
+jsosa/LFPtools,"identical flagged code, SonarQube re-keyed it",1
+mit-acl/tcaff,"flagged line edited, same rule and message",7
+mit-acl/tcaff,file renamed or moved (tracker followed git rename),23
+mit-acl/tcaff,"identical flagged code, SonarQube re-keyed it",3
+pachterlab/edgePython,"flagged line edited, same rule and message",2

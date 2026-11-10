@@ -1,0 +1,16 @@
+group,category,removal_mechanism,n
+AI,maintainability,code_changed,127
+AI,maintainability,code_still_present,35
+AI,maintainability,file_deleted,180
+AI,reliability,code_changed,4
+AI,reliability,code_still_present,1
+AI,reliability,file_deleted,10
+AI,security,code_changed,2
+AI,security,file_deleted,7
+PreAI,maintainability,code_changed,252
+PreAI,maintainability,code_still_present,74
+PreAI,maintainability,file_deleted,198
+PreAI,reliability,code_changed,4
+PreAI,reliability,file_deleted,4
+PreAI,security,code_changed,9
+PreAI,security,file_deleted,2

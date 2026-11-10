@@ -1,0 +1,11 @@
+unit,category,n_AI_declared,n_PreAI,AI_declared_km_median,PreAI_km_median,logrank_chi2,logrank_p,pair_stratified_chi2,pair_stratified_p
+commits,all,599,1376,,13.0,27.9763,0.0,11.8675,0.0006
+commits,maintainability,554,1319,,13.0,23.6166,0.0,9.6522,0.0019
+commits,reliability,17,16,,,4.706,0.0301,2.0,0.1573
+commits,security,7,12,6.0,7.0,0.2197,0.6393,,
+commits,performance,21,29,,,0.452,0.5014,0.35,0.5541
+days,all,599,1376,,1365.036,38.1394,0.0,1.1248,0.2889
+days,maintainability,554,1319,,1365.036,32.4689,0.0,0.687,0.4072
+days,reliability,17,16,,766.99,5.5857,0.0181,2.0,0.1573
+days,security,7,12,237.033,558.227,0.009,0.9244,,
+days,performance,21,29,,,0.5409,0.4621,0.0691,0.7926

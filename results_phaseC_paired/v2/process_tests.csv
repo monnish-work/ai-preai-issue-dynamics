@@ -1,0 +1,7 @@
+measure,AI_declared_median,PreAI_median,p,cliffs_delta,p_holm
+commits,45.0,104.0,0.2222,-0.52,1.0
+commits_per_month,9.49,8.0,0.4206,0.36,1.0
+distinct_authors,5.0,3.0,0.5476,0.28,1.0
+commits_per_author,10.0,75.93,0.0952,-0.68,0.5714
+dev_experience_days,500.1,332.7,0.4206,0.36,1.0
+dev_experience_author_days,234.4,424.2,0.4206,-0.36,1.0

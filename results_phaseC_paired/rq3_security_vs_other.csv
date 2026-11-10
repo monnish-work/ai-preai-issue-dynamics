@@ -1,0 +1,5 @@
+group,unit,n_security,n_other,security_removed_share,other_removed_share,logrank_chi2,p_value
+AI,days,7,571,0.286,0.189,0.811,0.368
+AI,snapshots,7,571,0.286,0.189,0.368,0.5441
+PreAI,days,12,1335,0.75,0.242,6.043,0.014
+PreAI,snapshots,12,1335,0.75,0.242,4.372,0.0365

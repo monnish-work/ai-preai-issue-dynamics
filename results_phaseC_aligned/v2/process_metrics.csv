@@ -1,0 +1,11 @@
+repo,group,window_start,window_end,commits,commits_per_month,distinct_authors,commits_per_author,dev_experience_days,dev_experience_author_days
+TaylorResearchLab/scedar,Pre-AI,2018-03-17,2021-04-24,298,8.0,3,99.33,167.6,243.5
+binsync/declib,AI-declared,2026-01-27,2026-08-31,67,9.49,11,6.09,624.8,134.9
+getavalon/core,Pre-AI,2016-09-13,2021-03-23,1611,29.68,16,100.69,255.8,377.2
+hanyas/sds,Pre-AI,2019-02-25,2021-08-23,171,5.73,2,85.5,469.0,484.9
+initc3/HoneyBadgerMPC,Pre-AI,2018-05-12,2020-05-13,320,13.33,17,18.82,165.9,143.3
+jaxleyverse/jaxley,AI-declared,2024-08-20,2026-09-03,215,8.8,16,13.44,500.1,234.4
+jsosa/LFPtools,Pre-AI,2017-12-19,2019-10-26,72,3.24,2,36.0,268.2,613.9
+mit-acl/tcaff,AI-declared,2024-01-15,2026-07-02,42,1.42,3,14.0,466.7,495.4
+pachterlab/edgePython,AI-declared,2026-02-15,2026-06-16,45,11.42,5,9.0,16.0,25.7
+temporalecologylab/TreeRings,AI-declared,2026-08-16,2026-09-22,30,24.68,3,10.0,870.7,832.6
