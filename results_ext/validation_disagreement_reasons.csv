@@ -1,0 +1,190 @@
+repo,reason,n
+AXErunners/electrum-axe,"identical flagged code, SonarQube re-keyed it",2544
+AXErunners/electrum-axe,file renamed or moved (tracker followed git rename),1064
+AXErunners/electrum-axe,"flagged line edited, same rule and message",322
+AdityaSavara/jsongrapher-py,"flagged line edited, same rule and message",8
+AdityaSavara/jsongrapher-py,"identical flagged code, SonarQube re-keyed it",3
+AdityaSavara/jsongrapher-py,file renamed or moved (tracker followed git rename),1
+BlackEnd1ess/CrashB_in_python,"flagged line edited, same rule and message",195
+BlackEnd1ess/CrashB_in_python,file renamed or moved (tracker followed git rename),403
+BlackEnd1ess/CrashB_in_python,"identical flagged code, SonarQube re-keyed it",24
+Cloud-CV/EvalAI,file renamed or moved (tracker followed git rename),8
+Cloud-CV/EvalAI,"identical flagged code, SonarQube re-keyed it",13
+Cloud-CV/EvalAI,"flagged line edited, same rule and message",53
+DoubleF3lix/onyx,"flagged line edited, same rule and message",31
+Dynatrace-Dave-Mauney/Automation,file renamed or moved (tracker followed git rename),63
+Dynatrace-Dave-Mauney/Automation,"flagged line edited, same rule and message",706
+Dynatrace-Dave-Mauney/Automation,"identical flagged code, SonarQube re-keyed it",3
+FatihTasyaran/FISH_INTERFERE,"flagged line edited, same rule and message",22
+FatihTasyaran/FISH_INTERFERE,"identical flagged code, SonarQube re-keyed it",1
+FennisRobert/EMerge,"flagged line edited, same rule and message",503
+FennisRobert/EMerge,file renamed or moved (tracker followed git rename),336
+FennisRobert/EMerge,"identical flagged code, SonarQube re-keyed it",128
+Flix8/scriptor,"flagged line edited, same rule and message",23
+Flix8/scriptor,"identical flagged code, SonarQube re-keyed it",5
+GreshamLab/sc_self_supervised,"identical flagged code, SonarQube re-keyed it",65
+GreshamLab/sc_self_supervised,"flagged line edited, same rule and message",1
+KTH-RPL/DriveCmd_LLM,file renamed or moved (tracker followed git rename),7
+KTH-RPL/DriveCmd_LLM,"identical flagged code, SonarQube re-keyed it",2
+KTH-RPL/DriveCmd_LLM,"flagged line edited, same rule and message",2
+PhatnaniLab/nanopore_10x_multiome,"flagged line edited, same rule and message",2
+Quent-DL/MasterThesis_ElectroLoc,"flagged line edited, same rule and message",71
+Quent-DL/MasterThesis_ElectroLoc,"identical flagged code, SonarQube re-keyed it",117
+Quent-DL/MasterThesis_ElectroLoc,file renamed or moved (tracker followed git rename),22
+R2U2/r2u2,file renamed or moved (tracker followed git rename),234
+R2U2/r2u2,"flagged line edited, same rule and message",34
+R2U2/r2u2,"identical flagged code, SonarQube re-keyed it",2
+Raptacon/Robot-2026,"flagged line edited, same rule and message",102
+Raptacon/Robot-2026,file renamed or moved (tracker followed git rename),41
+TaylorResearchLab/scedar,"flagged line edited, same rule and message",21
+TaylorResearchLab/scedar,file renamed or moved (tracker followed git rename),150
+TaylorResearchLab/scedar,"identical flagged code, SonarQube re-keyed it",95
+TheSignPainter98/adjust-keys,file renamed or moved (tracker followed git rename),163
+TheSignPainter98/adjust-keys,"flagged line edited, same rule and message",67
+ToniRV/Kimera-VIO-Evaluation,file renamed or moved (tracker followed git rename),140
+ToniRV/Kimera-VIO-Evaluation,"flagged line edited, same rule and message",19
+ToniRV/Kimera-VIO-Evaluation,"identical flagged code, SonarQube re-keyed it",1
+Vihangip/PyOpSee,"flagged line edited, same rule and message",1
+adammak23/PCB-Blender,"flagged line edited, same rule and message",42
+adammak23/PCB-Blender,file renamed or moved (tracker followed git rename),694
+adammak23/PCB-Blender,"identical flagged code, SonarQube re-keyed it",2
+arpruss/raspberryjammod-minetest,"identical flagged code, SonarQube re-keyed it",6
+arpruss/raspberryjammod-minetest,"flagged line edited, same rule and message",10
+arpruss/raspberryjammod-minetest,file renamed or moved (tracker followed git rename),1
+asdf1434/noise-schedule-exp,file renamed or moved (tracker followed git rename),2
+asdf1434/noise-schedule-exp,"flagged line edited, same rule and message",1
+avalanche103/personal-finance,"flagged line edited, same rule and message",2
+binsync/declib,"flagged line edited, same rule and message",23
+binsync/declib,file renamed or moved (tracker followed git rename),26
+binsync/declib,"identical flagged code, SonarQube re-keyed it",2
+bytesy-z/Inverse-3D-EEG-and-Diesease-Detection-VESL,"flagged line edited, same rule and message",6
+bytesy-z/Inverse-3D-EEG-and-Diesease-Detection-VESL,"identical flagged code, SonarQube re-keyed it",7
+codebro634/Cascade,"flagged line edited, same rule and message",7
+ctuning/ck-tensorflow,file renamed or moved (tracker followed git rename),144
+ctuning/ck-tensorflow,"flagged line edited, same rule and message",5
+diegodukao/sonicbox,file renamed or moved (tracker followed git rename),11
+drepetto/chiplotle,file renamed or moved (tracker followed git rename),652
+drepetto/chiplotle,"flagged line edited, same rule and message",127
+drepetto/chiplotle,"identical flagged code, SonarQube re-keyed it",5
+edsuom/yampex,"flagged line edited, same rule and message",53
+edsuom/yampex,file renamed or moved (tracker followed git rename),39
+ekraka/SSnet,file renamed or moved (tracker followed git rename),62
+ekraka/SSnet,"flagged line edited, same rule and message",4
+getavalon/core,file renamed or moved (tracker followed git rename),249
+getavalon/core,"flagged line edited, same rule and message",22
+getavalon/core,"identical flagged code, SonarQube re-keyed it",6
+hanyas/sds,file renamed or moved (tracker followed git rename),102
+hanyas/sds,"flagged line edited, same rule and message",77
+hanyas/sds,"identical flagged code, SonarQube re-keyed it",16
+hitranonline/hapiest,"flagged line edited, same rule and message",689
+hitranonline/hapiest,"identical flagged code, SonarQube re-keyed it",265
+hitranonline/hapiest,file renamed or moved (tracker followed git rename),173
+idearibosome/tf-perceptual-eusr,"flagged line edited, same rule and message",2
+idearibosome/tf-perceptual-eusr,file renamed or moved (tracker followed git rename),6
+igor-morawski/HTPA32x32d,file renamed or moved (tracker followed git rename),172
+igor-morawski/HTPA32x32d,"flagged line edited, same rule and message",6
+igor-morawski/HTPA32x32d,"identical flagged code, SonarQube re-keyed it",2
+initc3/HoneyBadgerMPC,file renamed or moved (tracker followed git rename),164
+initc3/HoneyBadgerMPC,"flagged line edited, same rule and message",95
+initc3/HoneyBadgerMPC,"identical flagged code, SonarQube re-keyed it",3
+internetarchive/iari,"flagged line edited, same rule and message",71
+internetarchive/iari,file renamed or moved (tracker followed git rename),416
+internetarchive/iari,"identical flagged code, SonarQube re-keyed it",13
+jaxleyverse/jaxley,"flagged line edited, same rule and message",45
+jaxleyverse/jaxley,file renamed or moved (tracker followed git rename),29
+jaxleyverse/jaxley,"identical flagged code, SonarQube re-keyed it",4
+jfsp/pqc-monitor,"flagged line edited, same rule and message",1
+jfsp/pqc-monitor,"identical flagged code, SonarQube re-keyed it",3
+jfuruness/lib_bgp_data,"identical flagged code, SonarQube re-keyed it",17
+jfuruness/lib_bgp_data,file renamed or moved (tracker followed git rename),671
+jfuruness/lib_bgp_data,"flagged line edited, same rule and message",96
+jimbarnesrtp/pf2,file renamed or moved (tracker followed git rename),76
+jimbarnesrtp/pf2,"identical flagged code, SonarQube re-keyed it",5
+jimbarnesrtp/pf2,"flagged line edited, same rule and message",5
+jingtao-lbl/A2MC-elm,file renamed or moved (tracker followed git rename),42
+jingtao-lbl/A2MC-elm,"flagged line edited, same rule and message",14
+jingtao-lbl/A2MC-elm,"identical flagged code, SonarQube re-keyed it",1
+jsosa/LFPtools,file renamed or moved (tracker followed git rename),211
+jsosa/LFPtools,"flagged line edited, same rule and message",21
+jsosa/LFPtools,"identical flagged code, SonarQube re-keyed it",1
+kragen/dercuano,"flagged line edited, same rule and message",3
+lgactna/fastlabel,file renamed or moved (tracker followed git rename),8
+lgactna/fastlabel,"identical flagged code, SonarQube re-keyed it",611
+lgactna/fastlabel,"flagged line edited, same rule and message",3
+mit-acl/tcaff,file renamed or moved (tracker followed git rename),67
+mit-acl/tcaff,"flagged line edited, same rule and message",41
+mit-acl/tcaff,"identical flagged code, SonarQube re-keyed it",6
+mitche50/NanoTipBot,"flagged line edited, same rule and message",8
+mitche50/NanoTipBot,"identical flagged code, SonarQube re-keyed it",4
+mohaEs/image-to-images-translation,file renamed or moved (tracker followed git rename),136
+mohaEs/image-to-images-translation,"flagged line edited, same rule and message",6
+n4hy/AutoNVIS,"flagged line edited, same rule and message",5
+nekiwanuka/ROSHE_LOGISTICS_SYSTEM,"flagged line edited, same rule and message",13
+nekiwanuka/ROSHE_LOGISTICS_SYSTEM,"identical flagged code, SonarQube re-keyed it",1
+nekiwanuka/ROSHE_LOGISTICS_SYSTEM,file renamed or moved (tracker followed git rename),2
+nishishailesh/astm_general,file renamed or moved (tracker followed git rename),74
+nishishailesh/astm_general,"flagged line edited, same rule and message",6
+pachterlab/edgePython,"flagged line edited, same rule and message",2
+paladin-705/UniversityScheduleBot,file renamed or moved (tracker followed git rename),56
+paladin-705/UniversityScheduleBot,"flagged line edited, same rule and message",8
+paladin-705/UniversityScheduleBot,"identical flagged code, SonarQube re-keyed it",5
+patrickltobing/cyclevae-vc-neuralvoco,file renamed or moved (tracker followed git rename),2068
+patrickltobing/cyclevae-vc-neuralvoco,"flagged line edited, same rule and message",91
+patrickltobing/cyclevae-vc-neuralvoco,"identical flagged code, SonarQube re-keyed it",5
+pfnet-research/chainer-compiler,file renamed or moved (tracker followed git rename),395
+pfnet-research/chainer-compiler,"flagged line edited, same rule and message",48
+pfnet-research/chainer-compiler,"identical flagged code, SonarQube re-keyed it",3
+predict-idlab/seriesdistancematrix,"identical flagged code, SonarQube re-keyed it",91
+predict-idlab/seriesdistancematrix,"flagged line edited, same rule and message",55
+predict-idlab/seriesdistancematrix,file renamed or moved (tracker followed git rename),2
+pybpc/f2format,file renamed or moved (tracker followed git rename),110
+pybpc/f2format,"flagged line edited, same rule and message",10
+pybpc/f2format,"identical flagged code, SonarQube re-keyed it",3
+pytroll/fogpy,file renamed or moved (tracker followed git rename),28
+pytroll/fogpy,"flagged line edited, same rule and message",26
+pytroll/fogpy,"identical flagged code, SonarQube re-keyed it",4
+rdlaner/MicroPython_Libs,file renamed or moved (tracker followed git rename),6
+rdlaner/MicroPython_Libs,"flagged line edited, same rule and message",3
+rdlaner/MicroPython_Libs,"identical flagged code, SonarQube re-keyed it",1
+ryland-goldman/SLAC-Summer-2025,"flagged line edited, same rule and message",5
+ryland-goldman/SLAC-Summer-2025,file renamed or moved (tracker followed git rename),6
+shaftoe/api-l3x-in,file renamed or moved (tracker followed git rename),1190
+shaftoe/api-l3x-in,"flagged line edited, same rule and message",3
+shawnbrown/datatest,file renamed or moved (tracker followed git rename),397
+shawnbrown/datatest,"flagged line edited, same rule and message",110
+shawnbrown/datatest,"identical flagged code, SonarQube re-keyed it",70
+simongoricar/Nano,file renamed or moved (tracker followed git rename),100
+simongoricar/Nano,"flagged line edited, same rule and message",50
+simongoricar/Nano,"identical flagged code, SonarQube re-keyed it",19
+spcl/stencilflow,file renamed or moved (tracker followed git rename),367
+spcl/stencilflow,"flagged line edited, same rule and message",61
+spcl/stencilflow,"identical flagged code, SonarQube re-keyed it",34
+tb1337/pypaperless,file renamed or moved (tracker followed git rename),5
+tb1337/pypaperless,"identical flagged code, SonarQube re-keyed it",2
+tb1337/pypaperless,"flagged line edited, same rule and message",5
+tdseher/addtag-project,"flagged line edited, same rule and message",132
+tdseher/addtag-project,file renamed or moved (tracker followed git rename),575
+tdseher/addtag-project,"identical flagged code, SonarQube re-keyed it",67
+temporalecologylab/TreeRings,"flagged line edited, same rule and message",8
+temporalecologylab/TreeRings,file renamed or moved (tracker followed git rename),1
+thingless/viewshed,file renamed or moved (tracker followed git rename),96
+thingless/viewshed,"flagged line edited, same rule and message",4
+tichyy/flight-delay-predictor,"flagged line edited, same rule and message",3
+tichyy/flight-delay-predictor,file renamed or moved (tracker followed git rename),6
+toruseo/UXsim,file renamed or moved (tracker followed git rename),324
+toruseo/UXsim,"identical flagged code, SonarQube re-keyed it",11
+toruseo/UXsim,"flagged line edited, same rule and message",133
+transientskp/pyse,"flagged line edited, same rule and message",29
+transientskp/pyse,"identical flagged code, SonarQube re-keyed it",6
+transientskp/pyse,file renamed or moved (tracker followed git rename),27
+ucl-nlnt/virtualttbot,file renamed or moved (tracker followed git rename),7
+ucl-nlnt/virtualttbot,"flagged line edited, same rule and message",105
+ucl-nlnt/virtualttbot,"identical flagged code, SonarQube re-keyed it",10
+wepiha/qt-amdgpu-fan-ctl,file renamed or moved (tracker followed git rename),48
+wepiha/qt-amdgpu-fan-ctl,"flagged line edited, same rule and message",24
+wepiha/qt-amdgpu-fan-ctl,"identical flagged code, SonarQube re-keyed it",2
+xarray-contrib/xarray-simlab,file renamed or moved (tracker followed git rename),89
+xarray-contrib/xarray-simlab,"identical flagged code, SonarQube re-keyed it",5
+xarray-contrib/xarray-simlab,"flagged line edited, same rule and message",32
+yh-luo/psychopy_tobii_infant,"flagged line edited, same rule and message",8
+yh-luo/psychopy_tobii_infant,"identical flagged code, SonarQube re-keyed it",29

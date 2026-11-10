@@ -1,0 +1,5 @@
+,count,count,count,share,share,share
+removal_mechanism,code_changed,code_still_present,file_deleted,code_changed,code_still_present,file_deleted
+group,,,,,,
+AI-declared,3280,791,4143,0.399,0.096,0.504
+Pre-AI,3907,807,4050,0.446,0.092,0.462

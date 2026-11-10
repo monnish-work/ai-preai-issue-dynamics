@@ -1,0 +1,6 @@
+set,histories,removed,file
+A. All issue histories (every tool-category pair),59874,25301,issue_histories.csv
+"B. Primary categories only (SonarQube M+R, Semgrep S, Ruff P)",58119,24685,"rates (removed_all), mechanism shares"
+   of which baseline issues (present at first analysed commit),2800,1640,
+"C. Primary, introduced in window (baseline excluded)",55319,23045,"lifetimes, survival curves, removed_in_window"
+   of which right-censored (open at last analysed commit),32274,0,
