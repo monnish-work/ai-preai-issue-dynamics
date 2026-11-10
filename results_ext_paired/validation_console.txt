@@ -1,0 +1,546 @@
+                                               repo  our_histories  sonar_keys  merged_histories(>1 key)  split_keys(>1 history)  agreement_pct
+                        AdityaSavara/jsongrapher-py            213         220                         8                       2          95.45
+                      BlackEnd1ess/CrashB_in_python            853        1151                       236                       3          79.24
+                                   DoubleF3lix/onyx            564         564                         0                       0         100.00
+                       FatihTasyaran/FISH_INTERFERE           1150        1170                        23                       3          97.78
+                                FennisRobert/EMerge           3399        3931                       554                     114          83.01
+                                     Flix8/scriptor            162         185                        16                       2          90.27
+                      GreshamLab/sc_self_supervised             52          52                         0                       0         100.00
+                               KTH-RPL/DriveCmd_LLM             56          58                         2                       0          96.55
+                  PhatnaniLab/nanopore_10x_multiome             32          34                         2                       0          94.12
+                   Quent-DL/MasterThesis_ElectroLoc            310         427                       102                      10          73.77
+                           TaylorResearchLab/scedar            514         677                       179                      91          60.12
+                       TheSignPainter98/adjust-keys            309         342                        30                       0          91.23
+                       ToniRV/Kimera-VIO-Evaluation            286         347                        63                       4          80.69
+                                   Vihangip/PyOpSee             23          24                         1                       0          95.83
+                              adammak23/PCB-Blender            976         976                         0                       0         100.00
+            agitter/openadmet-expansionrx-challenge            314         314                         0                       0         100.00
+                        asdf1434/noise-schedule-exp             71          73                         3                       1          94.52
+                      avalanche103/personal-finance            186         188                         2                       0          98.94
+                                       becky82/mteh             34          34                         0                       0         100.00
+                                     binsync/declib            335         339                         6                       2          97.64
+bytesy-z/Inverse-3D-EEG-and-Diesease-Detection-VESL            356         362                        13                       7          94.48
+                                 codebro634/Cascade            165         162                         6                       5          93.21
+                              ctuning/ck-tensorflow            367         369                         2                       0          99.46
+                                diegodukao/sonicbox             16          27                         9                       0          66.67
+                                 drepetto/chiplotle           1116        1661                       363                      23          76.76
+                                      edsuom/yampex            557         649                        81                       0          87.52
+                                       ekraka/SSnet           1171        1171                         2                       2          99.66
+                                     getavalon/core            347         422                        68                       0          83.89
+                                         hanyas/sds            682         732                        55                       5          91.80
+                               hitranonline/hapiest           2227        3047                       648                     215          71.68
+                    idearibosome/tf-perceptual-eusr             52          60                         7                       0          88.33
+                           igor-morawski/HTPA32x32d            210         388                       123                       2          67.78
+                              initc3/HoneyBadgerMPC            293         365                        69                       0          81.10
+                               internetarchive/iari           1209        1277                        87                      25          91.23
+                                 jaxleyverse/jaxley            272         294                        27                       6          88.78
+                                   jfsp/pqc-monitor            353         354                         4                       3          98.02
+                                   jimbarnesrtp/pf2           1499        1580                        85                       4          94.37
+                               jingtao-lbl/A2MC-elm           1070        1127                        55                       0          95.12
+                                     jsosa/LFPtools            240         241                         1                       0          99.59
+                                    kragen/dercuano            181         184                         3                       0          98.37
+                                         krzjoa/kra              5           5                         0                       0         100.00
+                                  lgactna/fastlabel           1229        1240                       465                     454          25.89
+                                      mit-acl/tcaff            522         544                        30                      11          92.46
+                 mohaEs/image-to-images-translation            466         472                         6                       0          98.73
+                                      n4hy/AutoNVIS            643         643                         0                       0         100.00
+                  nekiwanuka/ROSHE_LOGISTICS_SYSTEM            263         278                        15                       1          94.24
+                              pachterlab/edgePython            462         463                         2                       1          99.35
+                  paladin-705/UniversityScheduleBot             98         155                        52                       4          63.87
+              patrickltobing/cyclevae-vc-neuralvoco           3299        5406                       966                      42          81.35
+                    pfnet-research/chainer-compiler           1432        1852                       303                       9          83.15
+                 predict-idlab/seriesdistancematrix            127         201                        75                       1          62.19
+                                     pybpc/f2format            208         228                        41                      24          71.49
+                    ryland-goldman/SLAC-Summer-2025            341         351                        10                       1          96.87
+                                 shaftoe/api-l3x-in           1153        2343                       601                       0          74.35
+                                shawnbrown/datatest            709        1191                       342                      60          66.25
+                                  simongoricar/Nano            298         364                        60                       6          81.87
+                                   spcl/stencilflow            277         676                       145                      11          76.92
+                                 tb1337/pypaperless             64          67                         4                       1          92.54
+                             tdseher/addtag-project           2106        2739                       665                     129          71.01
+                       temporalecologylab/TreeRings            261         261                         0                       0         100.00
+                                 thingless/viewshed            140         240                        96                       0          60.00
+                      tichyy/flight-delay-predictor             21          25                         4                       0          84.00
+                                      toruseo/UXsim           1313        1751                       386                      17          76.98
+                                  transientskp/pyse            231         283                        51                       0          81.98
+                              ucl-nlnt/virtualttbot            776         864                        91                      27          86.34
+                           wepiha/qt-amdgpu-fan-ctl            113         131                        16                       0          87.79
+                       xarray-contrib/xarray-simlab            169         279                        63                       4          75.99
+                       yh-luo/psychopy_tobii_infant             79         107                        26                       8          68.22
+                                               repo      tool           method     n  ambiguous
+                        AdityaSavara/jsongrapher-py      ruff            exact    39          0
+                        AdityaSavara/jsongrapher-py      ruff       exact_twin    45          0
+                        AdityaSavara/jsongrapher-py      ruff          message     1          0
+                        AdityaSavara/jsongrapher-py   semgrep            exact    15          0
+                        AdityaSavara/jsongrapher-py sonarqube            exact  1068          0
+                        AdityaSavara/jsongrapher-py sonarqube       exact_twin   231          0
+                        AdityaSavara/jsongrapher-py sonarqube          message   396          0
+                        AdityaSavara/jsongrapher-py sonarqube            moved     1          0
+                      BlackEnd1ess/CrashB_in_python      ruff       exact_twin    12          0
+                      BlackEnd1ess/CrashB_in_python   semgrep            exact   149          0
+                      BlackEnd1ess/CrashB_in_python sonarqube            exact  2917          0
+                      BlackEnd1ess/CrashB_in_python sonarqube       exact_twin   902          0
+                      BlackEnd1ess/CrashB_in_python sonarqube          message   198          1
+                      BlackEnd1ess/CrashB_in_python sonarqube            moved    25          0
+                      BlackEnd1ess/CrashB_in_python sonarqube moved_unresolved     7          7
+                                   DoubleF3lix/onyx      ruff            exact    25          0
+                                   DoubleF3lix/onyx      ruff       exact_twin    12          0
+                                   DoubleF3lix/onyx      ruff          message     2          0
+                                   DoubleF3lix/onyx sonarqube            exact   733          0
+                                   DoubleF3lix/onyx sonarqube       exact_twin    26          0
+                                   DoubleF3lix/onyx sonarqube          message     6          0
+                       FatihTasyaran/FISH_INTERFERE      ruff            exact   806          0
+                       FatihTasyaran/FISH_INTERFERE      ruff       exact_twin   364          0
+                       FatihTasyaran/FISH_INTERFERE      ruff          message     1          0
+                       FatihTasyaran/FISH_INTERFERE   semgrep            exact   286          0
+                       FatihTasyaran/FISH_INTERFERE   semgrep          message     1          0
+                       FatihTasyaran/FISH_INTERFERE sonarqube            exact 11556          0
+                       FatihTasyaran/FISH_INTERFERE sonarqube       exact_twin  1793          0
+                       FatihTasyaran/FISH_INTERFERE sonarqube          message    53          0
+                                FennisRobert/EMerge      ruff            exact   173          0
+                                FennisRobert/EMerge      ruff       exact_twin    26          0
+                                FennisRobert/EMerge      ruff          message     1          0
+                                FennisRobert/EMerge      ruff            moved     2          0
+                                FennisRobert/EMerge   semgrep            exact    58          0
+                                FennisRobert/EMerge sonarqube            exact 16024          0
+                                FennisRobert/EMerge sonarqube       exact_twin  9840          0
+                                FennisRobert/EMerge sonarqube          message  1223          2
+                                FennisRobert/EMerge sonarqube            moved    76          0
+                                FennisRobert/EMerge sonarqube moved_unresolved    82         82
+                                     Flix8/scriptor      ruff            exact    10          0
+                                     Flix8/scriptor   semgrep            exact    20          0
+                                     Flix8/scriptor   semgrep          message     1          0
+                                     Flix8/scriptor sonarqube            exact  1190          0
+                                     Flix8/scriptor sonarqube       exact_twin   242          0
+                                     Flix8/scriptor sonarqube          message    28          0
+                      GreshamLab/sc_self_supervised sonarqube            exact   298          0
+                      GreshamLab/sc_self_supervised sonarqube       exact_twin    89          0
+                               KTH-RPL/DriveCmd_LLM      ruff            exact    21          0
+                               KTH-RPL/DriveCmd_LLM sonarqube            exact   343          0
+                               KTH-RPL/DriveCmd_LLM sonarqube          message    24          0
+                  PhatnaniLab/nanopore_10x_multiome      ruff            exact    11          0
+                  PhatnaniLab/nanopore_10x_multiome sonarqube            exact   315          0
+                  PhatnaniLab/nanopore_10x_multiome sonarqube       exact_twin   104          0
+                  PhatnaniLab/nanopore_10x_multiome sonarqube          message     6          0
+                   Quent-DL/MasterThesis_ElectroLoc      ruff            exact    73          0
+                   Quent-DL/MasterThesis_ElectroLoc      ruff          message     1          0
+                   Quent-DL/MasterThesis_ElectroLoc   semgrep            exact    59          0
+                   Quent-DL/MasterThesis_ElectroLoc sonarqube            exact  1595          0
+                   Quent-DL/MasterThesis_ElectroLoc sonarqube       exact_twin   464          0
+                   Quent-DL/MasterThesis_ElectroLoc sonarqube          message   995          2
+                   Quent-DL/MasterThesis_ElectroLoc sonarqube            moved     3          0
+                   Quent-DL/MasterThesis_ElectroLoc sonarqube moved_unresolved     4          4
+                           TaylorResearchLab/scedar      ruff            exact    19          0
+                           TaylorResearchLab/scedar      ruff       exact_twin     7          0
+                           TaylorResearchLab/scedar      ruff          message     1          0
+                           TaylorResearchLab/scedar   semgrep            exact    64          0
+                           TaylorResearchLab/scedar   semgrep       exact_twin    58          0
+                           TaylorResearchLab/scedar   semgrep          message     1          0
+                           TaylorResearchLab/scedar sonarqube            exact  1561          0
+                           TaylorResearchLab/scedar sonarqube       exact_twin  3042          0
+                           TaylorResearchLab/scedar sonarqube          message   320          0
+                           TaylorResearchLab/scedar sonarqube            moved    34          0
+                           TaylorResearchLab/scedar sonarqube moved_unresolved   109        109
+                       TheSignPainter98/adjust-keys      ruff            exact     7          0
+                       TheSignPainter98/adjust-keys   semgrep            exact    14          0
+                       TheSignPainter98/adjust-keys sonarqube            exact  1108          0
+                       TheSignPainter98/adjust-keys sonarqube       exact_twin   160          0
+                       TheSignPainter98/adjust-keys sonarqube          message    38          2
+                       TheSignPainter98/adjust-keys sonarqube            moved     4          0
+                       TheSignPainter98/adjust-keys sonarqube moved_unresolved     1          1
+                       ToniRV/Kimera-VIO-Evaluation   semgrep            exact    19          0
+                       ToniRV/Kimera-VIO-Evaluation   semgrep          message     1          0
+                       ToniRV/Kimera-VIO-Evaluation   semgrep            moved     1          0
+                       ToniRV/Kimera-VIO-Evaluation sonarqube            exact  1047          0
+                       ToniRV/Kimera-VIO-Evaluation sonarqube       exact_twin   235          0
+                       ToniRV/Kimera-VIO-Evaluation sonarqube          message   280          0
+                       ToniRV/Kimera-VIO-Evaluation sonarqube            moved    26          0
+                       ToniRV/Kimera-VIO-Evaluation sonarqube moved_unresolved     5          5
+                                   Vihangip/PyOpSee sonarqube            exact    82          0
+                                   Vihangip/PyOpSee sonarqube       exact_twin    36          0
+                                   Vihangip/PyOpSee sonarqube          message     2          0
+                              adammak23/PCB-Blender      ruff            exact    72          0
+                              adammak23/PCB-Blender   semgrep            exact    36          0
+                              adammak23/PCB-Blender sonarqube            exact  4206          0
+                              adammak23/PCB-Blender sonarqube       exact_twin  1134          0
+                              adammak23/PCB-Blender sonarqube          message   516          0
+            agitter/openadmet-expansionrx-challenge      ruff            exact   108          0
+            agitter/openadmet-expansionrx-challenge      ruff       exact_twin    48          0
+            agitter/openadmet-expansionrx-challenge   semgrep            exact   492          0
+            agitter/openadmet-expansionrx-challenge sonarqube            exact  3272          0
+            agitter/openadmet-expansionrx-challenge sonarqube       exact_twin   460          0
+            agitter/openadmet-expansionrx-challenge sonarqube          message    24          0
+                        asdf1434/noise-schedule-exp      ruff            exact     9          0
+                        asdf1434/noise-schedule-exp   semgrep            exact    21          0
+                        asdf1434/noise-schedule-exp   semgrep            moved     1          0
+                        asdf1434/noise-schedule-exp sonarqube            exact   634          0
+                        asdf1434/noise-schedule-exp sonarqube       exact_twin    19          0
+                        asdf1434/noise-schedule-exp sonarqube          message    96          0
+                        asdf1434/noise-schedule-exp sonarqube            moved     2          0
+                      avalanche103/personal-finance      ruff            exact    97          0
+                      avalanche103/personal-finance   semgrep            exact   164          0
+                      avalanche103/personal-finance   semgrep          message     1          0
+                      avalanche103/personal-finance sonarqube            exact  1946          0
+                      avalanche103/personal-finance sonarqube       exact_twin    72          0
+                      avalanche103/personal-finance sonarqube          message     2          0
+                                       becky82/mteh      ruff            exact    21          0
+                                       becky82/mteh sonarqube            exact   503          0
+                                       becky82/mteh sonarqube       exact_twin    79          0
+                                     binsync/declib      ruff            exact    83          0
+                                     binsync/declib   semgrep            exact    31          0
+                                     binsync/declib sonarqube            exact  1363          0
+                                     binsync/declib sonarqube       exact_twin   204          0
+                                     binsync/declib sonarqube          message   395          0
+                                     binsync/declib sonarqube            moved     1          0
+bytesy-z/Inverse-3D-EEG-and-Diesease-Detection-VESL      ruff            exact   150          0
+bytesy-z/Inverse-3D-EEG-and-Diesease-Detection-VESL sonarqube            exact  4004          0
+bytesy-z/Inverse-3D-EEG-and-Diesease-Detection-VESL sonarqube       exact_twin  2406          0
+bytesy-z/Inverse-3D-EEG-and-Diesease-Detection-VESL sonarqube          message    42          0
+                                 codebro634/Cascade   semgrep            exact   290          0
+                                 codebro634/Cascade   semgrep       exact_twin    58          0
+                                 codebro634/Cascade sonarqube            exact  2147          0
+                                 codebro634/Cascade sonarqube       exact_twin   424          0
+                                 codebro634/Cascade sonarqube          message   166          0
+                              ctuning/ck-tensorflow      ruff            exact    28          0
+                              ctuning/ck-tensorflow   semgrep            exact     8          0
+                              ctuning/ck-tensorflow sonarqube            exact  2153          0
+                              ctuning/ck-tensorflow sonarqube       exact_twin   382          0
+                              ctuning/ck-tensorflow sonarqube          message   146          0
+                              ctuning/ck-tensorflow sonarqube            moved     1          0
+                                diegodukao/sonicbox sonarqube            exact   114          0
+                                diegodukao/sonicbox sonarqube          message     6          0
+                                diegodukao/sonicbox sonarqube            moved     1          0
+                                 drepetto/chiplotle      ruff            exact    86          0
+                                 drepetto/chiplotle      ruff          message     6          0
+                                 drepetto/chiplotle      ruff            moved     3          0
+                                 drepetto/chiplotle   semgrep            exact    58          0
+                                 drepetto/chiplotle   semgrep       exact_twin   221          0
+                                 drepetto/chiplotle   semgrep          message    61         30
+                                 drepetto/chiplotle   semgrep            moved     2          0
+                                 drepetto/chiplotle   semgrep moved_unresolved     6          6
+                                 drepetto/chiplotle sonarqube            exact  5897          0
+                                 drepetto/chiplotle sonarqube       exact_twin  2071          0
+                                 drepetto/chiplotle sonarqube          message   943         15
+                                 drepetto/chiplotle sonarqube            moved    22          0
+                                 drepetto/chiplotle sonarqube moved_unresolved    12         12
+                                      edsuom/yampex sonarqube            exact  4950          0
+                                      edsuom/yampex sonarqube       exact_twin   905          0
+                                      edsuom/yampex sonarqube          message   172          0
+                                      edsuom/yampex sonarqube            moved    36          0
+                                      edsuom/yampex sonarqube moved_unresolved     2          2
+                                       ekraka/SSnet      ruff            exact   381          0
+                                       ekraka/SSnet      ruff       exact_twin   279          0
+                                       ekraka/SSnet   semgrep            exact    27          0
+                                       ekraka/SSnet sonarqube            exact  3339          0
+                                       ekraka/SSnet sonarqube       exact_twin  1941          0
+                                       ekraka/SSnet sonarqube          message  3502          0
+                                     getavalon/core      ruff            exact    29          0
+                                     getavalon/core   semgrep            exact     3          0
+                                     getavalon/core sonarqube            exact   930          0
+                                     getavalon/core sonarqube       exact_twin   173          0
+                                     getavalon/core sonarqube          message   101          1
+                                     getavalon/core sonarqube            moved    18          0
+                                     getavalon/core sonarqube moved_unresolved     4          4
+                                         hanyas/sds   semgrep            exact     2          0
+                                         hanyas/sds sonarqube            exact   293          0
+                                         hanyas/sds sonarqube       exact_twin   186          0
+                                         hanyas/sds sonarqube          message   132          0
+                                         hanyas/sds sonarqube            moved     4          0
+                               hitranonline/hapiest      ruff            exact   335          0
+                               hitranonline/hapiest      ruff       exact_twin    50          0
+                               hitranonline/hapiest      ruff          message     4          0
+                               hitranonline/hapiest      ruff            moved     4          0
+                               hitranonline/hapiest   semgrep            exact    50          0
+                               hitranonline/hapiest   semgrep       exact_twin    14          0
+                               hitranonline/hapiest   semgrep          message     1          0
+                               hitranonline/hapiest   semgrep            moved     1          0
+                               hitranonline/hapiest sonarqube            exact 14563          0
+                               hitranonline/hapiest sonarqube       exact_twin 17022          0
+                               hitranonline/hapiest sonarqube          message  1817         10
+                               hitranonline/hapiest sonarqube            moved    34          0
+                               hitranonline/hapiest sonarqube moved_unresolved    39         39
+                    idearibosome/tf-perceptual-eusr sonarqube            exact   532          0
+                    idearibosome/tf-perceptual-eusr sonarqube          message     9          0
+                           igor-morawski/HTPA32x32d      ruff            exact    46          0
+                           igor-morawski/HTPA32x32d      ruff          message     2          0
+                           igor-morawski/HTPA32x32d   semgrep            exact    54          0
+                           igor-morawski/HTPA32x32d   semgrep       exact_twin    15          0
+                           igor-morawski/HTPA32x32d   semgrep            moved     1          0
+                           igor-morawski/HTPA32x32d   semgrep moved_unresolved     2          2
+                           igor-morawski/HTPA32x32d sonarqube            exact  1050          0
+                           igor-morawski/HTPA32x32d sonarqube       exact_twin   501          0
+                           igor-morawski/HTPA32x32d sonarqube          message    52          0
+                           igor-morawski/HTPA32x32d sonarqube            moved    39          0
+                           igor-morawski/HTPA32x32d sonarqube moved_unresolved    26         26
+                              initc3/HoneyBadgerMPC      ruff            exact    79          0
+                              initc3/HoneyBadgerMPC      ruff       exact_twin    97          0
+                              initc3/HoneyBadgerMPC      ruff          message     2          0
+                              initc3/HoneyBadgerMPC   semgrep            exact   183          0
+                              initc3/HoneyBadgerMPC   semgrep          message     9          0
+                              initc3/HoneyBadgerMPC sonarqube            exact  1181          0
+                              initc3/HoneyBadgerMPC sonarqube       exact_twin   177          0
+                              initc3/HoneyBadgerMPC sonarqube          message   323          0
+                              initc3/HoneyBadgerMPC sonarqube            moved     4          0
+                              initc3/HoneyBadgerMPC sonarqube moved_unresolved     1          1
+                               internetarchive/iari      ruff            exact   194          0
+                               internetarchive/iari      ruff       exact_twin    20          0
+                               internetarchive/iari      ruff            moved     5          0
+                               internetarchive/iari      ruff moved_unresolved     1          1
+                               internetarchive/iari   semgrep            exact   158          0
+                               internetarchive/iari   semgrep          message     5          0
+                               internetarchive/iari sonarqube            exact  1025          0
+                               internetarchive/iari sonarqube       exact_twin   448          0
+                               internetarchive/iari sonarqube          message  1855          5
+                               internetarchive/iari sonarqube            moved     8          0
+                               internetarchive/iari sonarqube moved_unresolved     4          4
+                                 jaxleyverse/jaxley      ruff            exact   104          0
+                                 jaxleyverse/jaxley      ruff            moved     2          0
+                                 jaxleyverse/jaxley sonarqube            exact   799          0
+                                 jaxleyverse/jaxley sonarqube       exact_twin   265          0
+                                 jaxleyverse/jaxley sonarqube          message    85          0
+                                 jaxleyverse/jaxley sonarqube            moved     7          0
+                                   jfsp/pqc-monitor   semgrep            exact   253          0
+                                   jfsp/pqc-monitor   semgrep          message     5          0
+                                   jfsp/pqc-monitor sonarqube            exact  5527          0
+                                   jfsp/pqc-monitor sonarqube       exact_twin  1393          0
+                                   jfsp/pqc-monitor sonarqube          message     1          0
+                                   jimbarnesrtp/pf2   semgrep            exact   132          0
+                                   jimbarnesrtp/pf2 sonarqube            exact 12691          0
+                                   jimbarnesrtp/pf2 sonarqube       exact_twin  8551          0
+                                   jimbarnesrtp/pf2 sonarqube          message  1419          0
+                                   jimbarnesrtp/pf2 sonarqube            moved     7          0
+                                   jimbarnesrtp/pf2 sonarqube moved_unresolved     8          8
+                               jingtao-lbl/A2MC-elm      ruff            exact  1246          0
+                               jingtao-lbl/A2MC-elm      ruff       exact_twin    66          0
+                               jingtao-lbl/A2MC-elm      ruff            moved     6          0
+                               jingtao-lbl/A2MC-elm   semgrep            exact   115          0
+                               jingtao-lbl/A2MC-elm   semgrep       exact_twin    39          0
+                               jingtao-lbl/A2MC-elm sonarqube            exact 11768          0
+                               jingtao-lbl/A2MC-elm sonarqube       exact_twin  1632          0
+                               jingtao-lbl/A2MC-elm sonarqube          message   141          1
+                               jingtao-lbl/A2MC-elm sonarqube            moved    32          0
+                               jingtao-lbl/A2MC-elm sonarqube moved_unresolved     6          6
+                                     jsosa/LFPtools      ruff            exact    39          0
+                                     jsosa/LFPtools sonarqube            exact  2019          0
+                                     jsosa/LFPtools sonarqube       exact_twin   845          0
+                                     jsosa/LFPtools sonarqube          message    82          0
+                                    kragen/dercuano   semgrep            exact    33          0
+                                    kragen/dercuano sonarqube            exact   429          0
+                                    kragen/dercuano sonarqube       exact_twin    50          0
+                                    kragen/dercuano sonarqube          message    34          0
+                                         krzjoa/kra sonarqube            exact    14          0
+                                         krzjoa/kra sonarqube          message    65          0
+                                  lgactna/fastlabel      ruff            exact    21          0
+                                  lgactna/fastlabel      ruff          message     1          0
+                                  lgactna/fastlabel sonarqube            exact  1763          0
+                                  lgactna/fastlabel sonarqube       exact_twin  6566          0
+                                  lgactna/fastlabel sonarqube          message   248          0
+                                      mit-acl/tcaff      ruff            exact   157          0
+                                      mit-acl/tcaff   semgrep            exact    75          0
+                                      mit-acl/tcaff   semgrep            moved     3          0
+                                      mit-acl/tcaff sonarqube            exact  2697          0
+                                      mit-acl/tcaff sonarqube       exact_twin   991          0
+                                      mit-acl/tcaff sonarqube          message   788          0
+                                      mit-acl/tcaff sonarqube            moved    13          0
+                                      mit-acl/tcaff sonarqube moved_unresolved     2          2
+                 mohaEs/image-to-images-translation   semgrep            exact    38          0
+                 mohaEs/image-to-images-translation sonarqube            exact  4227          0
+                 mohaEs/image-to-images-translation sonarqube       exact_twin   776          0
+                 mohaEs/image-to-images-translation sonarqube          message   518          0
+                                      n4hy/AutoNVIS      ruff            exact   144          0
+                                      n4hy/AutoNVIS   semgrep            exact     7          0
+                                      n4hy/AutoNVIS sonarqube            exact  2742          0
+                                      n4hy/AutoNVIS sonarqube       exact_twin   930          0
+                                      n4hy/AutoNVIS sonarqube          message    78          0
+                  nekiwanuka/ROSHE_LOGISTICS_SYSTEM   semgrep            exact    52          0
+                  nekiwanuka/ROSHE_LOGISTICS_SYSTEM   semgrep       exact_twin    30          0
+                  nekiwanuka/ROSHE_LOGISTICS_SYSTEM   semgrep          message     2          0
+                  nekiwanuka/ROSHE_LOGISTICS_SYSTEM sonarqube            exact  3158          0
+                  nekiwanuka/ROSHE_LOGISTICS_SYSTEM sonarqube       exact_twin   649          0
+                  nekiwanuka/ROSHE_LOGISTICS_SYSTEM sonarqube          message    13          0
+                  nekiwanuka/ROSHE_LOGISTICS_SYSTEM sonarqube            moved     2          0
+                              pachterlab/edgePython      ruff            exact    58          0
+                              pachterlab/edgePython sonarqube            exact 10136          0
+                              pachterlab/edgePython sonarqube       exact_twin  2009          0
+                              pachterlab/edgePython sonarqube          message   203          0
+                  paladin-705/UniversityScheduleBot   semgrep            exact    24          0
+                  paladin-705/UniversityScheduleBot sonarqube            exact   673          0
+                  paladin-705/UniversityScheduleBot sonarqube       exact_twin   330          0
+                  paladin-705/UniversityScheduleBot sonarqube          message     2          0
+                  paladin-705/UniversityScheduleBot sonarqube            moved     3          0
+              patrickltobing/cyclevae-vc-neuralvoco      ruff            exact   295          0
+              patrickltobing/cyclevae-vc-neuralvoco      ruff       exact_twin   137          0
+              patrickltobing/cyclevae-vc-neuralvoco      ruff            moved     2          0
+              patrickltobing/cyclevae-vc-neuralvoco      ruff moved_unresolved    17         17
+              patrickltobing/cyclevae-vc-neuralvoco sonarqube            exact 10953          0
+              patrickltobing/cyclevae-vc-neuralvoco sonarqube       exact_twin  1639          0
+              patrickltobing/cyclevae-vc-neuralvoco sonarqube          message  7028          5
+              patrickltobing/cyclevae-vc-neuralvoco sonarqube            moved    74          0
+              patrickltobing/cyclevae-vc-neuralvoco sonarqube moved_unresolved   119        119
+                    pfnet-research/chainer-compiler      ruff            exact   313          0
+                    pfnet-research/chainer-compiler      ruff          message     8          0
+                    pfnet-research/chainer-compiler      ruff            moved     2          0
+                    pfnet-research/chainer-compiler   semgrep            exact    33          0
+                    pfnet-research/chainer-compiler   semgrep          message     2          0
+                    pfnet-research/chainer-compiler sonarqube            exact  3170          0
+                    pfnet-research/chainer-compiler sonarqube       exact_twin   701          0
+                    pfnet-research/chainer-compiler sonarqube          message  1551          1
+                    pfnet-research/chainer-compiler sonarqube            moved    35          0
+                    pfnet-research/chainer-compiler sonarqube moved_unresolved    12         12
+                 predict-idlab/seriesdistancematrix sonarqube            exact   563          0
+                 predict-idlab/seriesdistancematrix sonarqube       exact_twin   186          0
+                 predict-idlab/seriesdistancematrix sonarqube          message    62          0
+                                     pybpc/f2format sonarqube            exact   950          0
+                                     pybpc/f2format sonarqube       exact_twin   245          0
+                                     pybpc/f2format sonarqube          message   371          0
+                    ryland-goldman/SLAC-Summer-2025   semgrep            exact    66          0
+                    ryland-goldman/SLAC-Summer-2025 sonarqube            exact   735          0
+                    ryland-goldman/SLAC-Summer-2025 sonarqube          message   106          0
+                    ryland-goldman/SLAC-Summer-2025 sonarqube            moved     6          0
+                                 shaftoe/api-l3x-in   semgrep            exact   969          0
+                                 shaftoe/api-l3x-in sonarqube            exact 15114          0
+                                 shaftoe/api-l3x-in sonarqube       exact_twin  2351          0
+                                 shaftoe/api-l3x-in sonarqube          message  1847          0
+                                 shaftoe/api-l3x-in sonarqube            moved     3          0
+                                shawnbrown/datatest   semgrep            exact    30          0
+                                shawnbrown/datatest   semgrep          message     1          0
+                                shawnbrown/datatest sonarqube            exact  3481          0
+                                shawnbrown/datatest sonarqube       exact_twin  2560          0
+                                shawnbrown/datatest sonarqube          message   475          4
+                                shawnbrown/datatest sonarqube            moved    64          0
+                                shawnbrown/datatest sonarqube moved_unresolved    45         45
+                                  simongoricar/Nano   semgrep            exact    76          0
+                                  simongoricar/Nano sonarqube            exact  2550          0
+                                  simongoricar/Nano sonarqube       exact_twin   304          0
+                                  simongoricar/Nano sonarqube          message   153          0
+                                   spcl/stencilflow   semgrep            exact     6          0
+                                   spcl/stencilflow   semgrep          message     1          0
+                                   spcl/stencilflow sonarqube            exact  2094          0
+                                   spcl/stencilflow sonarqube       exact_twin   285          0
+                                   spcl/stencilflow sonarqube          message   210          4
+                                   spcl/stencilflow sonarqube            moved     2          0
+                                   spcl/stencilflow sonarqube moved_unresolved     2          2
+                                 tb1337/pypaperless sonarqube            exact   331          0
+                                 tb1337/pypaperless sonarqube       exact_twin    55          0
+                                 tb1337/pypaperless sonarqube          message    46          0
+                             tdseher/addtag-project   semgrep            exact    50          0
+                             tdseher/addtag-project   semgrep            moved     2          0
+                             tdseher/addtag-project sonarqube            exact 12221          0
+                             tdseher/addtag-project sonarqube       exact_twin  5425          0
+                             tdseher/addtag-project sonarqube          message  5638          6
+                             tdseher/addtag-project sonarqube            moved   139          0
+                             tdseher/addtag-project sonarqube moved_unresolved    37         37
+                       temporalecologylab/TreeRings      ruff            exact     7          0
+                       temporalecologylab/TreeRings      ruff       exact_twin    28          0
+                       temporalecologylab/TreeRings sonarqube            exact   412          0
+                       temporalecologylab/TreeRings sonarqube       exact_twin   368          0
+                       temporalecologylab/TreeRings sonarqube          message   126          0
+                                 thingless/viewshed sonarqube            exact  1727          0
+                                 thingless/viewshed sonarqube       exact_twin  1005          0
+                                 thingless/viewshed sonarqube          message   569          0
+                      tichyy/flight-delay-predictor sonarqube            exact   132          0
+                      tichyy/flight-delay-predictor sonarqube       exact_twin    54          0
+                      tichyy/flight-delay-predictor sonarqube          message    18          0
+                                      toruseo/UXsim   semgrep            exact   112          0
+                                      toruseo/UXsim   semgrep       exact_twin   136          0
+                                      toruseo/UXsim   semgrep          message     1          0
+                                      toruseo/UXsim sonarqube            exact 10560          0
+                                      toruseo/UXsim sonarqube       exact_twin  2585          0
+                                      toruseo/UXsim sonarqube          message  1582          1
+                                      toruseo/UXsim sonarqube            moved     5          0
+                                      toruseo/UXsim sonarqube moved_unresolved   200        200
+                                  transientskp/pyse sonarqube            exact  1375          0
+                                  transientskp/pyse sonarqube       exact_twin   504          0
+                                  transientskp/pyse sonarqube          message    86          0
+                              ucl-nlnt/virtualttbot   semgrep            exact   130          0
+                              ucl-nlnt/virtualttbot   semgrep          message     3          0
+                              ucl-nlnt/virtualttbot sonarqube            exact  4788          0
+                              ucl-nlnt/virtualttbot sonarqube       exact_twin  1575          0
+                              ucl-nlnt/virtualttbot sonarqube          message   723         36
+                              ucl-nlnt/virtualttbot sonarqube            moved     7          0
+                              ucl-nlnt/virtualttbot sonarqube moved_unresolved     1          1
+                           wepiha/qt-amdgpu-fan-ctl sonarqube            exact   814          0
+                           wepiha/qt-amdgpu-fan-ctl sonarqube       exact_twin    49          0
+                           wepiha/qt-amdgpu-fan-ctl sonarqube          message    52          0
+                       xarray-contrib/xarray-simlab sonarqube            exact  1376          0
+                       xarray-contrib/xarray-simlab sonarqube       exact_twin    50          0
+                       xarray-contrib/xarray-simlab sonarqube          message   153          0
+                       xarray-contrib/xarray-simlab sonarqube            moved     2          0
+                       yh-luo/psychopy_tobii_infant sonarqube            exact   228          0
+                       yh-luo/psychopy_tobii_infant sonarqube       exact_twin   227          0
+                       yh-luo/psychopy_tobii_infant sonarqube          message    14          0
+Manual sample: 10 issues -> results/manual_validation_sample.md
+                                               repo  sonar_new_keys  tracker_introductions  event_agreement_pct
+                        AdityaSavara/jsongrapher-py             220                    213                 96.8
+                      BlackEnd1ess/CrashB_in_python            1151                    853                 74.1
+                                   DoubleF3lix/onyx             564                    564                100.0
+                       FatihTasyaran/FISH_INTERFERE            1170                   1150                 98.3
+                                FennisRobert/EMerge            3931                   3399                 86.5
+                                     Flix8/scriptor             185                    162                 87.6
+                      GreshamLab/sc_self_supervised              52                     52                100.0
+                               KTH-RPL/DriveCmd_LLM              58                     56                 96.6
+                  PhatnaniLab/nanopore_10x_multiome              34                     32                 94.1
+                   Quent-DL/MasterThesis_ElectroLoc             427                    310                 72.6
+                           TaylorResearchLab/scedar             677                    514                 74.4
+                       TheSignPainter98/adjust-keys             342                    309                 90.4
+                       ToniRV/Kimera-VIO-Evaluation             347                    286                 82.4
+                                   Vihangip/PyOpSee              24                     23                 95.8
+                              adammak23/PCB-Blender             976                    976                100.0
+            agitter/openadmet-expansionrx-challenge             314                    314                100.0
+                        asdf1434/noise-schedule-exp              73                     71                 94.5
+                      avalanche103/personal-finance             188                    186                 98.9
+                                       becky82/mteh              34                     34                100.0
+                                     binsync/declib             339                    335                 98.8
+bytesy-z/Inverse-3D-EEG-and-Diesease-Detection-VESL             362                    356                 98.3
+                                 codebro634/Cascade             162                    165                 93.3
+                              ctuning/ck-tensorflow             369                    367                 99.5
+                                diegodukao/sonicbox              27                     16                 59.3
+                                 drepetto/chiplotle            1661                   1116                 67.2
+                                      edsuom/yampex             649                    557                 85.8
+                                       ekraka/SSnet            1171                   1171                100.0
+                                     getavalon/core             422                    347                 82.2
+                                         hanyas/sds             732                    682                 93.2
+                               hitranonline/hapiest            3047                   2227                 73.0
+                    idearibosome/tf-perceptual-eusr              60                     52                 86.7
+                           igor-morawski/HTPA32x32d             388                    210                 54.1
+                              initc3/HoneyBadgerMPC             365                    293                 80.3
+                               internetarchive/iari            1277                   1209                 94.7
+                                 jaxleyverse/jaxley             294                    272                 90.5
+                                   jfsp/pqc-monitor             354                    353                 99.7
+                                   jimbarnesrtp/pf2            1580                   1499                 94.9
+                               jingtao-lbl/A2MC-elm            1127                   1070                 94.9
+                                     jsosa/LFPtools             241                    240                 99.6
+                                    kragen/dercuano             184                    181                 98.4
+                                         krzjoa/kra               5                      5                100.0
+                                  lgactna/fastlabel            1240                   1229                 99.1
+                                      mit-acl/tcaff             544                    522                 94.1
+                 mohaEs/image-to-images-translation             472                    466                 98.7
+                                      n4hy/AutoNVIS             643                    643                100.0
+                  nekiwanuka/ROSHE_LOGISTICS_SYSTEM             278                    263                 94.6
+                              pachterlab/edgePython             463                    462                 99.4
+                  paladin-705/UniversityScheduleBot             155                     98                 63.2
+              patrickltobing/cyclevae-vc-neuralvoco            5406                   3299                 61.0
+                    pfnet-research/chainer-compiler            1852                   1432                 77.3
+                 predict-idlab/seriesdistancematrix             201                    127                 63.2
+                                     pybpc/f2format             228                    208                 72.8
+                    ryland-goldman/SLAC-Summer-2025             351                    341                 97.2
+                                 shaftoe/api-l3x-in            2343                   1153                 49.2
+                                shawnbrown/datatest            1191                    709                 59.5
+                                  simongoricar/Nano             364                    298                 81.9
+                                   spcl/stencilflow             676                    277                 40.7
+                                 tb1337/pypaperless              67                     64                 95.5
+                             tdseher/addtag-project            2739                   2106                 76.2
+                       temporalecologylab/TreeRings             261                    261                100.0
+                                 thingless/viewshed             240                    140                 58.3
+                      tichyy/flight-delay-predictor              25                     21                 84.0
+                                      toruseo/UXsim            1751                   1313                 74.9
+                                  transientskp/pyse             283                    231                 81.6
+                              ucl-nlnt/virtualttbot             864                    776                 89.4
+                           wepiha/qt-amdgpu-fan-ctl             131                    113                 86.3
+                       xarray-contrib/xarray-simlab             279                    169                 59.1
+                       yh-luo/psychopy_tobii_infant             107                     79                 73.8
+reason
+file renamed or moved (tracker followed git rename)    7415
+flagged line edited, same rule and message             2462
+identical flagged code, SonarQube re-keyed it          1594
+Name: n, dtype: int64

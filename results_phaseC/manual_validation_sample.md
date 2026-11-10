@@ -1,3 +1,5 @@
+> **Version note (November 2026).** This sample was drawn and checked with tracker v1 (issue numbers below are v1 numbers). `manual_validation_sample.csv` maps each issue to its v2 number and v2 removal label; the v2 re-check is in `docs/TRACKER_VALIDATION.md`, section 5.
+
 # Manual validation sample (10 issue histories, seed 42)
 
 ## Issue 3836 - AI - jaxleyverse/jaxley

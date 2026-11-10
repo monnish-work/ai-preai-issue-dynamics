@@ -1,0 +1,9 @@
+unit,category,n_AI,n_PreAI,logrank_chi2,p_value,cliffs_delta_removed_only(AI vs PreAI)
+days,maintainability,9497,13679,2.454,0.1172,0.081
+days,reliability,440,499,15.066,0.0001,0.0
+days,security,122,92,7.222,0.0072,0.182
+days,all,10059,14270,6.834,0.0089,0.078
+snapshots,maintainability,9497,13679,220.444,0.0,0.013
+snapshots,reliability,440,499,19.813,0.0,0.038
+snapshots,security,122,92,18.197,0.0,0.141
+snapshots,all,10059,14270,255.798,0.0,0.016

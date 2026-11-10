@@ -1,0 +1,82 @@
+# Manual validation sample (10 issue histories, seed 42)
+
+## Issue 39199 - AI - ucl-nlnt/virtualttbot
+- Tool/rule: sonarqube `python:S125` (maintainability)
+- Message: Remove this commented out code.
+- Introduced: c0107460e5 (2024-03-11); seen in snapshots 6-7; lines 302 > 301
+- Paths: workspace/src/sensors/sensors/annotator.py
+- Removal: 71eced6ebe -> code_changed
+- [code at introduction](https://github.com/ucl-nlnt/virtualttbot/blob/c0107460e5f5ffbf1ac065af519c1fb9f56e7bfd/workspace/src/sensors/sensors/annotator.py#L302) | [code last seen](https://github.com/ucl-nlnt/virtualttbot/blob/5d00a45b2199b295db23b0e4a18913f90e3ac90a/workspace/src/sensors/sensors/annotator.py#L301) | [removal commit diff](https://github.com/ucl-nlnt/virtualttbot/commit/71eced6ebeea1e3703cf3f5397d4e25cf816db34)
+
+## Issue 4130 - AI - FennisRobert/EMerge
+- Tool/rule: sonarqube `python:S117` (maintainability)
+- Message: Rename this local variable "Mat" to match the regular expression ^[_a-z][a-z0-9_]*$.
+- Introduced: d4670370cb (2025-09-10); seen in snapshots 4-14; lines 316 > 315
+- Paths: src/emerge/_emerge/physics/microwave/assembly/robin_abc_order2.py
+- Removal: dd5149014d -> code_changed
+- [code at introduction](https://github.com/FennisRobert/EMerge/blob/d4670370cb420e6f1abf55d66a3efca81cb8990d/src/emerge/_emerge/physics/microwave/assembly/robin_abc_order2.py#L316) | [code last seen](https://github.com/FennisRobert/EMerge/blob/7b269c904dc61d5fe103512bade76e2453422ca4/src/emerge/_emerge/physics/microwave/assembly/robin_abc_order2.py#L316) | [removal commit diff](https://github.com/FennisRobert/EMerge/commit/dd5149014d556607083082cf4f75ba14696dcfc0)
+
+## Issue 10418 - AI - bytesy-z/Inverse-3D-EEG-and-Diesease-Detection-VESL
+- Tool/rule: sonarqube `python:S3776` (maintainability)
+- Message: Refactor this function to reduce its Cognitive Complexity from 25 to the 15 allowed.
+- Introduced: fd04b479d2 (2026-03-01); seen in snapshots 2-24; lines 31
+- Paths: debug_inference.py
+- Removal: a8fe1e2d66 -> file_deleted
+- [code at introduction](https://github.com/bytesy-z/Inverse-3D-EEG-and-Diesease-Detection-VESL/blob/fd04b479d2498a7621d2e66acc52bcc518e594ee/debug_inference.py#L31) | [code last seen](https://github.com/bytesy-z/Inverse-3D-EEG-and-Diesease-Detection-VESL/blob/4e27b2e4e9d97b1e097e532b4b2a426147d53f44/debug_inference.py#L31) | [removal commit diff](https://github.com/bytesy-z/Inverse-3D-EEG-and-Diesease-Detection-VESL/commit/a8fe1e2d66d4cca979770275732e87d3bfedae9a)
+
+## Issue 4953 - AI - FennisRobert/EMerge
+- Tool/rule: sonarqube `python:S117` (maintainability)
+- Message: Rename this local variable "CEx" to match the regular expression ^[_a-z][a-z0-9_]*$.
+- Introduced: e9a4a0e10e (2026-04-01); seen in snapshots 12-21; lines 55 > 62 > 101
+- Paths: src/emerge/_emerge/physics/microwave/background_field.py > src/emerge/_emerge/physics/microwave/bcs/background_field.py
+- Removal: - -> still open (censored)
+- [code at introduction](https://github.com/FennisRobert/EMerge/blob/e9a4a0e10e6ddceb613e8a996982a52de9355d16/src/emerge/_emerge/physics/microwave/background_field.py#L55) | [code last seen](https://github.com/FennisRobert/EMerge/blob/4eafb5ed700e52d22a03eeaf4353d93fc3dac434/src/emerge/_emerge/physics/microwave/bcs/background_field.py#L101)
+
+## Issue 6515 - AI - Flix8/scriptor
+- Tool/rule: sonarqube `python:S3776` (maintainability)
+- Message: Refactor this function to reduce its Cognitive Complexity from 29 to the 15 allowed.
+- Introduced: 64750e3202 (2025-09-24); seen in snapshots 20-22; lines 1451 > 1456 > 1469
+- Paths: letter_core.py
+- Removal: - -> still open (censored)
+- [code at introduction](https://github.com/Flix8/scriptor/blob/64750e3202197dd95720051eb9133654d804587e/letter_core.py#L1451) | [code last seen](https://github.com/Flix8/scriptor/blob/1ebc6738ae3a7c10d71f8185fb352775354c2fdf/letter_core.py#L1469)
+
+## Issue 35083 - PreAI - tdseher/addtag-project
+- Tool/rule: sonarqube `python:PrintStatementUsage` (maintainability)
+- Message: Replace print statement by built-in function.
+- Introduced: 405c6f786d (2017-04-20); seen in snapshots 3-16; lines 55 > 57 > 75 > 76
+- Paths: source/azimuth/wrapper.py > source/algorithms/azimuth_wrapper.py
+- Removal: bc4e4c35eb -> code_changed
+- [code at introduction](https://github.com/tdseher/addtag-project/blob/405c6f786d2697aca1163a8ae11ad8f75ce1a467/source/azimuth/wrapper.py#L55) | [code last seen](https://github.com/tdseher/addtag-project/blob/52e57b234a9a96599d748116286ecfc36aca5cd4/source/algorithms/azimuth_wrapper.py#L76) | [removal commit diff](https://github.com/tdseher/addtag-project/commit/bc4e4c35eb1809726393a5863e5852037bc596c6)
+
+## Issue 35862 - PreAI - tdseher/addtag-project
+- Tool/rule: sonarqube `python:S117` (maintainability)
+- Message: Rename this local variable "region_F_start" to match the regular expression ^[_a-z][a-z0-9_]*$.
+- Introduced: 67f54e85dc (2019-01-11); seen in snapshots 12-13; lines 779 > 815
+- Paths: source/__init__.py
+- Removal: a42fac4d5f -> code_changed
+- [code at introduction](https://github.com/tdseher/addtag-project/blob/67f54e85dc49d36815ff4a7c52b0bd442b396ef9/source/__init__.py#L779) | [code last seen](https://github.com/tdseher/addtag-project/blob/12583ccd2adfdc9ee8e7989d7f639e6ffa837245/source/__init__.py#L815) | [removal commit diff](https://github.com/tdseher/addtag-project/commit/a42fac4d5f3dd04ebb3779eddfbef6e5fd29748e)
+
+## Issue 1432 - PreAI - DoubleF3lix/onyx
+- Tool/rule: sonarqube `python:S1192` (maintainability)
+- Message: Define a constant instead of duplicating this literal "minecraft:shulker_box" 3 times.
+- Introduced: 2a4f96657a (2021-10-14); seen in snapshots 5-6; lines 1917
+- Paths: onyx/enums.py
+- Removal: 03270cce0f -> file_deleted
+- [code at introduction](https://github.com/DoubleF3lix/onyx/blob/2a4f96657ace0676f85a7d09f0d7dbb32a7e5e45/onyx/enums.py#L1917) | [code last seen](https://github.com/DoubleF3lix/onyx/blob/59bbe63ffe59cba4a1783be5efec3f86eee44e2b/onyx/enums.py#L1917) | [removal commit diff](https://github.com/DoubleF3lix/onyx/commit/03270cce0f6befc074e16b7602b04ef1401603f4)
+
+## Issue 29203 - PreAI - patrickltobing/cyclevae-vc-neuralvoco
+- Tool/rule: sonarqube `python:S3776` (maintainability)
+- Message: Refactor this function to reduce its Cognitive Complexity from 21 to the 15 allowed.
+- Introduced: 279d513f3e (2021-01-04); seen in snapshots 20-29; lines 304 > 314 > 311 > 308
+- Paths: src/bin/train_sparse-gru-cycle-melsp-x-lf0cap-spk-vae-laplace_noar.py > src/bin/train_sparse-gru-cycle-melsp-x-lf0cap-spk-vae-laplace-smpl.py > src/bin/train_sparse-gru-cycle-melsp-x-lf0cap-spk-vae-gauss-smpl.py > src/bin/train_sparse-gru-cycle-melsp-x-lf0cap-spk-vae-gauss-smpl_weightemb_v2.py > src/bin/train_sparse-gru-cycle-melsp-x-lf0cap-spk-vae-gauss-smpl_noct_weightemb_v2.py > src/bin/train_sparse-gru-cycle-melsp-x-lf0cap-spk-vae-gauss-smpl_weightemb_v3.py
+- Removal: - -> still open (censored)
+- [code at introduction](https://github.com/patrickltobing/cyclevae-vc-neuralvoco/blob/279d513f3e630c18ada905f56d7533c16860ed96/src/bin/train_sparse-gru-cycle-melsp-x-lf0cap-spk-vae-laplace_noar.py#L304) | [code last seen](https://github.com/patrickltobing/cyclevae-vc-neuralvoco/blob/cd6e90da5980173173644132c16ba583a386c4d5/src/bin/train_sparse-gru-cycle-melsp-x-lf0cap-spk-vae-gauss-smpl_weightemb_v2.py#L311)
+
+## Issue 31620 - PreAI - pfnet-research/chainer-compiler
+- Tool/rule: sonarqube `python:S6711` (maintainability)
+- Message: Use a "numpy.random.Generator" here instead of this legacy function.
+- Introduced: eb21214edb (2019-08-05); seen in snapshots 21-21; lines 43
+- Paths: testcases/elichika_tests/syntax/Range.py
+- Removal: - -> still open (censored)
+- [code at introduction](https://github.com/pfnet-research/chainer-compiler/blob/eb21214edb4d48ca7a565347fa9bdb488c53fc76/testcases/elichika_tests/syntax/Range.py#L43) | [code last seen](https://github.com/pfnet-research/chainer-compiler/blob/eb21214edb4d48ca7a565347fa9bdb488c53fc76/testcases/elichika_tests/syntax/Range.py#L43)
+

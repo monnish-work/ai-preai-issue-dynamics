@@ -1,0 +1,8 @@
+measure,AI_median,PreAI_median,n_AI,n_PreAI,U,p_value,cliffs_delta
+intro_per_kloc,16.059,51.636,34,34,381.0,0.0153,-0.341
+removed_per_kloc,5.107,21.364,34,34,331.5,0.0022,-0.426
+intro_per_commit,5.579,8.553,34,34,455.0,0.1336,-0.213
+removed_share,0.133,0.253,34,33,392.0,0.034,-0.301
+km_median_snapshots,11.0,8.0,7,13,57.5,0.3929,0.264
+km_median_days,138.142,482.504,8,12,37.0,0.4269,-0.229
+file_deleted_share_of_removals,0.09,0.098,26,31,383.0,0.7566,-0.05

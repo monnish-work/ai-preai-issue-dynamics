@@ -1,0 +1,6 @@
+variant,introduced,removed,code_changed,file_deleted,code_still_present,event_agreement_median,identity_agreement_median
+none,5592,3013,1481,1294,238,86.85,84.8
+rename,5385,2806,1471,1097,238,83.35,83.44999999999999
+twins,5588,3009,1479,1294,236,86.65,85.80000000000001
+multiline,5592,3013,1451,1294,268,86.85,84.8
+all,5380,2801,1438,1097,266,83.15,84.5
