@@ -1,0 +1,18 @@
+# created locally by setup / run scripts - not part of the repository
+.venv/
+tools/
+downloads/
+repos/
+__pycache__/
+.DS_Store
+app/study.db
+app/.secret_key
+data/raw/
+data/raw_phaseC/
+data/raw_phaseD/
+data/raw_phaseE/
+data/raw_ext/
+data/derived*/
+data/scan_log.txt
+tool_versions_local.txt
+results*/figures/*.tmp
