@@ -1,0 +1,41 @@
+repo_dir,repo,first_declaration_commit,first_declaration_date,commit_subject,start_index,commits_in_window,match_id
+pachterlab__edgePython,pachterlab/edgePython,ef3cf617bc,2026-02-15,Initial commit of edgePython: Python implementation of edgeR,1,30,M1
+binsync__declib,binsync/declib,797a3bf06d,2026-01-02,Swith Backend to PyGhidra (Ghidra 12); Add Server/Client for Decompile,23,8,M2
+jaxleyverse__jaxley,jaxleyverse/jaxley,461050f28c,2024-08-01,Correct ordering of internal compartment handling (#394),21,10,M3
+temporalecologylab__TreeRings,temporalecologylab/TreeRings,acbf016525,2026-04-12,Adding comments on LLM generation and clarifying file purposes in the ,26,5,M4
+mit-acl__tcaff,mit-acl/tcaff,fb09c97977,2024-01-10,add 3d person detection using depth camera,17,14,M5
+becky82__mteh,becky82/mteh,1a2620f807,2025-10-24,Added missing characters report + python code,4,27,M22
+Quent-DL__MasterThesis_ElectroLoc,Quent-DL/MasterThesis_ElectroLoc,41e5909a15,2025-03-05,Working basic algo with postprocessing,3,28,M21
+asdf1434__noise-schedule-exp,asdf1434/noise-schedule-exp,288a22c6de,2026-07-07,upload code,1,30,M20
+fabio-cunial__hapestry_experiments,fabio-cunial/hapestry_experiments,7673662e48,2026-04-19,fixes,29,2,M19
+GreshamLab__sc_self_supervised,GreshamLab/sc_self_supervised,7ac6226311,2025-02-20,Modules with tests,20,11,M18
+AdityaSavara__jsongrapher-py,AdityaSavara/jsongrapher-py,8f2b8b6e83,2025-05-04,Added merge_JSONGrapherRecords,15,16,M17
+ucl-nlnt__virtualttbot,ucl-nlnt/virtualttbot,c172f98b50,2024-02-05,version 24.2.1; added IMU yaw pitch and roll,4,27,M16
+BlackEnd1ess__CrashB_in_python,BlackEnd1ess/CrashB_in_python,91c33bb7f9,2024-10-11,Update texture_split.py,11,20,M15
+nekiwanuka__ROSHE_LOGISTICS_SYSTEM,nekiwanuka/ROSHE_LOGISTICS_SYSTEM,11706d6a70,2026-01-07,Prepare production deployment,4,27,M14
+transientskp__pyse,transientskp/pyse,a96e1b33ab,2024-11-02,Added 'nearest_nonzero' function to be,17,14,M13
+rdlaner__MicroPython_Libs,rdlaner/MicroPython_Libs,d232a3b343,2025-12-31,tests: add unit tests for ptp state machine,28,3,M12
+bytesy-z__Inverse-3D-EEG-and-Diesease-Detection-VESL,bytesy-z/Inverse-3D-EEG-and-Diesease-Detection-VESL,b67f7c0fa6,2026-03-01,"Unified dashboard, full window processing, Plotly fixes, backend/front",5,26,M11
+agitter__openadmet-expansionrx-challenge,agitter/openadmet-expansionrx-challenge,9279cf3d10,2026-01-06,Script to format submission results,18,13,M10
+R2U2__r2u2,R2U2/r2u2,09184d5985,2026-01-10,"Major update to benchmarks (fluxgate, boeing-wbs, nasa-atc), adding mt",28,3,M9
+toruseo__UXsim,toruseo/UXsim,e839ee481e,2023-09-29,UXsimの公開,4,27,M7
+jfsp__pqc-monitor,jfsp/pqc-monitor,24fc8ed88b,2026-06-10,"First release of the pqc monitor, developed by Claude",1,30,M6
+tichyy__flight-delay-predictor,tichyy/flight-delay-predictor,5867a16973,2025-12-25,Major changes. Added flight path visualization.,9,22,M23
+Vihangip__PyOpSee,Vihangip/PyOpSee,04f1ea2876,2026-03-11,"Add JSON serialization to Project Tree, update Block metadata",18,13,M25
+KTH-RPL__DriveCmd_LLM,KTH-RPL/DriveCmd_LLM,33a4c4f330,2023-10-19,add rule-based methods,23,8,M27
+Flix8__scriptor,Flix8/scriptor,5fc8fdc89b,2025-01-06,Saving and Displaying Loaded Letter,9,22,M29
+tb1337__pypaperless,tb1337/pypaperless,4f859a14e3,2026-04-01,"Rewrite to httpx and pydantic, better API coverage (#589)",22,9,M31
+avalanche103__personal-finance,avalanche103/personal-finance,11965efebb,2026-06-05,Add Binance portfolio sync integration.,12,19,M33
+FatihTasyaran__FISH_INTERFERE,FatihTasyaran/FISH_INTERFERE,0393fa7d96,2026-03-22,"ros2 cli query during execution added, perf removed",2,29,M35
+FennisRobert__EMerge,FennisRobert/EMerge,90963b3da0,2025-08-06,"Improved accuracy, added third party licenses and added the first veri",10,21,M37
+n4hy__AutoNVIS,n4hy/AutoNVIS,739875d4b6,2026-03-15,Add Vogler-Hoffmeyer HF channel model integration,24,7,M39
+Cloud-CV__EvalAI,Cloud-CV/EvalAI,6ba5af3932,2026-05-17,Backend: Add S3 submission retention tagging (#5081),29,2,M41
+krzjoa__kra,krzjoa/kra,f984f42f62,2025-07-31,Added unit tests,10,21,M24
+codebro634__Cascade,codebro634/Cascade,92e3d32a82,2024-01-31,create repo,1,30,M26
+PhatnaniLab__nanopore_10x_multiome,PhatnaniLab/nanopore_10x_multiome,67ae6c9488,2025-03-03,initial commit basic functions,2,29,M28
+ryland-goldman__SLAC-Summer-2025,ryland-goldman/SLAC-Summer-2025,622c0cf0e1,2025-06-30,Add tungsten/tantalum comparison,21,10,M30
+internetarchive__iari,internetarchive/iari,dc8b64e6c6,2022-12-31,Add new endpoint get_statistics and test it using ChatGPT generated te,15,16,M32
+Raptacon__Robot-2026,Raptacon/Robot-2026,8410b9be11,2026-02-28,Add fuzz tester for full robot teleop (#43),28,3,M34
+lgactna__fastlabel,lgactna/fastlabel,c324e65991,2024-11-23,better models,5,26,M36
+Dynatrace-Dave-Mauney__Automation,Dynatrace-Dave-Mauney/Automation,cc43383fff,2026-06-24,Various changes.,29,2,M38
+jingtao-lbl__A2MC-elm,jingtao-lbl/A2MC-elm,e032d58ddc,2026-02-09,"Sync: Add two-level iteration (v2.11), diagnostic tools (v2.10), and s",5,26,M40

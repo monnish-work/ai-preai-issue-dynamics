@@ -1,0 +1,80 @@
+repo,decision,pair_or_reason
+AdityaSavara/jsongrapher-py,accepted,M17
+BlackEnd1ess/CrashB_in_python,accepted,M15
+FatihTasyaran/FISH_INTERFERE,accepted,M35
+FennisRobert/EMerge,accepted,M37
+GreshamLab/sc_self_supervised,accepted,M18
+Quent-DL/MasterThesis_ElectroLoc,accepted,M21
+R2U2/r2u2,accepted,M9
+Raptacon/Robot-2026,accepted,M34
+agitter/openadmet-expansionrx-challenge,accepted,M10
+asdf1434/noise-schedule-exp,accepted,M20
+becky82/mteh,accepted,M22
+bytesy-z/Inverse-3D-EEG-and-Diesease-Detection-VESL,accepted,M11
+fabio-cunial/hapestry_experiments,accepted,M19
+jfsp/pqc-monitor,accepted,M6
+jingtao-lbl/A2MC-elm,accepted,M40
+nekiwanuka/ROSHE_LOGISTICS_SYSTEM,accepted,M14
+rdlaner/MicroPython_Libs,accepted,M12
+toruseo/UXsim,accepted,M7
+transientskp/pyse,accepted,M13
+ucl-nlnt/virtualttbot,accepted,M16
+Cloud-CV/EvalAI,accepted (relaxed),M41
+Dynatrace-Dave-Mauney/Automation,accepted (relaxed),M38
+Flix8/scriptor,accepted (relaxed),M29
+KTH-RPL/DriveCmd_LLM,accepted (relaxed),M27
+PhatnaniLab/nanopore_10x_multiome,accepted (relaxed),M28
+Vihangip/PyOpSee,accepted (relaxed),M25
+avalanche103/personal-finance,accepted (relaxed),M33
+codebro634/Cascade,accepted (relaxed),M26
+internetarchive/iari,accepted (relaxed),M32
+krzjoa/kra,accepted (relaxed),M24
+lgactna/fastlabel,accepted (relaxed),M36
+n4hy/AutoNVIS,accepted (relaxed),M39
+ryland-goldman/SLAC-Summer-2025,accepted (relaxed),M30
+tb1337/pypaperless,accepted (relaxed),M31
+tichyy/flight-delay-predictor,accepted (relaxed),M23
+CDCgov/seqsender,excluded,"size: 734k Python lines, outside the Pre-AI pool"
+DataBiosphere/azul,excluded,108k Python lines
+Erkaek/aa-Indy_Hub,excluded,"size: 95k Python lines, outside the Pre-AI pool"
+ICARUSPoliTO/HybridModels,excluded,222k Python lines
+Jeebig/SteamProject,excluded,6 commits
+birder-project/birder,excluded,142k Python lines
+canfieldjuan/coding-assistant-sdk,excluded,1 commit
+dapperfu/python_Meijer,excluded,"size: 132k Python lines, outside the Pre-AI pool"
+fredp03/web-interface-luna,excluded,23 commits
+hebertpena88/sat-go-cliente,excluded,21 commits
+houseabsolute/actions-rust-cross,excluded,only 445 Python lines (a GitHub Action; Python is incidental)
+plasmapotential/HEAT,excluded,"sampled commits end in 2023 (history after 2023 consists of merge commits only), so no commit after the first declaration can be analysed"
+the2nd/otpme,excluded,283k Python lines
+Alexander-Nasuta/manta,rejected,declares colour values only
+AryanThodupunuri/uva-food-finder,rejected,course project (AI-citation comments required by the course)
+JayantDevkar/claude-code-karma,rejected,phrases describe a tool that monitors AI sessions; no declaration of generated code
+Jlehavi/PoisoningAgents,rejected,"one regex line, duplicated"
+KGCP/paper2lkg,rejected,one test snippet copied into two folders
+NayCheno/OpenGuard,rejected,phrases are test data strings
+Nemit0/StoryWeaver-GPT,rejected,one declared file copied into three folders (no repeated evidence)
+PacktPublishing/AI-for-DevOps-and-Site-Reliability-Engineering,rejected,book chapter code (tutorial)
+PurrGod/asgn4-repo,rejected,course assignment
+ReflectiveObsidian/Honey-Badger-Sales-Helper,rejected,"declares a list of example quotes, not code"
+Ruben-du-Pon/Hardcoded-Protein,rejected,course case (protein folding); declares only docstrings
+SHRIVP/covidtext,rejected,"phrase is a negation (""not written by chatgpt"")"
+StanfordCBCL/cco_bifurcations,rejected,one file and its copy
+alecfremond-wq/CS-Group-12.04,rejected,course group project
+arielsolomon/large_vlm_distillation_ood,rejected,"false hit: ""openai"" is a dataset name, no declaration"
+bmackenty/studentPythonStuff,rejected,"teaching material (""student python stuff"")"
+chrislaney/SpotifyStats,rejected,course design project; one declared file duplicated in a report folder
+d4re/tmux-agents,rejected,"phrases describe files written by tool hooks, not code"
+frederik-uni/robo-muehle,rejected,declares docstrings only
+hejoric/club-finance-helper,rejected,course project (AI-citation comments required by the course)
+hoovdc/Sandbox,rejected,personal sandbox of unrelated scripts
+izaac/ai-trace-scanner,rejected,phrases are test data of an AI-trace scanner
+jamditis/claude-skills-journalism,rejected,"phrases are rules of a filter that blocks AI attribution, not declarations"
+jimthompson5802/gh_copilot,rejected,Copilot test bed / playground
+knutankv/wawi,rejected,"declares only docstrings, not code"
+labut21/ITM352_F24_repo,rejected,course repository (ITM352 assignments)
+pageauc/pi-timolo,rejected,"false hit: ""written by Claude Pageau"" is the human author"
+pageauc/picamera-motion,rejected,"false hit: ""written by Claude Pageau"" is the human author"
+paulosantanabr/esp_ps,rejected,declared scripts are not .py files
+roseate8/graph-rag-trials,rejected,phrase appears inside a generated answer string
+shenxianpeng/aion,rejected,declarations are labels inside test fixtures of an AI-code auditing tool

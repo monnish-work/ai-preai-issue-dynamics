@@ -1,0 +1,69 @@
+repo_dir,repo,start_index,pair,reason
+pachterlab__edgePython,pachterlab/edgePython,1,M1,first AI declaration
+TaylorResearchLab__scedar,TaylorResearchLab/scedar,1,M1,same relative position as pachterlab/edgePython
+binsync__declib,binsync/declib,23,M2,first AI declaration
+getavalon__core,getavalon/core,23,M2,same relative position as binsync/declib
+jaxleyverse__jaxley,jaxleyverse/jaxley,21,M3,first AI declaration
+initc3__HoneyBadgerMPC,initc3/HoneyBadgerMPC,21,M3,same relative position as jaxleyverse/jaxley
+temporalecologylab__TreeRings,temporalecologylab/TreeRings,26,M4,first AI declaration
+hanyas__sds,hanyas/sds,26,M4,same relative position as temporalecologylab/TreeRings
+mit-acl__tcaff,mit-acl/tcaff,17,M5,first AI declaration
+jsosa__LFPtools,jsosa/LFPtools,17,M5,same relative position as mit-acl/tcaff
+becky82__mteh,becky82/mteh,4,M22,first AI declaration
+idearibosome__tf-perceptual-eusr,idearibosome/tf-perceptual-eusr,4,M22,same relative position as becky82/mteh
+Quent-DL__MasterThesis_ElectroLoc,Quent-DL/MasterThesis_ElectroLoc,3,M21,first AI declaration
+thingless__viewshed,thingless/viewshed,3,M21,same relative position as Quent-DL/MasterThesis_ElectroLoc
+asdf1434__noise-schedule-exp,asdf1434/noise-schedule-exp,1,M20,first AI declaration
+kragen__dercuano,kragen/dercuano,1,M20,same relative position as asdf1434/noise-schedule-exp
+GreshamLab__sc_self_supervised,GreshamLab/sc_self_supervised,20,M18,first AI declaration
+predict-idlab__seriesdistancematrix,predict-idlab/seriesdistancematrix,20,M18,same relative position as GreshamLab/sc_self_supervised
+AdityaSavara__jsongrapher-py,AdityaSavara/jsongrapher-py,15,M17,first AI declaration
+ToniRV__Kimera-VIO-Evaluation,ToniRV/Kimera-VIO-Evaluation,15,M17,same relative position as AdityaSavara/jsongrapher-py
+ucl-nlnt__virtualttbot,ucl-nlnt/virtualttbot,4,M16,first AI declaration
+edsuom__yampex,edsuom/yampex,4,M16,same relative position as ucl-nlnt/virtualttbot
+BlackEnd1ess__CrashB_in_python,BlackEnd1ess/CrashB_in_python,11,M15,first AI declaration
+simongoricar__Nano,simongoricar/Nano,11,M15,same relative position as BlackEnd1ess/CrashB_in_python
+nekiwanuka__ROSHE_LOGISTICS_SYSTEM,nekiwanuka/ROSHE_LOGISTICS_SYSTEM,4,M14,first AI declaration
+jimbarnesrtp__pf2,jimbarnesrtp/pf2,4,M14,same relative position as nekiwanuka/ROSHE_LOGISTICS_SYSTEM
+transientskp__pyse,transientskp/pyse,17,M13,first AI declaration
+mohaEs__image-to-images-translation,mohaEs/image-to-images-translation,17,M13,same relative position as transientskp/pyse
+bytesy-z__Inverse-3D-EEG-and-Diesease-Detection-VESL,bytesy-z/Inverse-3D-EEG-and-Diesease-Detection-VESL,5,M11,first AI declaration
+xarray-contrib__xarray-simlab,xarray-contrib/xarray-simlab,5,M11,same relative position as bytesy-z/Inverse-3D-EEG-and-Diesease-Detection-VESL
+agitter__openadmet-expansionrx-challenge,agitter/openadmet-expansionrx-challenge,18,M10,first AI declaration
+DoubleF3lix__onyx,DoubleF3lix/onyx,18,M10,same relative position as agitter/openadmet-expansionrx-challenge
+toruseo__UXsim,toruseo/UXsim,4,M7,first AI declaration
+shawnbrown__datatest,shawnbrown/datatest,4,M7,same relative position as toruseo/UXsim
+jfsp__pqc-monitor,jfsp/pqc-monitor,1,M6,first AI declaration
+tdseher__addtag-project,tdseher/addtag-project,1,M6,same relative position as jfsp/pqc-monitor
+tichyy__flight-delay-predictor,tichyy/flight-delay-predictor,9,M23,first AI declaration
+diegodukao__sonicbox,diegodukao/sonicbox,9,M23,same relative position as tichyy/flight-delay-predictor
+Vihangip__PyOpSee,Vihangip/PyOpSee,18,M25,first AI declaration
+wepiha__qt-amdgpu-fan-ctl,wepiha/qt-amdgpu-fan-ctl,18,M25,same relative position as Vihangip/PyOpSee
+KTH-RPL__DriveCmd_LLM,KTH-RPL/DriveCmd_LLM,23,M27,first AI declaration
+TheSignPainter98__adjust-keys,TheSignPainter98/adjust-keys,23,M27,same relative position as KTH-RPL/DriveCmd_LLM
+Flix8__scriptor,Flix8/scriptor,9,M29,first AI declaration
+pybpc__f2format,pybpc/f2format,9,M29,same relative position as Flix8/scriptor
+tb1337__pypaperless,tb1337/pypaperless,22,M31,first AI declaration
+ctuning__ck-tensorflow,ctuning/ck-tensorflow,22,M31,same relative position as tb1337/pypaperless
+avalanche103__personal-finance,avalanche103/personal-finance,12,M33,first AI declaration
+spcl__stencilflow,spcl/stencilflow,12,M33,same relative position as avalanche103/personal-finance
+FatihTasyaran__FISH_INTERFERE,FatihTasyaran/FISH_INTERFERE,2,M35,first AI declaration
+patrickltobing__cyclevae-vc-neuralvoco,patrickltobing/cyclevae-vc-neuralvoco,2,M35,same relative position as FatihTasyaran/FISH_INTERFERE
+FennisRobert__EMerge,FennisRobert/EMerge,10,M37,first AI declaration
+pfnet-research__chainer-compiler,pfnet-research/chainer-compiler,10,M37,same relative position as FennisRobert/EMerge
+n4hy__AutoNVIS,n4hy/AutoNVIS,24,M39,first AI declaration
+adammak23__PCB-Blender,adammak23/PCB-Blender,24,M39,same relative position as n4hy/AutoNVIS
+krzjoa__kra,krzjoa/kra,10,M24,first AI declaration
+paladin-705__UniversityScheduleBot,paladin-705/UniversityScheduleBot,10,M24,same relative position as krzjoa/kra
+codebro634__Cascade,codebro634/Cascade,1,M26,first AI declaration
+yh-luo__psychopy_tobii_infant,yh-luo/psychopy_tobii_infant,1,M26,same relative position as codebro634/Cascade
+PhatnaniLab__nanopore_10x_multiome,PhatnaniLab/nanopore_10x_multiome,2,M28,first AI declaration
+igor-morawski__HTPA32x32d,igor-morawski/HTPA32x32d,2,M28,same relative position as PhatnaniLab/nanopore_10x_multiome
+ryland-goldman__SLAC-Summer-2025,ryland-goldman/SLAC-Summer-2025,21,M30,first AI declaration
+ekraka__SSnet,ekraka/SSnet,21,M30,same relative position as ryland-goldman/SLAC-Summer-2025
+internetarchive__iari,internetarchive/iari,15,M32,first AI declaration
+drepetto__chiplotle,drepetto/chiplotle,15,M32,same relative position as internetarchive/iari
+lgactna__fastlabel,lgactna/fastlabel,5,M36,first AI declaration
+hitranonline__hapiest,hitranonline/hapiest,5,M36,same relative position as lgactna/fastlabel
+jingtao-lbl__A2MC-elm,jingtao-lbl/A2MC-elm,5,M40,first AI declaration
+shaftoe__api-l3x-in,shaftoe/api-l3x-in,5,M40,same relative position as jingtao-lbl/A2MC-elm
