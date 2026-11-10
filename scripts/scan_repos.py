@@ -26,6 +26,8 @@ RULES = ROOT / "rules"
 SONAR = "http://localhost:9000"
 CRED = TOOLS / "sonar_credentials.json"      # local only, never shared
 
+# SEMGREP_CMD lets run_extension_scan.ps1 call "python -m semgrep" when Windows blocks the semgrep.exe launcher
+SEMGREP_CMD = os.environ.get("SEMGREP_CMD", "semgrep").split("|")
 SEMGREP_RULESETS = ["p/python", "p/security-audit"]   # frozen to local files on first run
 
 
@@ -44,8 +46,13 @@ def run(cmd, cwd=None, check=True, timeout=3600):
     return r
 
 
+# Git LFS is not installed: check out LFS pointer files as they are (LFS content is never Python source)
+NO_LFS = ["-c", "filter.lfs.process=", "-c", "filter.lfs.smudge=", "-c", "filter.lfs.clean=", "-c", "filter.lfs.required=false",
+          "-c", "core.protectNTFS=false"]   # paths Windows cannot create are excluded by the sparse-checkout patterns below
+
+
 def git(repo_dir, *args, check=True):
-    return run(["git", *args], cwd=repo_dir, check=check).stdout
+    return run(["git", *NO_LFS, *args], cwd=repo_dir, check=check).stdout
 
 
 # --------------------------------------------------------------- Semgrep rules
@@ -75,12 +82,20 @@ def sonar_up():
 def ensure_sonar():
     if sonar_up():
         return
-    bats = [p for p in (TOOLS / "sonarqube").rglob("StartSonar.bat") if "windows-x86-64" in str(p)]
-    if not bats:
-        sys.exit("SonarQube not found - run setup.ps1 first.")
-    log("Starting SonarQube in a new window (1-3 minutes). Do NOT close that window.")
     env = os.environ.copy()
-    subprocess.Popen(["cmd", "/c", "start", "SonarQube - keep open", str(bats[0])], env=env)
+    if os.name == "nt":
+        bats = [p for p in (TOOLS / "sonarqube").rglob("StartSonar.bat") if "windows-x86-64" in str(p)]
+        if not bats:
+            sys.exit("SonarQube not found - run setup.ps1 first.")
+        log("Starting SonarQube in a new window (1-3 minutes). Do NOT close that window.")
+        subprocess.Popen(["cmd", "/c", "start", "SonarQube - keep open", str(bats[0])], env=env)
+    else:   # macOS / Linux: tools/sonarqube/<version>/bin/<platform>/sonar.sh (installed by setup_mac.sh --with-scanners)
+        plat = "macosx-universal-64" if sys.platform == "darwin" else "linux-x86-64"
+        sh = [p for p in (TOOLS / "sonarqube").rglob("sonar.sh") if plat in str(p)]
+        if not sh:
+            sys.exit("SonarQube not found - run ./setup_mac.sh --with-scanners first (or start a SonarQube server on localhost:9000).")
+        log("Starting SonarQube in the background (1-3 minutes).")
+        subprocess.run(["sh", str(sh[0]), "start"], env=env)
     for _ in range(90):
         time.sleep(5)
         if sonar_up():
@@ -121,7 +136,13 @@ def sonar_get(tok, path, params):
 
 
 def sonar_scan(tok, key, src_dir, commit_hash, when, workdir):
-    scanner = next((TOOLS / "scanner").rglob("sonar-scanner.bat"))
+    if os.name == "nt":
+        scanner = next((TOOLS / "scanner").rglob("sonar-scanner.bat"))
+    else:
+        scanner = next((p for p in (TOOLS / "scanner").rglob("sonar-scanner") if p.parent.name == "bin"), None) \
+            or shutil.which("sonar-scanner")
+        if not scanner:
+            sys.exit("sonar-scanner not found - run ./setup_mac.sh --with-scanners first.")
     shutil.rmtree(workdir, ignore_errors=True)
     workdir.mkdir(parents=True)
     args = [str(scanner),
@@ -224,12 +245,31 @@ def main():
     REPOS.mkdir(exist_ok=True)
 
     for s in study:
+        try:
+            scan_one(s, a, rules, tok)
+        except Exception as e:                       # one broken repository must not stop the whole scan
+            log(f"FAILED {s['repo']}: {str(e)[:300]}")
+    log("ALL SCANS FINISHED")
+
+
+def prepare_clone(full, rdir):
+    """Clone without checkout and skip paths that Windows cannot create (e.g. names containing ':').
+    Such paths are never .py files, so the analysed code is unchanged."""
+    if not (rdir / ".git").exists():
+        log(f"Cloning {full}")
+        run(["git", *NO_LFS, "clone", "--quiet", "--no-checkout", f"https://github.com/{full}.git", str(rdir)])
+    git(rdir, "config", "core.sparseCheckout", "true")
+    git(rdir, "config", "core.sparseCheckoutCone", "false")
+    info = rdir / ".git" / "info"; info.mkdir(exist_ok=True)
+    (info / "sparse-checkout").write_text("/*\n!*:*\n!*\\?*\n!*\\**\n!*\"*\n!*<*\n!*>*\n!*|*\n"
+                                        "!**/con\n!**/con.*\n!**/prn\n!**/prn.*\n!**/aux\n!**/aux.*\n!**/nul\n!**/nul.*\n!**/com1\n!**/com1.*\n!**/com2\n!**/com2.*\n!**/com3\n!**/com3.*\n!**/com4\n!**/com4.*\n!**/lpt1\n!**/lpt1.*\n!**/lpt2\n!**/lpt2.*\n!**/lpt3\n!**/lpt3.*\n", encoding="utf-8")
+
+
+def scan_one(s, a, rules, tok):
         full, group = s["repo"], s["group"]
         name = full.replace("/", "__")
         rdir = REPOS / name
-        if not rdir.exists():
-            log(f"Cloning {full}")
-            run(["git", "clone", "--quiet", f"https://github.com/{full}.git", str(rdir)])
+        prepare_clone(full, rdir)
         default = git(rdir, "rev-parse", "--abbrev-ref", "origin/HEAD", check=False).strip().replace("origin/", "") or "HEAD"
         git(rdir, "checkout", "--quiet", "-f", default)
         head = git(rdir, "rev-parse", "HEAD").strip()
@@ -245,6 +285,7 @@ def main():
         last_when = None
         phase = Path(a.out).name.replace("raw", "").strip("_")
         key = "study_" + (phase + "_" if phase else "") + name.replace(".", "_")
+        key += os.environ.get("SONAR_KEY_SUFFIX", "")   # new SonarQube project when a scan is restarted from scratch
         for i, h in enumerate(commits, 1):
             cdir = out / f"{i:03d}_{h[:10]}"
             done_flag = cdir / "DONE"
@@ -264,7 +305,7 @@ def main():
             t0 = time.time()
             # --- Semgrep
             try:
-                cmd = ["semgrep", "scan", "--json", "--metrics=off", "--disable-version-check",
+                cmd = SEMGREP_CMD + ["scan", "--json", "--metrics=off", "--disable-version-check",
                        "--quiet", "--include=*.py", "--timeout=60",
                        f"--output={cdir / 'semgrep.json'}"]
                 for r in rules:
@@ -292,9 +333,6 @@ def main():
             log(f"  {full} [{i}/{len(commits)}] {h[:10]} {tl[h]['committer_date'][:10]} "
                 f"LOC={loc} ({meta['seconds']}s){'  ERRORS: ' + '; '.join(meta['errors']) if meta['errors'] else ''}")
         git(rdir, "checkout", "--quiet", "-f", default)
-
-    log("ALL SCANS FINISHED")
-    print("\nNow run:  tar -a -cf $HOME\\Downloads\\raw_results.zip data\\raw data\\scan_log.txt rules tool_versions.txt")
 
 
 if __name__ == "__main__":

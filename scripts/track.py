@@ -29,8 +29,18 @@ ROOT = Path(__file__).resolve().parent.parent
 PHASE = sys.argv[1] if len(sys.argv) > 1 else ""   # e.g. "phaseC"; empty = pilot
 SFX = ("_" + PHASE) if PHASE else ""
 RAW = ROOT / "data" / ("raw" + SFX)
+import os
+# Tracker fixes (v2). FIXES lists the active ones; default = all. Used to measure each fix's impact.
+FIXES = set(filter(None, os.environ.get("FIXES", "rename,twins,multiline").split(",")))
+OUT_TAG = os.environ.get("OUT_TAG", "")
+# Optional observation windows: CSV with repo_dir,start_index (1-based sampled commit to start from)
+WINDOWS = {}
+if os.environ.get("WINDOW_FILE"):
+    import csv as _csv
+    for _r in _csv.DictReader(open(os.environ["WINDOW_FILE"], encoding="utf-8")):
+        WINDOWS[_r["repo_dir"]] = int(_r["start_index"])
 REPOS = ROOT / "repos"
-OUT = ROOT / "data" / ("derived" + SFX)
+OUT = ROOT / "data" / ("derived" + SFX + OUT_TAG)
 OUT.mkdir(parents=True, exist_ok=True)
 
 # Generated / vendored code is not developer-written source: excluded for BOTH groups.
@@ -118,19 +128,34 @@ def load_snapshot(cdir, repo_name, src):
                          "end_line": tr.get("endLine") or i.get("line") or 0,
                          "message": (i.get("message") or "").strip()[:300], "cwe": "",
                          "sonar_key": i["key"]})
+    rf = cdir / "ruff.json"                     # Performance Efficiency (Ruff PERF rules), see run_ruff.py
+    if rf.exists():
+        for d in json.loads(rf.read_text(encoding="utf-8")):
+            code = str(d.get("code") or "")
+            if not code.startswith("PERF"):          # e.g. 'invalid-syntax' parse errors are not findings
+                continue
+            loc, end = d.get("location") or {}, d.get("end_location") or {}
+            rows.append({"tool": "ruff", "rule": code, "category": "performance", "severity": "",
+                         "path": d["filename"], "line": loc.get("row") or 0,
+                         "end_line": end.get("row") or loc.get("row") or 0,
+                         "message": (d.get("message") or "").strip()[:300], "cwe": "", "sonar_key": ""})
     rows = [r for r in rows if not EXCLUDE_PATH.search(r["path"])]
     for r in rows:
         ls = src.lines(h, r["path"])
         a, b = max(1, int(r["line"])), max(int(r["line"]), int(r["end_line"]))
         b = min(b, a + 5)
         r["code"] = norm_code(" ".join(ls[a - 1:b])) if ls and a <= len(ls) else ""
-    avail = {t for t, f in (("semgrep", sg), ("sonarqube", sq)) if f.exists()}
+        # whitespace-only normalisation (comments kept): needed for comment findings such as
+        # commented-out code (python:S125), whose code would otherwise normalise to "".
+        r["block"] = [re.sub(r"\s+", "", l) for l in ls[a - 1:b]] if ls and a <= len(ls) else []
+    avail = {t for t, f in (("semgrep", sg), ("sonarqube", sq), ("ruff", rf)) if f.exists()}
     return meta, rows, avail
 
 
 def renames(repo, old, new):
     m = {}
-    for line in git(repo, "diff", "-M", "--name-status", old, new).splitlines():
+    thr = "-M40%" if "rename" in FIXES else "-M"
+    for line in git(repo, "diff", thr, "--name-status", old, new).splitlines():
         parts = line.split("\t")
         if parts[0].startswith("R") and len(parts) == 3:
             m[parts[1]] = parts[2]
@@ -165,7 +190,7 @@ def make_line_mapper(src, old_commit, new_commit):
     return mapper
 
 
-def match(prev, cur, ren, log, ctx, mapper=None):
+def match(prev, cur, ren, log, ctx, mapper=None, files_old=None, files_new=None):
     """prev/cur: lists of finding dicts (same tool). Returns {cur_idx: prev_idx}."""
     mapping, used_p, used_c = {}, set(), set()
 
@@ -178,12 +203,39 @@ def match(prev, cur, ren, log, ctx, mapper=None):
             k = fn(f); out.append((k + (cnt[k],), f)); cnt[k] += 1
         return out
 
-    # 1 EXACT (with occurrence index)
-    pk = {k: f["_i"] for k, f in occ_key(prev, lambda f: (f["rule"], ppath(f), f["code"]))}
-    for k, f in occ_key(cur, lambda f: (f["rule"], f["path"], f["code"])):
-        if k in pk and pk[k] not in used_p and f["code"]:
-            mapping[f["_i"]] = pk[k]; used_p.add(pk[k]); used_c.add(f["_i"])
-            log.append({**ctx, "method": "exact", "cur": f["_i"], "prev": pk[k], "ambiguous": False})
+    # 1 EXACT
+    if "twins" in FIXES:
+        # Repeated identical findings (same rule, file and code) are paired by minimum total
+        # distance between the diff-mapped old line and the new line (optimal assignment),
+        # instead of by their order in the file, so a removal in the middle does not shift identities.
+        from scipy.optimize import linear_sum_assignment
+        gp, gc = defaultdict(list), defaultdict(list)
+        for f in prev:
+            if f["code"]:
+                gp[(f["rule"], ppath(f), f["code"])].append(f)
+        for f in cur:
+            if f["code"]:
+                gc[(f["rule"], f["path"], f["code"])].append(f)
+        for k, cs in gc.items():
+            ps = gp.get(k)
+            if not ps:
+                continue
+            if len(ps) == 1 and len(cs) == 1:
+                pairs = [(ps[0], cs[0], False)]
+            else:
+                ml = [mapper(p["path"], ppath(p), p["line"]) if mapper else p["line"] for p in ps]
+                cost = [[abs(m - c["line"]) for c in cs] for m in ml]
+                ri, ci = linear_sum_assignment(cost)
+                pairs = [(ps[a], cs[b], True) for a, b in zip(ri, ci)]
+            for p, c, twin in pairs:
+                mapping[c["_i"]] = p["_i"]; used_p.add(p["_i"]); used_c.add(c["_i"])
+                log.append({**ctx, "method": "exact_twin" if twin else "exact", "cur": c["_i"], "prev": p["_i"], "ambiguous": False})
+    else:
+        pk = {k: f["_i"] for k, f in occ_key(prev, lambda f: (f["rule"], ppath(f), f["code"]))}
+        for k, f in occ_key(cur, lambda f: (f["rule"], f["path"], f["code"])):
+            if k in pk and pk[k] not in used_p and f["code"]:
+                mapping[f["_i"]] = pk[k]; used_p.add(pk[k]); used_c.add(f["_i"])
+                log.append({**ctx, "method": "exact", "cur": f["_i"], "prev": pk[k], "ambiguous": False})
 
     # 2 CONTEXT + 3 MESSAGE, nearest line, flag ties
     for method, keyf in (("context", lambda f: (f["rule"], f["code"])),
@@ -209,6 +261,27 @@ def match(prev, cur, ren, log, ctx, mapper=None):
             best = cands[0]
             mapping[f["_i"]] = best["_i"]; used_p.add(best["_i"]); used_c.add(f["_i"])
             log.append({**ctx, "method": method, "cur": f["_i"], "prev": best["_i"], "ambiguous": amb})
+
+    # 4 MOVED (rename fix): identical rule + code in another file, when the old file is gone from
+    # the new commit or the new file did not exist in the old commit (file split, move, rename that
+    # git's similarity threshold missed). Only a unique candidate is accepted; others are logged.
+    if "rename" in FIXES and files_old is not None and files_new is not None:
+        pool = defaultdict(list)
+        for p in prev:
+            if p["_i"] not in used_p and p["code"] and ppath(p) not in files_new:
+                pool[(p["rule"], p["code"])].append(p)
+        for f in cur:
+            if f["_i"] in used_c or not f["code"]:
+                continue
+            cands = [p for p in pool.get((f["rule"], f["code"]), []) if p["_i"] not in used_p]
+            if not cands and f["path"] not in files_old:
+                cands = [p for p in prev if p["_i"] not in used_p and p["code"] == f["code"] and p["rule"] == f["rule"]]
+            if len(cands) == 1:
+                p = cands[0]
+                mapping[f["_i"]] = p["_i"]; used_p.add(p["_i"]); used_c.add(f["_i"])
+                log.append({**ctx, "method": "moved", "cur": f["_i"], "prev": p["_i"], "ambiguous": False})
+            elif len(cands) > 1:
+                log.append({**ctx, "method": "moved_unresolved", "cur": f["_i"], "prev": -1, "ambiguous": True})
     return mapping
 
 
@@ -220,6 +293,8 @@ def track_repo(rdir_raw):
         subprocess.run(["git", "clone", "--quiet", f"https://github.com/{full}.git", str(repo)], check=True)
     src = Source(repo)
     snaps = sorted(d for d in rdir_raw.iterdir() if d.is_dir() and (d / "meta.json").exists())
+    if name in WINDOWS:
+        snaps = snaps[WINDOWS[name] - 1:]
     all_findings, histories, mlog, snap_rows = [], [], [], []
     counter = 0
     prev_meta = None
@@ -233,14 +308,16 @@ def track_repo(rdir_raw):
         snap_rows.append({"repo": meta["repo"], "group": meta["group"], "index": k + 1, "commit": h,
                           "date": date, "py_loc": sum(sum(1 for l in src.lines(h, f) if l.strip()) for f in files_now
                                         if f.endswith(".py") and not EXCLUDE_PATH.search(f)),
+                          "py_lines_all": sum(len(src.lines(h, f)) for f in files_now
+                                        if f.endswith(".py") and not EXCLUDE_PATH.search(f)),
                           "py_loc_scanner_all": meta["py_loc_nonblank"], "py_files": meta["py_files"],
                           "errors": "; ".join(meta.get("errors", [])), "missing_tools": "",
-                          **{f"n_{t}": sum(r["tool"] == t for r in rows) for t in ("semgrep", "sonarqube")}})
+                          **{f"n_{t}": sum(r["tool"] == t for r in rows) for t in ("semgrep", "sonarqube", "ruff")}})
         by_tool = defaultdict(list)
         for i, r in enumerate(rows):
             r["_i"] = i
             by_tool[r["tool"]].append(r)
-        for tool in ("semgrep", "sonarqube"):
+        for tool in ("semgrep", "sonarqube", "ruff"):
             if tool not in avail:          # analyzer failed on this commit: bridge the gap
                 by_tool[tool] = prev_by_tool.get(tool, [])
                 snap_rows[-1]["missing_tools"] = snap_rows[-1].get("missing_tools", "") + tool + " "
@@ -250,7 +327,8 @@ def track_repo(rdir_raw):
             ctx = {"repo": meta["repo"], "tool": tool, "snapshot": k + 1}
             lc = last_commit.get(tool)
             ren_t = renames(repo, lc, h) if (lc and prev_meta and lc != prev_meta["commit"]) else ren
-            mp = match(prev, cur, ren_t, mlog, ctx, make_line_mapper(src, lc, h)) if lc else {}
+            mp = match(prev, cur, ren_t, mlog, ctx, make_line_mapper(src, lc, h),
+                       files_old=existing_files(repo, lc) if lc else None, files_new=files_now) if lc else {}
             last_commit[tool] = h
             prev_idx = {p["_i"]: p for p in prev}
             matched_prev = set(mp.values())
@@ -263,8 +341,16 @@ def track_repo(rdir_raw):
                 if newpath not in files_now:
                     mech = "file_deleted"
                 else:
-                    code_now = {norm_code(l) for l in src.lines(h, newpath)}
-                    mech = "code_still_present" if p["code"] and p["code"] in code_now else "code_changed"
+                    if "multiline" in FIXES:
+                        # The flagged block (all its lines, comments kept) must still occur as a
+                        # contiguous run of lines in the new file.
+                        nl = [x for x in (re.sub(r"\s+", "", l) for l in src.lines(h, newpath)) if x]
+                        blk = [x for x in p.get("block", []) if x]
+                        present = bool(blk) and any(nl[i:i + len(blk)] == blk for i in range(len(nl) - len(blk) + 1))
+                    else:
+                        new_lines = [norm_code(l) for l in src.lines(h, newpath)]
+                        present = bool(p["code"]) and p["code"] in set(new_lines)
+                    mech = "code_still_present" if present else "code_changed"
                 hist.update({"removed_commit": h, "removed_date": date, "removed_snapshot": k + 1,
                              "removal_mechanism": mech, "censored": False})
             # continuing / introduced
@@ -324,6 +410,9 @@ if __name__ == "__main__":
     F, H, M, S = [], [], [], []
     offset = 0
     for rdir in sorted(d for d in RAW.iterdir() if d.is_dir()):
+        if WINDOWS and rdir.name not in WINDOWS:     # a window file lists the repositories to analyse
+            print(f"Skipping {rdir.name} (not in {os.environ['WINDOW_FILE']})")
+            continue
         print(f"Tracking {rdir.name} ...")
         f, h, m, s = track_repo(rdir)
         for x in h: x["issue_id"] += offset

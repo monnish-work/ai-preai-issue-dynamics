@@ -85,8 +85,11 @@ for _, r in S.iterrows():
         "CHECK_intro_correct(Y/N)": "", "CHECK_persistence_correct(Y/N)": "",
         "CHECK_removal_correct(Y/N)": "", "notes": ""})
 V = pd.DataFrame(out)
-V.to_csv(R / "manual_validation_sample.csv", index=False)
-with open(R / "manual_validation_sample.md", "w", encoding="utf-8") as f:
+# The sample was checked by hand (docs/TRACKER_VALIDATION.md, section 4): never overwrite it on re-runs.
+# A fresh, unchecked sample is written next to it instead.
+SAMPLE = "manual_validation_sample" if not (R / "manual_validation_sample.csv").exists() else "manual_validation_sample_new_unchecked"
+V.to_csv(R / f"{SAMPLE}.csv", index=False)
+with open(R / f"{SAMPLE}.md", "w", encoding="utf-8") as f:
     f.write("# Manual validation sample (10 issue histories, seed 42)\n\n")
     for _, v in V.iterrows():
         f.write(f"## Issue {v.issue_id} - {v.group} - {v.repo}\n- Tool/rule: {v.tool} `{v.rule}` ({v.category})\n"

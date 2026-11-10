@@ -1,30 +1,32 @@
-# Dataset: the 10 analysed repositories
+# Dataset: matched AI-declared and Pre-AI repositories
 
-This document lists the five AI-assisted and five Pre-AI Python repositories in the main study. It also gives the matching criteria and explains how a project was classified as AI-assisted.
+This document describes the first five matched pairs (sections 1–6) and the dataset extension of November 2026 (sections 7–8: pairs M6–M41, 40 pairs in total). It also gives the matching criteria, explains how a project was classified as AI-declared, and defines the observation windows.
+
+**Terminology.** Following the October review, the AI group is called **AI-declared** (not "AI-assisted"): a repository is in the group because its developers *declare* AI-generated code in the source. The declaration proves AI involvement in the declared files only.
 The machine-readable version is [`data/dataset_manifest.csv`](../data/dataset_manifest.csv).
 
-## 1. The 10 repositories
+## 1. The first five pairs (M1–M5)
 
 | Pair | Group | Repository | Stars | Forks | Analysed window (first → last sampled commit) | Python LOC (first → last) | Non-merge commits |
 |---|---|---|---:|---:|---|---:|---:|
-| M1 | AI | [pachterlab/edgePython](https://github.com/pachterlab/edgePython) | 94 | 7 | 2026-02-15 → 2026-06-16 | 18,134 → 20,963 | 46 |
+| M1 | AI-declared | [pachterlab/edgePython](https://github.com/pachterlab/edgePython) | 94 | 7 | 2026-02-15 → 2026-06-16 | 18,134 → 20,963 | 46 |
 | M1 | Pre-AI | [TaylorResearchLab/scedar](https://github.com/TaylorResearchLab/scedar) | 41 | 9 | 2018-03-17 → 2021-04-24 | 208 → 13,543 | 297 |
-| M2 | AI | [binsync/declib](https://github.com/binsync/declib) | 190 | 25 | 2023-04-20 → 2026-08-30 | 0 → 22,536 | 276 |
+| M2 | AI-declared | [binsync/declib](https://github.com/binsync/declib) | 190 | 25 | 2023-04-20 → 2026-08-30 | 0 → 22,536 | 276 |
 | M2 | Pre-AI | [getavalon/core](https://github.com/getavalon/core) | 221 | 48 | 2016-09-13 → 2021-03-23 | 0 → 14,513 | 238 |
-| M3 | AI | [jaxleyverse/jaxley](https://github.com/jaxleyverse/jaxley) | 212 | 36 | 2023-03-17 → 2026-09-03 | 0 → 19,061 | 690 |
+| M3 | AI-declared | [jaxleyverse/jaxley](https://github.com/jaxleyverse/jaxley) | 212 | 36 | 2023-03-17 → 2026-09-03 | 0 → 19,061 | 690 |
 | M3 | Pre-AI | [initc3/HoneyBadgerMPC](https://github.com/initc3/HoneyBadgerMPC) | 137 | 64 | 2018-05-12 → 2020-05-13 | 647 → 15,581 | 255 |
-| M4 | AI | [temporalecologylab/TreeRings](https://github.com/temporalecologylab/TreeRings) | 6 | 0 | 2023-10-06 → 2026-09-22 | 0 → 6,955 | 202 |
+| M4 | AI-declared | [temporalecologylab/TreeRings](https://github.com/temporalecologylab/TreeRings) | 6 | 0 | 2023-10-06 → 2026-09-22 | 0 → 6,955 | 202 |
 | M4 | Pre-AI | [hanyas/sds](https://github.com/hanyas/sds) | 11 | 5 | 2019-02-25 → 2021-08-23 | 1,485 → 10,960 | 105 |
-| M5 | AI | [mit-acl/tcaff](https://github.com/mit-acl/tcaff) | 21 | 1 | 2022-10-12 → 2026-07-02 | 114 → 4,038 | 79 |
+| M5 | AI-declared | [mit-acl/tcaff](https://github.com/mit-acl/tcaff) | 21 | 1 | 2022-10-12 → 2026-07-02 | 114 → 4,038 | 79 |
 | M5 | Pre-AI | [jsosa/LFPtools](https://github.com/jsosa/LFPtools) | 40 | 15 | 2017-12-19 → 2019-10-26 | 0 → 4,169 | 71 |
 
-Stars and forks were recorded at search time (24 September 2026). LOC counts non-blank Python lines, excluding generated or vendored folders (`build/`, `dist/`, `vendor/`, `site-packages/`, …). 30 non-merge commits were analysed per repository, evenly spaced over the first-parent history of the default branch (300 analysed commits in total).
+Stars and forks were recorded at search time (24 September 2026). LOC in this table counts non-blank Python lines (the analysis itself uses all lines, as in the professor's replication package, see [ANALYSIS.md](ANALYSIS.md)), excluding generated or vendored folders (`build/`, `dist/`, `vendor/`, `site-packages/`, …). 30 non-merge commits were analysed per repository, evenly spaced over the first-parent history of the default branch (300 analysed commits in total).
 
-**Pilot (method test, not part of the 5 + 5 comparison):** [pachterlab/edgePython](https://github.com/pachterlab/edgePython) (AI) vs [dhlab-epfl/dhSegment](https://github.com/dhlab-epfl/dhSegment) (Pre-AI), using the last 30 non-merge commits of each.
+**Pilot (method test, not part of the 5 + 5 comparison):** [pachterlab/edgePython](https://github.com/pachterlab/edgePython) (AI-declared) vs [dhlab-epfl/dhSegment](https://github.com/dhlab-epfl/dhSegment) (Pre-AI), using the last 30 non-merge commits of each.
 
-## 2. How a project was classified as AI-assisted
+## 2. How a project was classified as AI-declared
 
-A repository counts as **AI-assisted** only when its own source files contain explicit statements that attribute generation of the code to an AI tool. This follows Kashif, Liang & Tahir (2025).
+A repository counts as **AI-declared** only when its own source files contain explicit statements that attribute generation of the code to an AI tool. This follows Kashif, Liang & Tahir (2025).
 
 1. **Search.** We used GitHub code search, restricted to Python, for 15 attribution phrases: "generated by / with / using ChatGPT", "written by ChatGPT", "generated by GitHub Copilot", "generated by / with Copilot", "written by Copilot", "generated by / with Claude", "written by Claude", "generated by / with GPT-4", "generated by / with Cursor". This returned 3,644 file hits in 1,636 repositories (`data/candidates/ai_declaration_hits.csv`, queries in `search_log.json`).
 2. **Filters.** We excluded forks, archived repositories, repositories whose primary language is not Python, and tutorials, homework, examples, demos and templates (keyword filter on name and description).
@@ -32,7 +34,7 @@ A repository counts as **AI-assisted** only when its own source files contain ex
 4. **Manual validation.** Every declaration in the selected repositories was read by hand. A comment had to attribute generation or assistance to an AI tool. Phrases that only mention AI (test strings, documentation) were rejected. Example of a rejected candidate: *HQ1995/vibe-security-radar*, where "Generated by Copilot" appears only as mocked pull-request text in unit tests.
 5. **History and size.** At least 60 non-merge commits, so that 30 commits can be sampled.
 
-**Declaration evidence for the five AI-assisted repositories** (counted at the head commit):
+**Declaration evidence for the five AI-declared repositories** (counted at the head commit):
 
 | Repository | Declared `.py` files | Tool | Example declaration (verbatim) |
 |---|---:|---|---|
@@ -42,7 +44,7 @@ A repository counts as **AI-assisted** only when its own source files contain ex
 | temporalecologylab/TreeRings | 5 of 25 (20 %) | ChatGPT | `# Generated with ChatGPT-4.0` |
 | mit-acl/tcaff | 2 of 37 (5.4 %) | ChatGPT | `"""Written by ChatGPT and fixed by me` |
 
-A declaration proves AI involvement in at least part of the code. It does not show how much of the remaining code is AI-assisted.
+A declaration proves AI involvement in at least part of the code. It does not show how much of the remaining code was written with AI help.
 
 ## 3. How a project was classified as Pre-AI
 
@@ -57,7 +59,7 @@ The term is deliberately **Pre-AI**, not "non-AI": a contemporary repository wit
 
 ## 4. Matching criteria
 
-Each AI-assisted repository was paired with one Pre-AI repository. The criteria, in order of priority:
+Each AI-declared repository was paired with one Pre-AI repository. The criteria, in order of priority:
 
 1. **Language:** Python in both groups.
 2. **Size:** similar non-blank Python LOC at the end of the window. Pre-AI candidates were profiled from their Git history before selection; the size ratio within pairs is 0.6–1.6.
@@ -77,5 +79,60 @@ Each AI-assisted repository was paired with one Pre-AI repository. The criteria,
 
 - **Approximate matching.** Five pairs are matched on language, size and popularity only. Team size, domain and maturity still differ within pairs.
 - **Era differences.** Pre-AI projects are older by design, so Python versions, libraries and analyzer rule fit differ between groups.
-- **Partial AI evidence.** Declarations cover 2.4 %–90 % of files. Undeclared files in AI repositories may or may not be AI-assisted.
-- **Window start before ChatGPT.** mit-acl/tcaff's history starts in October 2022, shortly before ChatGPT's release, so its earliest sampled commits are probably not AI-assisted.
+- **Partial AI evidence.** Declarations cover 2.4 %–90 % of files. Undeclared files in AI-declared repositories may or may not be AI-generated.
+- **Window start before ChatGPT.** mit-acl/tcaff's history starts in October 2022, shortly before ChatGPT's release, so its earliest sampled commits are probably not AI-generated. The aligned observation window (section 6) addresses this.
+
+## 6. Observation windows aligned with documented AI use
+
+The whole-history comparison mixes, for an AI-declared repository, years before any AI use with the period after it. As requested in the November recap, the main result therefore uses windows that start at **documented AI use**.
+
+**Finding the start.** For each AI-declared repository, the first commit that *adds* a declaration was found with `git log -i -G "<declaration pattern>"` (the same phrases as the search, section 2), oldest first. The window starts at the first *sampled* commit at or after that commit. File: [`data/ai_declaration_windows.csv`](../data/ai_declaration_windows.csv).
+
+| Pair | AI-declared repository | First declaration commit | Date | Sampled commits in window (of 30) |
+|---|---|---|---|---:|
+| M1 | pachterlab/edgePython | `ef3cf617bc` "Initial commit of edgePython" | 2026-02-15 | 30 (declared from the first commit) |
+| M2 | binsync/declib | `797a3bf06d` "Switch backend to PyGhidra …; add server/client" | 2026-01-02 | 8 |
+| M3 | jaxleyverse/jaxley | `461050f28c` | 2024-08-01 | 10 |
+| M4 | temporalecologylab/TreeRings | `acbf016525` "Adding comments on LLM generation …" | 2026-04-12 | 5 |
+| M5 | mit-acl/tcaff | `fb09c97977` "add 3d person detection using depth camera" | 2024-01-10 | 14 |
+
+**Pre-AI partners.** A Pre-AI repository has no declaration date. To keep the comparison fair, each partner is observed over the **same sampled positions of its own history** (the same start index, hence the same number of analysed commits and the same relative project phase): [`data/paired_windows.csv`](../data/paired_windows.csv). Comparing a mid-project AI window with a whole Pre-AI history would mix project phases (early projects introduce many more issues).
+
+**Caveats.**
+- *TreeRings declares retroactively.* Commit `acbf016525` adds the "Generated with ChatGPT-4.0" headers to files that were created in 2024. The AI use therefore started earlier than the declaration, and the aligned window (5 commits) captures mainly a clean-up phase: 131 removals, all by file deletion. The whole-history data set is the better view for this repository.
+- *Short windows.* Three AI-declared repositories have only 5–10 analysed commits after the first declaration. Issues present at the window start become baseline issues (left-censored), so the aligned data set has many more baseline issues (2,089 of 4,064) than the whole-history one (475 of 6,008).
+- The whole-history data set is kept as a **sensitivity analysis**, and an "AI windows only" variant (AI aligned, Pre-AI whole history; `results_phaseC_aligned/`) is kept to show why paired windows are needed.
+
+## 7. Dataset extension (November 2026): pairs M6–M22
+
+Following the request to extend the dataset towards 83 pairs, every remaining candidate of the first search that met the declaration rule and had at least 60 non-merge commits (40 repositories) was reviewed by hand, with the same rules as in section 2. The decision for each one is in [`data/ai_extension_review.csv`](../data/ai_extension_review.csv).
+
+| Decision | Repositories | Typical reasons |
+|---|---:|---|
+| Accepted | 16 | explicit statements that an AI tool generated code (e.g. "This file was generated by Cursor AI", "# Written by ChatGPT", "Generated with cursor/claude-3.5-sonnet and then fixed to actually work") |
+| Rejected | 19 | course projects and assignments (8), phrases that are test data or tool rules rather than declarations (5), false hits (2: "written by Claude Pageau" is a person; "openai" is a dataset name), sandbox or playground repositories (2), declarations of docstrings only (2) |
+| Excluded after acceptance | 5 | Python size far outside the Pre-AI pool (3: 95k–734k lines), only 445 Python lines (1), sampled history ends before the first declaration (1: plasmapotential/HEAT, whose later history consists only of merge commits) |
+
+**Pre-AI partners.** 180 repositories of the stratified Pre-AI pool (`data/candidates/preai_pool_stratified.csv`; licence, created 2015–mid-2020, last push before 2022, no tutorial/course keywords) were cloned and profiled from their Git history ([`data/preai_extension_profile.csv`](../data/preai_extension_profile.csv)); 44 had at least 60 non-merge commits and at least 1,500 Python lines. Each accepted AI-declared repository (largest first) was matched to the unused Pre-AI repository closest in Python size and stars (distance |log size ratio| + 0.3 |log star ratio|). Size ratios within pairs are 0.55–1.18. The pairs are listed in [`data/study_repos_phaseD.csv`](../data/study_repos_phaseD.csv) and, with the analysed windows, in [RESULTS.md](RESULTS.md).
+
+**Same procedure as the first five pairs.** 30 non-merge commits evenly spaced over the first-parent history, the same frozen SonarQube, Semgrep and Ruff versions and rules, the same tracker and analysis. AI-declaration windows are found automatically ([`scripts/declaration_windows.py`](../scripts/declaration_windows.py), which reproduces the windows of the first five pairs exactly). Pairs whose AI window has fewer than 5 analysed commits (M9, M12, M19) are used in the whole-history analysis only.
+
+**What limits further growth.** The first search found only 45 candidates with enough history; the extension used all of them. More pairs need the wider search ([FEASIBILITY.md](FEASIBILITY.md)), which requires a GitHub token and a new round of manual review.
+
+**Scanning notes.** On the analysis laptop, Windows Smart App Control blocks the `semgrep.exe` launcher; Semgrep is therefore started from Python with the same package (`run_extension_scan.ps1`), producing identical output (version 1.178.0). One repository (ucl-nlnt/virtualttbot) contains file names with ":" that Windows cannot create; such files are skipped at checkout (they are never `.py` files). The first Pre-AI partner of M11, haxkor/forkever, has such names in paths Git refuses to check out on Windows, so it was replaced by the next-best match (xarray-contrib/xarray-simlab). transientskp/pyse uses Git LFS, which is not installed: LFS files are checked out as pointer files (they are not Python source).
+
+## 8. Second extension: pairs M23–M41 (relaxed rules, to reach 40 pairs)
+
+The strict rule (section 2) leaves no further candidates in the first search. To reach 40 pairs, two relaxations were applied, each to a clearly marked group of pairs, and every declaration was again read by hand:
+
+| Group | Rule | Pairs |
+|---|---|---|
+| Strict | ≥ 60 non-merge commits and ≥ 2 % of `.py` files declared (counted at the head commit by reading the files, which found more declared files than the code search for four repositories) | M1–M7, M9–M22 (except M8), M34, M35, M37, M40 |
+| Relaxed: shorter history | 30–59 non-merge commits, declaration rule unchanged | M23–M30 |
+| Relaxed: fewer declared files | ≥ 60 commits (or ≥ 30), ≥ 2 declared files but < 2 % of `.py` files | M31–M33, M36, M38, M39, M41 |
+
+Rejected at this stage (reasons in [`data/ai_extension_review.csv`](../data/ai_extension_review.csv) and below): course and book repositories (PacktPublishing chapter code, course projects), declarations of docstrings or colour values only, phrases inside strings or test data, single declared files copied into several folders, a second false hit for "Claude Pageau", and repositories with fewer than 30 commits or more than 100k Python lines.
+
+Pre-AI partners were matched as in section 7 from a larger profiled pool (340 repositories cloned and profiled; 84 unused and eligible). The large AI-declared repositories of this group (up to 84k Python lines) have fewer close partners, so size ratios range from 0.30 to 1.48. Every result is also reported for the strict pairs alone ([RESULTS.md](RESULTS.md), section 9).
+
+Lists: [`data/study_repos_phaseE1.csv`](../data/study_repos_phaseE1.csv), [`data/study_repos_phaseE2.csv`](../data/study_repos_phaseE2.csv) (column `tier`). They were scanned by two scan processes in parallel with the M6–M22 scan, with identical tools and settings.

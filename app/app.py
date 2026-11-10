@@ -27,7 +27,7 @@ if not KEY_FILE.exists():
 app.secret_key = KEY_FILE.read_text().strip()
 app.config["JSON_SORT_KEYS"] = False
 
-CATS = ["maintainability", "reliability", "security"]
+CATS = ["maintainability", "reliability", "security", "performance"]
 
 
 # ------------------------------------------------------------------ db helpers
@@ -95,7 +95,7 @@ def project_summary(phase, repo):
     if not p:
         return None
     p = p[0]
-    snaps = rows("SELECT idx, sha, date, loc, maint, rel, sec, missing FROM snapshots WHERE phase=? AND repo=? ORDER BY idx",
+    snaps = rows("SELECT idx, sha, date, loc, maint, rel, sec, perf, missing FROM snapshots WHERE phase=? AND repo=? ORDER BY idx",
                  phase, repo)
     iss = rows("SELECT category, baseline, removed_idx, mechanism, life_days, life_commits, rule, message FROM issues "
                "WHERE phase=? AND repo=?", phase, repo)
@@ -116,7 +116,7 @@ def project_summary(phase, repo):
     p.update({"snapshots": len(snaps), "first_date": snaps[0]["date"][:10] if snaps else "",
               "last_date": last.get("date", "")[:10], "loc_first": snaps[0]["loc"] if snaps else 0,
               "loc_last": last.get("loc", 0), "mean_kloc": round(kloc, 2),
-              "open_now": (ok[-1]["maint"] + ok[-1]["rel"] + ok[-1]["sec"]) if ok else 0,
+              "open_now": (ok[-1]["maint"] + ok[-1]["rel"] + ok[-1]["sec"] + (ok[-1]["perf"] or 0)) if ok else 0,
               "rates": per})
     return p, snaps, iss
 
@@ -148,7 +148,7 @@ def meta():
 
 @app.get("/api/compare")
 def compare():
-    phase, ai, hu = request.args.get("phase", "phaseC"), request.args.get("ai"), request.args.get("human")
+    phase, ai, hu = request.args.get("phase", "ext_paired"), request.args.get("ai"), request.args.get("human")
     unit = request.args.get("unit", "commits")
     out, sets = {}, {}
     for key, repo in (("ai", ai), ("human", hu)):
@@ -184,7 +184,7 @@ def compare():
 @app.get("/api/results")
 def results():
     """Group-level answers to RQ1-RQ3 for one phase."""
-    phase = request.args.get("phase", "phaseC")
+    phase = request.args.get("phase", "ext_paired")
     unit = request.args.get("unit", "commits")
     iss = rows("SELECT grp, category, baseline, removed_idx, mechanism, life_days, life_commits FROM issues WHERE phase=?", phase)
     km = {g: km_block([i for i in iss if i["grp"] == g], unit) for g in ("AI", "PreAI")}
@@ -204,14 +204,16 @@ def results():
     rates = table(phase, "rates_by_repo")
     return jsonify(km=km, tests=tests, mechanisms=mech, rates=rates, unit=unit,
                    repo_tests=table(phase, "repo_level_tests"), repo_measures=table(phase, "repo_level_measures"),
-                   rq3=table(phase, "rq3_security_vs_other"))
+                   rq3=table(phase, "rq3_security_vs_other"),
+                   v2={k: table(phase, "v2_" + k) for k in ("repo_tests", "pooled_tests", "count_reconciliation",
+                                                              "process_metrics", "process_tests")})
 
 
 # ------------------------------------------------------------------ issues
 @app.get("/api/issues")
 def issues():
     a = request.args
-    phase = a.get("phase", "phaseC")
+    phase = a.get("phase", "ext_paired")
     sql, args = "SELECT id, repo, grp, tool, rule, category, severity, message, path_last, intro_idx, last_idx, removed_idx, mechanism, baseline, life_commits, life_days FROM issues WHERE phase=?", [phase]
     if a.get("repo"):
         sql += " AND repo=?"; args.append(a["repo"])
@@ -251,15 +253,17 @@ def issue(phase, iid):
 # ------------------------------------------------------------------ validation
 @app.get("/api/validation")
 def validation():
-    phase = request.args.get("phase", "phaseC")
-    sample = table(phase, "manual_validation_sample")
-    checks = {r["issue_id"]: r for r in rows("SELECT * FROM manual_checks WHERE phase=?", phase)}
+    phase = request.args.get("phase", "ext_paired")
+    sample, sphase = table(phase, "manual_validation_sample"), phase
+    if not sample and phase != "pilot":      # the hand-checked sample belongs to the whole-history data set
+        sample, sphase = table("ext", "manual_validation_sample"), "ext"
+    checks = {r["issue_id"]: r for r in rows("SELECT * FROM manual_checks WHERE phase=?", sphase)}
     for s in sample:
         s["check"] = checks.get(int(s["issue_id"]))
     return jsonify(agreement=table(phase, "validation_sonar_agreement"),
                    methods=table(phase, "validation_match_methods"), sample=sample,
                    events=table(phase, "validation_event_agreement"),
-                   reasons=table(phase, "validation_disagreement_reasons"))
+                   reasons=table(phase, "validation_disagreement_reasons"), sample_phase=sphase)
 
 
 @app.post("/api/manual/<phase>/<int:iid>")

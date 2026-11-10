@@ -14,13 +14,17 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parent.parent
 DB = Path(__file__).resolve().parent / "study.db"
 
-PRIMARY = {("sonarqube", "maintainability"), ("sonarqube", "reliability"), ("semgrep", "security")}
+PRIMARY = {("sonarqube", "maintainability"), ("sonarqube", "reliability"), ("semgrep", "security"), ("ruff", "performance")}
 
 PHASES = {
     "pilot": {"label": "Pilot (1 + 1, last 30 commits)", "derived": "derived", "results": "results",
               "sampling": "Last 30 non-merge commits on the default branch"},
-    "phaseC": {"label": "Main study (5 + 5, whole history)", "derived": "derived_phaseC", "results": "results_phaseC",
-               "sampling": "30 non-merge commits evenly spaced over the whole history"},
+    "ext_paired": {"label": "Main result: AI-declaration windows", "derived": "derived_ext_paired",
+                   "results": "results_ext_paired",
+                   "sampling": "AI-declared: sampled commits from the first commit that adds an AI declaration onwards "
+                               "(pairs with at least 5 such commits). Pre-AI partner: the same sampled positions of its own history"},
+    "ext": {"label": "Whole history (sensitivity)", "derived": "derived_ext", "results": "results_ext",
+            "sampling": "30 non-merge commits evenly spaced over the whole history"},
 }
 
 INFO = {
@@ -51,6 +55,13 @@ MATCH = {"pachterlab/edgePython": "M1", "TaylorResearchLab/scedar": "M1", "binsy
          "getavalon/core": "M2", "jaxleyverse/jaxley": "M3", "initc3/HoneyBadgerMPC": "M3",
          "temporalecologylab/TreeRings": "M4", "hanyas/sds": "M4", "mit-acl/tcaff": "M5", "jsosa/LFPtools": "M5"}
 
+# pairs and evidence of the dataset extension (and any later one) come from the study lists
+for _f in sorted((ROOT / "data").glob("study_repos_phase*.csv")):
+    for _r in pd.read_csv(_f, keep_default_na=False).to_dict("records"):
+        MATCH.setdefault(_r["repo"], _r["match_id"])
+        if _r["repo"] not in INFO:
+            INFO[_r["repo"]] = ("", _r["ai_evidence_or_preai_basis"], "", int(_r["stars"]) if str(_r["stars"]).isdigit() else None)
+
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS users (name TEXT PRIMARY KEY, created TEXT, last_seen TEXT, visits INTEGER);
 CREATE TABLE IF NOT EXISTS manual_checks (phase TEXT, issue_id INTEGER, intro TEXT, persist TEXT, removal TEXT,
@@ -61,7 +72,7 @@ CREATE TABLE phases (id TEXT PRIMARY KEY, label TEXT, sampling TEXT);
 CREATE TABLE projects (phase TEXT, repo TEXT, grp TEXT, match_id TEXT, description TEXT, evidence TEXT,
     ai_tool TEXT, stars INTEGER, PRIMARY KEY (phase, repo));
 CREATE TABLE snapshots (phase TEXT, repo TEXT, idx INTEGER, sha TEXT, date TEXT, loc INTEGER,
-    maint INTEGER, rel INTEGER, sec INTEGER, missing TEXT, PRIMARY KEY (phase, repo, idx));
+    maint INTEGER, rel INTEGER, sec INTEGER, perf INTEGER, missing TEXT, PRIMARY KEY (phase, repo, idx));
 CREATE TABLE issues (phase TEXT, id INTEGER, repo TEXT, grp TEXT, tool TEXT, rule TEXT, category TEXT, severity TEXT,
     message TEXT, cwe TEXT, path_first TEXT, path_last TEXT, lines TEXT, paths TEXT, intro_idx INTEGER,
     last_idx INTEGER, removed_idx INTEGER, mechanism TEXT, baseline INTEGER, moved INTEGER,
@@ -93,9 +104,11 @@ def build():
                         (pid, repo, grp, MATCH.get(repo, "P1") if pid != "pilot" else "P1", d, ev, tool, stars))
         for _, r in S.iterrows():
             g = lambda c: int(cnt.get((r.repo, int(r["index"]), c), 0))
-            con.execute("INSERT INTO snapshots VALUES (?,?,?,?,?,?,?,?,?,?)",
-                        (pid, r.repo, int(r["index"]), r.commit, r.date, int(r.py_loc),
-                         g("maintainability"), g("reliability"), g("security"), str(r.get("missing_tools", "")).strip()))
+            loc = int(r.py_lines_all) if "py_lines_all" in S.columns else int(r.py_loc)
+            con.execute("INSERT INTO snapshots VALUES (?,?,?,?,?,?,?,?,?,?,?)",
+                        (pid, r.repo, int(r["index"]), r.commit, r.date, loc,
+                         g("maintainability"), g("reliability"), g("security"), g("performance"),
+                         str(r.get("missing_tools", "")).strip()))
         per = F.sort_values("snapshot").groupby("issue_id")
         lines = per.line.apply(lambda x: json.dumps([[int(s), int(l)] for s, l in zip(F.loc[x.index, "snapshot"], x)]))
         paths = per.path.apply(lambda x: json.dumps(list(dict.fromkeys(x))))
@@ -116,11 +129,49 @@ def build():
             f = R / f"{name}.csv"
             if f.exists() and f.stat().st_size > 5:
                 body = pd.read_csv(f, keep_default_na=False).to_json(orient="records")
-                con.execute("INSERT INTO tables_json VALUES (?,?,?)", (pid, name, body))
+                con.execute("INSERT OR REPLACE INTO tables_json VALUES (?,?,?)", (pid, name, body))
+        if pid == "ext":   # the hand-checked sample (whole-history data of the first 5 pairs), with issue ids of this data set
+            ms = ROOT / "results_phaseC" / "manual_validation_sample.csv"
+            hc = ROOT / "data" / "derived_phaseC" / "issue_histories.csv"
+            if ms.exists() and hc.exists():
+                V = pd.read_csv(ms, keep_default_na=False, dtype=str)
+                key = ["repo", "rule", "path_first", "line_first", "introduced_snapshot"]
+                old = pd.read_csv(hc, keep_default_na=False, dtype=str)[["issue_id"] + key]
+                new = H.astype({"issue_id": str})[["issue_id"] + key].astype(str)
+                m = (old.merge(new, on=key, suffixes=("_c", "_e")).drop_duplicates("issue_id_c")
+                     .set_index("issue_id_c").issue_id_e)
+                V["issue_id"] = V.issue_id.map(m)
+                con.execute("INSERT OR REPLACE INTO tables_json VALUES (?,?,?)",
+                            (pid, "manual_validation_sample", V.dropna(subset=["issue_id"]).to_json(orient="records")))
+        v2 = R / "v2"
+        if (v2 / "repo_tests.csv").exists():
+            # v2 analysis (4 ISO/IEC 25010 attributes, Holm correction) replaces the v1 tables used by the app
+            rm = pd.read_csv(v2 / "repo_measures.csv", keep_default_na=False)
+            long = []
+            for _, x in rm.iterrows():
+                for c in ["all", "maintainability", "reliability", "security", "performance"]:
+                    long.append({"repo": x.repo, "group": "AI" if x.group == "AI-declared" else "PreAI", "category": c,
+                                 "snapshots": x.analysed_commits, "mean_kloc": x.mean_kloc,
+                                 "baseline_issues": x[f"{c}_baseline"], "introduced": x[f"{c}_introduced"],
+                                 "removed": x[f"{c}_removed_all"], "intro_per_kloc": x[f"{c}_intro_per_kloc"],
+                                 "removed_per_kloc": x[f"{c}_removed_per_kloc"], "density_last": x[f"{c}_density_last"],
+                                 "density_mean": x[f"{c}_density_mean"]})
+            con.execute("INSERT OR REPLACE INTO tables_json VALUES (?,?,?)",
+                        (pid, "rates_by_repo", pd.DataFrame(long).to_json(orient="records")))
+            rt = pd.read_csv(v2 / "repo_tests.csv")
+            legacy = rt[rt.category == "all"].rename(columns={"AI_declared_median": "AI_median", "p": "p_value"})
+            legacy["measure"] = legacy.measure.replace({"median_life_commits": "km_median_snapshots"})
+            con.execute("INSERT OR REPLACE INTO tables_json VALUES (?,?,?)",
+                        (pid, "repo_level_tests", legacy.to_json(orient="records")))
+            for name in ["repo_tests", "pooled_tests", "count_reconciliation", "process_metrics", "process_tests"]:
+                f = v2 / f"{name}.csv"
+                if f.exists():
+                    con.execute("INSERT OR REPLACE INTO tables_json VALUES (?,?,?)",
+                                (pid, "v2_" + name, pd.read_csv(f).to_json(orient="records")))
         print(f"  {pid}: {S.repo.nunique()} projects, {len(rows)} issues")
     vfile = ROOT / "tool_versions.txt"
     if vfile.exists():
-        v = vfile.read_text(encoding="utf-8-sig").splitlines()[:9]
+        v = vfile.read_text(encoding="utf-8-sig").splitlines()[:10]
         con.execute("INSERT INTO tables_json VALUES (?,?,?)", ("all", "versions", json.dumps(v)))
     con.commit()
     con.close()

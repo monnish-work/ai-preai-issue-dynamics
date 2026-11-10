@@ -146,7 +146,7 @@ textarea { width: 100%; min-height: 60px; resize: vertical; }
 .chip.open { background: color-mix(in srgb, var(--warn) 16%, transparent); color: var(--warn); }
 .chip.gone { background: color-mix(in srgb, var(--good) 16%, transparent); color: var(--good); }
 .chip.del { background: color-mix(in srgb, var(--ink-3) 18%, transparent); color: var(--ink-2); }
-.cat-m { --cat: var(--ink-2); } .cat-r { --cat: var(--warn); } .cat-s { --cat: var(--crit); }
+.cat-m { --cat: var(--ink-2); } .cat-r { --cat: var(--warn); } .cat-s { --cat: var(--crit); } .cat-p { --cat: var(--good); }
 .cat-tag { font-size: .74rem; font-weight: 600; color: var(--cat); text-transform: capitalize; }
 
 .seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--surface); }

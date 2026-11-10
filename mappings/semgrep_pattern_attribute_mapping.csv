@@ -1,0 +1,12 @@
+source_level,source_name,mapped_quality_attribute,included_in_paper_mapping,notes
+config_bundle,p/security-audit,Security,yes,All Semgrep security patterns are mapped to Security in the paper.
+config_bundle,p/owasp-top-ten,Security,yes,All Semgrep security patterns are mapped to Security in the paper.
+config_bundle,p/cwe-top-25,Security,yes,All Semgrep security patterns are mapped to Security in the paper.
+config_bundle,p/secrets,Security,yes,All Semgrep security patterns are mapped to Security in the paper.
+config_bundle,p/insecure-transport,Security,yes,All Semgrep security patterns are mapped to Security in the paper.
+config_bundle,p/sql-injection,Security,yes,All Semgrep security patterns are mapped to Security in the paper.
+config_bundle,p/command-injection,Security,yes,All Semgrep security patterns are mapped to Security in the paper.
+config_bundle,p/jwt,Security,yes,All Semgrep security patterns are mapped to Security in the paper.
+config_bundle,p/xss,Security,yes,All Semgrep security patterns are mapped to Security in the paper.
+config_bundle,p/java,Security,yes,Language-specific pack used together with security bundles for Java snapshots.
+config_bundle,p/python,Security,yes,Language-specific pack used together with security bundles for Python snapshots.

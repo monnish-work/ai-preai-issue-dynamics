@@ -15,6 +15,11 @@ if ($LASTEXITCODE -ne 0) {
   Write-Host "Installing Flask into the project's .venv (first run only)..." -ForegroundColor Cyan
   & "$Root\tools\uv\uv.exe" pip install --python "$Root\.venv\Scripts\python.exe" flask
 }
+$xz = "$Root\app\study.db.xz"; $db = "$Root\app\study.db"
+if ((Test-Path $xz) -and ((-not (Test-Path $db)) -or ((Get-Item $xz).LastWriteTime -gt (Get-Item $db).LastWriteTime))) {
+  Write-Host "Unpacking app\study.db ..." -ForegroundColor Cyan
+  & $py -c "import lzma,shutil,sys; shutil.copyfileobj(lzma.open(sys.argv[1]), open(sys.argv[2],'wb'))" "$Root\app\study.db.xz" "$Root\app\study.db"
+}
 if (-not (Test-Path "$Root\app\study.db")) {
   Write-Host "Building app\study.db ..." -ForegroundColor Cyan
   & $py "$Root\app\database.py"

@@ -1,0 +1,6 @@
+rule_code,plugin,mapped_quality_attribute,included_in_paper_mapping,rule_message
+PERF102,perflint,Performance Efficiency,yes,When using only the keys of a dict use the `keys()` method
+PERF203,perflint,Performance Efficiency,yes,`try`-`except` within a loop incurs performance overhead
+PERF401,perflint,Performance Efficiency,yes,Use a list comprehension to create a transformed list
+PERF402,perflint,Performance Efficiency,yes,Use `list` or `list.copy` to create a copy of a list
+PERF403,perflint,Performance Efficiency,yes,Use a dictionary comprehension instead of a for-loop

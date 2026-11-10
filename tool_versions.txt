@@ -7,6 +7,7 @@ Semgrep: 1.178.0
 Java: openjdk version "21.0.12.1" 2026-08-18 LTS
 SonarQube: sonarqube-26.8.0.126808
 SonarScanner: sonar-scanner-8.1.0.6389-windows-x64
+Ruff: ruff 0.17.4 (PERF rules; added 2026-11-09)
 Python packages:
 autograd==1.9.1
 autograd-gamma==0.5.0
